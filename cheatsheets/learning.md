@@ -221,7 +221,12 @@ The system matters less than consistency. Pick tools you'll actually use.
 
 ## Tools
 
-| Purpose            | Options                                    |
+> Landscape shifts fast. See
+> [awesome-fsrs](https://github.com/open-spaced-repetition/awesome-fsrs) and
+> [awesome-knowledge-management](https://github.com/brettkromkamp/awesome-knowledge-management)
+> for current options.
+
+| Purpose            | Examples                                   |
 | ------------------ | ------------------------------------------ |
 | Spaced repetition  | Anki, RemNote, Mochi                       |
 | Connected notes    | Obsidian, Logseq, Roam                     |
