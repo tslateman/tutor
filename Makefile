@@ -1,4 +1,4 @@
-.PHONY: help lint format check fix setup sync
+.PHONY: help lint format check fix setup sync prose
 
 help:
 	@echo "Usage: make [target]"
@@ -10,6 +10,7 @@ help:
 	@echo "  fix     Format then lint"
 	@echo "  setup   Install git hooks"
 	@echo "  sync    Download vale style packages"
+	@echo "  prose   Review prose with Claude (Strunk's rules)"
 
 # Lint markdown files
 lint:
@@ -36,3 +37,7 @@ setup:
 # Download vale style packages
 sync:
 	vale sync
+
+# Review prose with Claude (Strunk's Elements of Style)
+prose:
+	claude -p "/elements-of-style:writing-clearly-and-concisely cheatsheets/"
