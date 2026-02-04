@@ -88,8 +88,8 @@ Ask "why" and "how" questions to connect new material to existing knowledge.
 **Why it works**: Creates semantic links to prior knowledge. More connections =
 more retrieval paths = better recall.
 
-**Limitation**: Requires background knowledge to elaborate from. Less effective
-for completely unfamiliar material.
+**Limitation**: Requires background knowledge to elaborate from. Works best when
+you have prior knowledge to connect to.
 
 ## Generation Effect
 
@@ -164,12 +164,12 @@ can become single units. Name them.
 
 ### Sleep
 
-Memory consolidation happens during sleep, particularly slow-wave sleep.
+Sleep consolidates memory, particularly slow-wave sleep.
 
 - Post-learning sleep stabilizes and enhances memories
 - Sleep before learning prepares encoding capacity
 - Naps help; all-nighters actively hurt retention
-- Tired learning is inefficient learning
+- Fatigue sabotages retention
 
 ### Deliberate Practice
 
@@ -180,8 +180,8 @@ Not just repetition—structured practice targeting weaknesses.
 - High concentration, not autopilot
 - Quality matters more than hours logged
 
-The "10,000 hour rule" is a misrepresentation. Deliberate practice explains ~26%
-of performance variance—significant but not everything.
+The "10,000 hour rule" oversimplifies. Deliberate practice explains ~26% of
+performance variance—significant but not everything.
 
 ### Metacognition
 
