@@ -30,7 +30,9 @@ materials.
 ## Commands
 
 ```bash
-make lint      # Check markdown style
+make lint      # Run markdownlint and vale
 make format    # Format with prettier
 make fix       # Format then lint
+make sync      # Download vale style packages
+make setup     # Install git hooks
 ```

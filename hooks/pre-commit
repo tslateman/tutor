@@ -1,13 +1,19 @@
 #!/bin/bash
 
 # Format markdown files
-prettier --write '**/*.md' >/dev/null 2>&1
+prettier --write '**/*.md' --ignore-path .gitignore >/dev/null 2>&1
 
 # Re-stage any formatted files
 git diff --name-only | grep '\.md$' | xargs -r git add
 
-# Run lint
-if ! markdownlint '**/*.md'; then
+# Run markdownlint
+if ! markdownlint '**/*.md' --ignore .vale; then
     echo "markdownlint failed. Fix errors before committing."
+    exit 1
+fi
+
+# Run vale
+if ! vale cheatsheets/*.md CLAUDE.md; then
+    echo "vale failed. Fix prose issues before committing."
     exit 1
 fi
