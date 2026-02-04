@@ -1,4 +1,14 @@
-.PHONY: lint format check fix setup
+.PHONY: help lint format check fix setup
+
+help:
+	@echo "Usage: make [target]"
+	@echo ""
+	@echo "Targets:"
+	@echo "  lint    Check markdown style"
+	@echo "  format  Format markdown with prettier"
+	@echo "  check   Check formatting (no changes)"
+	@echo "  fix     Format then lint"
+	@echo "  setup   Install git hooks"
 
 # Lint markdown files
 lint:
