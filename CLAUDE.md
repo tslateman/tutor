@@ -17,6 +17,7 @@ materials.
 | `docker.md`     | Images, containers, Dockerfile, Compose, networking         |
 | `git.md`        | Commits, branches, merging, rebasing, remotes, workflows    |
 | `jq.md`         | JSON processing, filters, transforms, practical examples    |
+| `learning.md`   | Retention techniques, spaced repetition, active recall      |
 | `neovim.md`     | LazyVim keybindings, Telescope, navigation, code actions    |
 | `postgres.md`   | psql commands, indexes, window functions, admin queries     |
 | `python.md`     | Data structures, comprehensions, typing, async              |
