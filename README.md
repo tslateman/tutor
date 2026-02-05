@@ -16,6 +16,7 @@ Personal reference for tools, languages, and techniques.
 | [Python](cheatsheets/python.md)         | Data structures, comprehensions, typing, async         |
 | [Regex](cheatsheets/regex.md)           | Patterns, quantifiers, groups, lookahead               |
 | [SQL](cheatsheets/sql.md)               | Joins, CTEs, window functions                          |
+| [Thinking](cheatsheets/thinking.md)     | Mental models, systems thinking, asking good questions |
 | [tmux](cheatsheets/tmux.md)             | Sessions, windows, panes, copy mode                    |
 | [TypeScript](cheatsheets/typescript.md) | Types, generics, utility types, patterns               |
 | [Unix](cheatsheets/unix.md)             | Shell commands, file ops, text processing, SSH         |

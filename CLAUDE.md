@@ -23,6 +23,7 @@ materials.
 | `python.md`     | Data structures, comprehensions, typing, async              |
 | `regex.md`      | Patterns, quantifiers, groups, lookahead, language-specific |
 | `sql.md`        | General SQL, joins, CTEs, window functions                  |
+| `thinking.md`   | Mental models, systems thinking, asking good questions      |
 | `tmux.md`       | Sessions, windows, panes, copy mode, configuration          |
 | `typescript.md` | Types, generics, utility types, patterns                    |
 | `unix.md`       | Shell commands, file ops, text processing, SSH              |
