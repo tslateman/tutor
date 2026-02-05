@@ -8,6 +8,7 @@ Personal reference for tools, languages, and techniques.
 | --------------------------------------- | ------------------------------------------------------ |
 | [Docker](cheatsheets/docker.md)         | Images, containers, Dockerfile, Compose, networking    |
 | [Git](cheatsheets/git.md)               | Commits, branches, merging, rebasing, remotes          |
+| [Complexity](cheatsheets/complexity.md) | Essential vs accidental, techniques, heuristics        |
 | [jq](cheatsheets/jq.md)                 | JSON processing, filters, transforms                   |
 | [Learning](cheatsheets/learning.md)     | Retention techniques, spaced repetition, active recall |
 | [macOS](cheatsheets/macos.md)           | Homebrew, defaults, Spotlight, launchctl               |

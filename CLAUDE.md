@@ -14,6 +14,7 @@ materials.
 
 | File            | Topics                                                      |
 | --------------- | ----------------------------------------------------------- |
+| `complexity.md` | Essential vs accidental, techniques, heuristics             |
 | `docker.md`     | Images, containers, Dockerfile, Compose, networking         |
 | `git.md`        | Commits, branches, merging, rebasing, remotes, workflows    |
 | `jq.md`         | JSON processing, filters, transforms, practical examples    |
