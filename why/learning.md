@@ -217,6 +217,25 @@ Minimum viable learning workflow:
 4. **Test**: Practice problems, teach-backs, self-quizzes
 5. **Sleep**: Non-negotiable
 
+### Example: Learning React Query in 2 Weeks
+
+**Days 1-3: Capture** — Read docs and tutorials. Take notes in your own words,
+not transcripts. Sketch the mental model (dual coding).
+
+**Days 2-5: Process** — Convert notes to Anki cards. Frame as questions: "When
+does React Query refetch by default?" Force active recall framing.
+
+**Days 3-14: Review** — Daily SRS review, 10-15 minutes. Let the algorithm
+schedule; trust the spacing.
+
+**Days 5-14: Test** — Build a small project. Explain your cache strategy out
+loud (Feynman). Debug without docs when possible.
+
+**Throughout: Sleep** — Consolidation happens overnight. No late-night cramming.
+
+Phases overlap. You're still capturing while processing, still processing while
+testing. The system is a loop, not a sequence.
+
 The system matters less than consistency. Pick tools you'll actually use.
 
 ## Tools
@@ -236,13 +255,18 @@ The system matters less than consistency. Pick tools you'll actually use.
 
 ## Sources
 
-- Dunlosky et al. (2013). "Improving Students' Learning With Effective Learning
-  Techniques." Psychological Science in the Public Interest.
-- Karpicke & Roediger (2008). "The Critical Importance of Retrieval for
-  Learning."
-- Bjork & Bjork. "Desirable Difficulties" research, UCLA Learning and Forgetting
-  Lab.
-- Ebbinghaus (1885). "Memory: A Contribution to Experimental Psychology."
+- Dunlosky et al. (2013).
+  [Improving Students' Learning With Effective Learning Techniques](https://doi.org/10.1177/1529100612453266).
+  Psychological Science in the Public Interest.
+- Karpicke & Roediger (2008).
+  [The Critical Importance of Retrieval for Learning](https://doi.org/10.1126/science.1152408).
+  Science.
+- Bjork & Bjork.
+  [Desirable Difficulties in Theory and Practice](https://bjorklab.psych.ucla.edu/research/).
+  UCLA Learning and Forgetting Lab.
+- Ebbinghaus (1885).
+  [Memory: A Contribution to Experimental Psychology](https://psychclassics.yorku.ca/Ebbinghaus/index.htm).
   (Forgetting curve)
-- Roediger & Butler (2011). "The Critical Role of Retrieval Practice in
-  Long-Term Retention."
+- Roediger & Butler (2011).
+  [The Critical Role of Retrieval Practice in Long-Term Retention](https://doi.org/10.1016/j.tics.2010.09.003).
+  Trends in Cognitive Sciences.

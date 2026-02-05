@@ -13,7 +13,13 @@ if ! markdownlint '**/*.md' --ignore .vale; then
 fi
 
 # Run vale
-if ! vale cheatsheets/*.md CLAUDE.md; then
+if ! vale how/*.md why/*.md CLAUDE.md; then
     echo "vale failed. Fix prose issues before committing."
+    exit 1
+fi
+
+# Check internal links
+if ! lychee --offline '**/*.md' 2>/dev/null; then
+    echo "Broken links found. Fix before committing."
     exit 1
 fi

@@ -1,0 +1,11 @@
+# Lychee link checker configuration
+# https://lychee.cli.rs/
+
+# Only check local files, skip external URLs (faster for pre-commit)
+offline = true
+
+# Exclude vale style directory
+exclude_path = [".vale"]
+
+# Don't require HTTPS for local file links
+require_https = false

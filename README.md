@@ -2,30 +2,39 @@
 
 Personal reference for tools, languages, and techniques.
 
-## Cheatsheets
+## how/
 
-| Topic                                   | Description                                            |
-| --------------------------------------- | ------------------------------------------------------ |
-| [Docker](cheatsheets/docker.md)         | Images, containers, Dockerfile, Compose, networking    |
-| [Git](cheatsheets/git.md)               | Commits, branches, merging, rebasing, remotes          |
-| [Complexity](cheatsheets/complexity.md) | Essential vs accidental, techniques, heuristics        |
-| [jq](cheatsheets/jq.md)                 | JSON processing, filters, transforms                   |
-| [Learning](cheatsheets/learning.md)     | Retention techniques, spaced repetition, active recall |
-| [macOS](cheatsheets/macos.md)           | Homebrew, defaults, Spotlight, launchctl               |
-| [Neovim](cheatsheets/neovim.md)         | LazyVim keybindings, Telescope, code actions           |
-| [PostgreSQL](cheatsheets/postgres.md)   | psql, indexes, window functions, admin                 |
-| [Python](cheatsheets/python.md)         | Data structures, comprehensions, typing, async         |
-| [Regex](cheatsheets/regex.md)           | Patterns, quantifiers, groups, lookahead               |
-| [SQL](cheatsheets/sql.md)               | Joins, CTEs, window functions                          |
-| [Thinking](cheatsheets/thinking.md)     | Mental models, systems thinking, asking good questions |
-| [tmux](cheatsheets/tmux.md)             | Sessions, windows, panes, copy mode                    |
-| [TypeScript](cheatsheets/typescript.md) | Types, generics, utility types, patterns               |
-| [Unix](cheatsheets/unix.md)             | Shell commands, file ops, text processing, SSH         |
+Commands, syntax, quick reference.
+
+| Topic                           | Description                                         |
+| ------------------------------- | --------------------------------------------------- |
+| [Docker](how/docker.md)         | Images, containers, Dockerfile, Compose, networking |
+| [Git](how/git.md)               | Commits, branches, merging, rebasing, remotes       |
+| [jq](how/jq.md)                 | JSON processing, filters, transforms                |
+| [macOS](how/macos.md)           | Homebrew, defaults, Spotlight, launchctl            |
+| [Neovim](how/neovim.md)         | LazyVim keybindings, Telescope, code actions        |
+| [PostgreSQL](how/postgres.md)   | psql, indexes, window functions, admin              |
+| [Python](how/python.md)         | Data structures, comprehensions, typing, async      |
+| [Regex](how/regex.md)           | Patterns, quantifiers, groups, lookahead            |
+| [SQL](how/sql.md)               | Joins, CTEs, window functions                       |
+| [tmux](how/tmux.md)             | Sessions, windows, panes, copy mode                 |
+| [TypeScript](how/typescript.md) | Types, generics, utility types, patterns            |
+| [Unix](how/unix.md)             | Shell commands, file ops, text processing, SSH      |
+
+## why/
+
+Mental models, principles, frameworks.
+
+| Topic                           | Description                                            |
+| ------------------------------- | ------------------------------------------------------ |
+| [Complexity](why/complexity.md) | Essential vs accidental, techniques, heuristics        |
+| [Learning](why/learning.md)     | Retention techniques, spaced repetition, active recall |
+| [Thinking](why/thinking.md)     | Mental models, systems thinking, asking good questions |
 
 ## Setup
 
 ```bash
-brew install markdownlint-cli prettier vale
+brew install markdownlint-cli prettier vale lychee
 make sync     # Download vale style packages
 make setup    # Install git hooks
 ```
@@ -34,7 +43,7 @@ make setup    # Install git hooks
 
 ```bash
 make help     # Show all commands
-make lint     # Check style (markdownlint + vale)
+make lint     # Check style (markdownlint + vale + links)
 make format   # Format with prettier
 make fix      # Format then lint
 make prose    # Review prose with Claude (Strunk's rules)

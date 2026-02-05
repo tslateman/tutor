@@ -1,21 +1,27 @@
-.PHONY: help lint format check fix setup sync prose
+.PHONY: help lint format check fix setup sync prose links
 
 help:
 	@echo "Usage: make [target]"
 	@echo ""
 	@echo "Targets:"
-	@echo "  lint    Run markdownlint and vale"
+	@echo "  lint    Run markdownlint, vale, and link checker"
 	@echo "  format  Format markdown with prettier"
 	@echo "  check   Check formatting (no changes)"
 	@echo "  fix     Format then lint"
 	@echo "  setup   Install git hooks"
 	@echo "  sync    Download vale style packages"
 	@echo "  prose   Review prose with Claude (Strunk's rules)"
+	@echo "  links   Check markdown links (internal only)"
 
 # Lint markdown files
 lint:
 	markdownlint '**/*.md' --ignore .vale
-	vale cheatsheets/*.md CLAUDE.md
+	vale how/*.md why/*.md CLAUDE.md
+	lychee --offline '**/*.md'
+
+# Check markdown links (internal only, fast)
+links:
+	lychee --offline '**/*.md'
 
 # Format markdown files
 format:
@@ -40,4 +46,4 @@ sync:
 
 # Review prose with Claude (Strunk's Elements of Style)
 prose:
-	claude -p "/elements-of-style:writing-clearly-and-concisely cheatsheets/"
+	claude -p "/elements-of-style:writing-clearly-and-concisely how/ why/"
