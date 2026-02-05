@@ -146,9 +146,9 @@ TypeError: Cannot read property 'name' of undefined
 
 Work backward from the error:
 
-1. What variable is undefined?
-2. Where should it have been set?
-3. Why wasn't it?
+1. Which variable lacks a value?
+2. Where should code assign it?
+3. Why didn't it?
 
 ### Stack Traces
 
@@ -186,7 +186,7 @@ logger.debug("Processing complete", extra={
 | ---------------- | ------------------------------ |
 | Function entry   | Input parameters               |
 | Function exit    | Return value                   |
-| Before condition | Variables being tested         |
+| Before condition | Variables under test           |
 | Inside loops     | Iteration count, current value |
 | Catch blocks     | Exception details              |
 
@@ -198,7 +198,7 @@ logger.debug("Processing complete", extra={
 | --------------- | --------------------------------- |
 | Line breakpoint | Stop at specific location         |
 | Conditional     | Stop only when expression is true |
-| Exception       | Stop when error is thrown         |
+| Exception       | Stop when code throws error       |
 | Data/watchpoint | Stop when variable changes        |
 
 ### Questions to Answer in Debugger

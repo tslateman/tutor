@@ -40,6 +40,7 @@ Mental models, principles, frameworks.
 | `complexity.md` | Essential vs accidental, techniques, heuristics        |
 | `debugging.md`  | Scientific method, bisection, isolation techniques     |
 | `learning.md`   | Retention techniques, spaced repetition, active recall |
+| `testing.md`    | Pyramid, strategy, doubles, TDD, anti-patterns         |
 | `thinking.md`   | Mental models, systems thinking, asking good questions |
 
 ## Commands
