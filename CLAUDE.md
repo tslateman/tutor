@@ -18,12 +18,14 @@ Commands, syntax, quick reference.
 | --------------- | ----------------------------------------------------------- |
 | `docker.md`     | Images, containers, Dockerfile, Compose, networking         |
 | `git.md`        | Commits, branches, merging, rebasing, remotes, workflows    |
+| `http.md`       | curl, headers, status codes, REST conventions               |
 | `jq.md`         | JSON processing, filters, transforms, practical examples    |
 | `macos.md`      | Homebrew, defaults, Spotlight, launchctl, AppleScript       |
 | `neovim.md`     | LazyVim keybindings, Telescope, navigation, code actions    |
 | `postgres.md`   | psql commands, indexes, window functions, admin queries     |
 | `python.md`     | Data structures, comprehensions, typing, async              |
 | `regex.md`      | Patterns, quantifiers, groups, lookahead, language-specific |
+| `shell.md`      | Scripting patterns, loops, conditionals, functions          |
 | `sql.md`        | General SQL, joins, CTEs, window functions                  |
 | `tmux.md`       | Sessions, windows, panes, copy mode, configuration          |
 | `typescript.md` | Types, generics, utility types, patterns                    |
@@ -36,6 +38,7 @@ Mental models, principles, frameworks.
 | File            | Topics                                                 |
 | --------------- | ------------------------------------------------------ |
 | `complexity.md` | Essential vs accidental, techniques, heuristics        |
+| `debugging.md`  | Scientific method, bisection, isolation techniques     |
 | `learning.md`   | Retention techniques, spaced repetition, active recall |
 | `thinking.md`   | Mental models, systems thinking, asking good questions |
 
