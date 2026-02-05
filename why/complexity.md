@@ -26,7 +26,7 @@ enemy you created._
 
 ### Two Root Causes
 
-1. **Dependencies** — Code can't be understood or changed in isolation
+1. **Dependencies** — You can't understand or change code in isolation
 2. **Obscurity** — Important information isn't obvious
 
 ## Simple vs Easy

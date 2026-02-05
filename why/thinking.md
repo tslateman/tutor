@@ -1,6 +1,6 @@
 # Thinking Cheat Sheet
 
-Judgment scales; execution is commoditized.
+Judgment scales; AI commoditizes execution.
 
 ## Mental Models
 
