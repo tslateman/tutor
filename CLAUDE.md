@@ -46,6 +46,14 @@ Mental models, principles, frameworks.
 | `testing.md`         | Pyramid, strategy, doubles, TDD, anti-patterns         |
 | `thinking.md`        | Mental models, systems thinking, asking good questions |
 
+### learn/
+
+Progressive lesson plans with exercises.
+
+| File                  | Topics                                            |
+| --------------------- | ------------------------------------------------- |
+| `tmux-lesson-plan.md` | 8 lessons from basics to scripting, with projects |
+
 ## Commands
 
 ```bash
