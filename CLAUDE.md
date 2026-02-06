@@ -16,6 +16,7 @@ Commands, syntax, quick reference.
 
 | File            | Topics                                                      |
 | --------------- | ----------------------------------------------------------- |
+| `ai-cli.md`     | Claude Code, context files, prompting, verification habits  |
 | `docker.md`     | Images, containers, Dockerfile, Compose, networking         |
 | `git.md`        | Commits, branches, merging, rebasing, remotes, workflows    |
 | `http.md`       | curl, headers, status codes, REST conventions               |
