@@ -193,3 +193,7 @@ Resolution: Learn _principles_ deeply, _details_ just-in-time.
 
 _"The formulation of a problem is often more essential than its solution."_ —
 Einstein
+
+## See Also
+
+- [Debugging](debugging.md) — Apply systematic thinking to find bugs

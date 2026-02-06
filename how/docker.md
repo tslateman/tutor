@@ -494,3 +494,7 @@ docker events --since 1h
 | Compose up           | `docker compose up -d`          |
 | Compose down         | `docker compose down`           |
 | Clean up             | `docker system prune -a`        |
+
+## See Also
+
+- [Shell](shell.md) — Scripting patterns used in Dockerfiles and entrypoints

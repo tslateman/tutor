@@ -375,5 +375,5 @@ spinner $!
 
 ## See Also
 
-- [Unix](unix.md) — Individual commands
+- [Unix](unix.md) — Individual commands used in scripts
 - [Regex](regex.md) — Pattern matching in scripts

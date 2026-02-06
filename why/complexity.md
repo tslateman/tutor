@@ -196,3 +196,7 @@ usually less than the cost of maintaining unused flexibility now.
 - Rich Hickey — _Simple Made Easy_ (2011 talk)
 - Sandi Metz — _Practical Object-Oriented Design_ (2012)
 - Dave Farley — _Modern Software Engineering_ (2021)
+
+## See Also
+
+- [Thinking](thinking.md) — Systems thinking helps manage complexity

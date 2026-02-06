@@ -385,3 +385,7 @@ jq '[.items[].tags[]] | unique'
 ```bash
 jq 'group_by(.category) | map({category: .[0].category, total: map(.amount) | add})'
 ```
+
+## See Also
+
+- [Shell](shell.md) — Scripting patterns for pipelines and data processing
