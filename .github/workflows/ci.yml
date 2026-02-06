@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli
+
+      - name: Install prettier
+        run: npm install -g prettier
+
+      - name: Install vale
+        run: |
+          wget -q https://github.com/errata-ai/vale/releases/download/v3.9.0/vale_3.9.0_Linux_64-bit.tar.gz
+          tar -xzf vale_3.9.0_Linux_64-bit.tar.gz vale
+          sudo mv vale /usr/local/bin/
+          vale sync
+
+      - name: Install lychee
+        run: |
+          wget -q https://github.com/lycheeverse/lychee/releases/download/v0.17.0/lychee-v0.17.0-x86_64-unknown-linux-gnu.tar.gz
+          tar -xzf lychee-v0.17.0-x86_64-unknown-linux-gnu.tar.gz lychee
+          sudo mv lychee /usr/local/bin/
+
+      - name: Run lint (markdownlint, vale, internal links)
+        run: make lint
+
+      - name: Check formatting
+        run: make check
+
+      - name: Check external links
+        run: lychee '**/*.md'
+        continue-on-error: true
