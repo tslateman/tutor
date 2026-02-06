@@ -472,3 +472,7 @@ pg_restore -d dbname backup.dump
 # Dump all databases
 pg_dumpall > all_databases.sql
 ```
+
+## See Also
+
+- [SQL](sql.md) — General SQL syntax portable across databases

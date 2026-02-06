@@ -253,3 +253,8 @@ for f in *.txt; do echo "$f"; done
 # Loop over lines
 while read -r line; do echo "$line"; done < file.txt
 ```
+
+## See Also
+
+- [Shell](shell.md) — Scripting patterns, loops, conditionals, functions
+- [jq](jq.md) — JSON processing in pipelines

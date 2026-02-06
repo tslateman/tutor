@@ -276,3 +276,7 @@ The system matters less than consistency. Pick tools you'll actually use.
 - Roediger & Butler (2011).
   [The Critical Role of Retrieval Practice in Long-Term Retention](https://doi.org/10.1016/j.tics.2010.09.003).
   Trends in Cognitive Sciences.
+
+## See Also
+
+- [Complexity](complexity.md) — Chunking relates to managing cognitive load

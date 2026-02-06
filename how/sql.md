@@ -704,3 +704,8 @@ SELECT
 FROM monthly_sales
 GROUP BY product_id;
 ```
+
+## See Also
+
+- [PostgreSQL](postgres.md) — PostgreSQL-specific features (JSONB, arrays, GIN
+  indexes)
