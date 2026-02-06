@@ -72,6 +72,12 @@ The difficulty improves long-term retention.
 **When to block**: Start with blocked practice for brand-new material.
 Interleave once you have the basics.
 
+**Transition signals** (move to interleaving when you can):
+
+- Solve basic problems without reference material
+- Explain the core concept in your own words (Feynman test)
+- Recognize which technique applies to a new problem
+
 **Research**: 30-40% improvement on delayed tests vs. blocking.
 
 ## Elaboration
