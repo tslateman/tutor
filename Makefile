@@ -1,4 +1,4 @@
-.PHONY: help lint format check fix setup sync prose links
+.PHONY: help lint format check fix setup sync prose links new
 
 help:
 	@echo "Usage: make [target]"
@@ -12,6 +12,7 @@ help:
 	@echo "  sync    Download vale style packages"
 	@echo "  prose   Review prose with Claude (Strunk's rules)"
 	@echo "  links   Check markdown links (internal only)"
+	@echo "  new     Create new guide (NAME=foo TYPE=how|why)"
 
 # Lint markdown files
 lint:
@@ -47,3 +48,13 @@ sync:
 # Review prose with Claude (Strunk's Elements of Style)
 prose:
 	claude -p "/elements-of-style:writing-clearly-and-concisely how/ why/"
+
+# Create a new guide
+new:
+ifndef NAME
+	$(error NAME is required. Usage: make new NAME=kubernetes TYPE=how)
+endif
+ifndef TYPE
+	$(error TYPE is required. Usage: make new NAME=kubernetes TYPE=how)
+endif
+	@./scripts/new-guide.sh "$(NAME)" "$(TYPE)"
