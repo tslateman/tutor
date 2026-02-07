@@ -54,8 +54,12 @@ Progressive lesson plans with exercises.
 | File                               | Topics                                             |
 | ---------------------------------- | -------------------------------------------------- |
 | `git-lesson-plan.md`               | 8 lessons from commits to workflows, with projects |
+| `golang-lesson-plan.md`            | 8 lessons from basics to concurrency               |
+| `python-lesson-plan.md`            | 8 lessons from basics to async                     |
+| `rust-lesson-plan.md`              | 8 lessons from ownership to lifetimes              |
 | `technical-writing-lesson-plan.md` | 8 lessons on clarity, structure, audience          |
 | `tmux-lesson-plan.md`              | 8 lessons from basics to scripting, with projects  |
+| `typescript-lesson-plan.md`        | 8 lessons from types to advanced patterns          |
 
 ## Commands
 
