@@ -8,6 +8,7 @@ Commands, syntax, quick reference.
 
 | Topic                           | Description                                         |
 | ------------------------------- | --------------------------------------------------- |
+| [AI CLI](how/ai-cli.md)         | Claude Code, context files, prompting, verification |
 | [Docker](how/docker.md)         | Images, containers, Dockerfile, Compose, networking |
 | [Git](how/git.md)               | Commits, branches, merging, rebasing, remotes       |
 | [HTTP](how/http.md)             | curl, headers, status codes, REST conventions       |
@@ -20,6 +21,7 @@ Commands, syntax, quick reference.
 | [Rust](how/rust.md)             | Ownership, borrowing, lifetimes, traits, cargo      |
 | [Shell](how/shell.md)           | Scripting patterns, loops, conditionals, functions  |
 | [SQL](how/sql.md)               | Joins, CTEs, window functions                       |
+| [Testing](how/testing.md)       | pytest, Jest, Go, Rust test runners                 |
 | [tmux](how/tmux.md)             | Sessions, windows, panes, copy mode                 |
 | [TypeScript](how/typescript.md) | Types, generics, utility types, patterns            |
 | [Unix](how/unix.md)             | Shell commands, file ops, text processing, SSH      |

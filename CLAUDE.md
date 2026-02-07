@@ -29,6 +29,7 @@ Commands, syntax, quick reference.
 | `rust.md`       | Ownership, borrowing, lifetimes, traits, cargo              |
 | `shell.md`      | Scripting patterns, loops, conditionals, functions          |
 | `sql.md`        | General SQL, joins, CTEs, window functions                  |
+| `testing.md`    | pytest, Jest, Go, Rust test commands, patterns              |
 | `tmux.md`       | Sessions, windows, panes, copy mode, configuration          |
 | `typescript.md` | Types, generics, utility types, patterns                    |
 | `unix.md`       | Shell commands, file ops, text processing, SSH              |
