@@ -22,6 +22,7 @@ Commands, syntax, quick reference.
 | `git.md`                 | Commits, branches, merging, rebasing, remotes, workflows    |
 | `http.md`                | curl, headers, status codes, REST conventions               |
 | `jq.md`                  | JSON processing, filters, transforms, practical examples    |
+| `learning-a-language.md` | Phases, daily routine, techniques, tools, anti-patterns     |
 | `macos.md`               | Homebrew, defaults, Spotlight, launchctl, AppleScript       |
 | `neovim.md`              | LazyVim keybindings, Telescope, navigation, code actions    |
 | `postgres.md`            | psql commands, indexes, window functions, admin queries     |
