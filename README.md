@@ -45,6 +45,7 @@ Progressive lesson plans with exercises.
 | Topic                                                       | Description                               |
 | ----------------------------------------------------------- | ----------------------------------------- |
 | [Git](learn/git-lesson-plan.md)                             | 8 lessons from commits to workflows       |
+| [GitHub](learn/github-lesson-plan.md)                       | 8 lessons from repos to Actions and API   |
 | [Go](learn/golang-lesson-plan.md)                           | 8 lessons from basics to concurrency      |
 | [Python](learn/python-lesson-plan.md)                       | 8 lessons from basics to async            |
 | [Rust](learn/rust-lesson-plan.md)                           | 8 lessons from ownership to lifetimes     |
