@@ -51,9 +51,11 @@ Mental models, principles, frameworks.
 
 Progressive lesson plans with exercises.
 
-| File                  | Topics                                            |
-| --------------------- | ------------------------------------------------- |
-| `tmux-lesson-plan.md` | 8 lessons from basics to scripting, with projects |
+| File                               | Topics                                             |
+| ---------------------------------- | -------------------------------------------------- |
+| `git-lesson-plan.md`               | 8 lessons from commits to workflows, with projects |
+| `technical-writing-lesson-plan.md` | 8 lessons on clarity, structure, audience          |
+| `tmux-lesson-plan.md`              | 8 lessons from basics to scripting, with projects  |
 
 ## Commands
 
