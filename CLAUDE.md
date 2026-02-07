@@ -14,25 +14,26 @@ materials.
 
 Commands, syntax, quick reference.
 
-| File            | Topics                                                      |
-| --------------- | ----------------------------------------------------------- |
-| `ai-cli.md`     | Claude Code, context files, prompting, verification habits  |
-| `docker.md`     | Images, containers, Dockerfile, Compose, networking         |
-| `git.md`        | Commits, branches, merging, rebasing, remotes, workflows    |
-| `http.md`       | curl, headers, status codes, REST conventions               |
-| `jq.md`         | JSON processing, filters, transforms, practical examples    |
-| `macos.md`      | Homebrew, defaults, Spotlight, launchctl, AppleScript       |
-| `neovim.md`     | LazyVim keybindings, Telescope, navigation, code actions    |
-| `postgres.md`   | psql commands, indexes, window functions, admin queries     |
-| `python.md`     | Data structures, comprehensions, typing, async              |
-| `regex.md`      | Patterns, quantifiers, groups, lookahead, language-specific |
-| `rust.md`       | Ownership, borrowing, lifetimes, traits, cargo              |
-| `shell.md`      | Scripting patterns, loops, conditionals, functions          |
-| `sql.md`        | General SQL, joins, CTEs, window functions                  |
-| `testing.md`    | pytest, Jest, Go, Rust test commands, patterns              |
-| `tmux.md`       | Sessions, windows, panes, copy mode, configuration          |
-| `typescript.md` | Types, generics, utility types, patterns                    |
-| `unix.md`       | Shell commands, file ops, text processing, SSH              |
+| File                   | Topics                                                      |
+| ---------------------- | ----------------------------------------------------------- |
+| `ai-cli.md`            | Claude Code, context files, prompting, verification habits  |
+| `docker.md`            | Images, containers, Dockerfile, Compose, networking         |
+| `git.md`               | Commits, branches, merging, rebasing, remotes, workflows    |
+| `http.md`              | curl, headers, status codes, REST conventions               |
+| `jq.md`                | JSON processing, filters, transforms, practical examples    |
+| `macos.md`             | Homebrew, defaults, Spotlight, launchctl, AppleScript       |
+| `neovim.md`            | LazyVim keybindings, Telescope, navigation, code actions    |
+| `postgres.md`          | psql commands, indexes, window functions, admin queries     |
+| `python.md`            | Data structures, comprehensions, typing, async              |
+| `regex.md`             | Patterns, quantifiers, groups, lookahead, language-specific |
+| `rust.md`              | Ownership, borrowing, lifetimes, traits, cargo              |
+| `security-scanning.md` | Scorecard, Trivy, GuardDog, secrets, supply chain           |
+| `shell.md`             | Scripting patterns, loops, conditionals, functions          |
+| `sql.md`               | General SQL, joins, CTEs, window functions                  |
+| `testing.md`           | pytest, Jest, Go, Rust test commands, patterns              |
+| `tmux.md`              | Sessions, windows, panes, copy mode, configuration          |
+| `typescript.md`        | Types, generics, utility types, patterns                    |
+| `unix.md`              | Shell commands, file ops, text processing, SSH              |
 
 ### why/
 
