@@ -17,17 +17,20 @@ tmux is a terminal multiplexer. It lets you:
 ### Exercises
 
 1. **Start and exit tmux**
+
    ```bash
    tmux           # Enter tmux
    exit           # Leave tmux (closes session)
    ```
 
 2. **Create a named session**
+
    ```bash
    tmux new -s practice
    ```
 
 3. **Detach and reattach**
+
    ```bash
    # Inside tmux, press: C-b d (Ctrl+b, then d)
    # You're back in your normal shell. The session lives on.
@@ -37,6 +40,7 @@ tmux is a terminal multiplexer. It lets you:
    ```
 
 4. **Kill the session**
+
    ```bash
    tmux kill-session -t practice
    ```
@@ -53,11 +57,13 @@ You understand the session lifecycle: create → detach → attach → kill.
 
 ### Concepts
 
-Windows are like browser tabs. Each window has its own shell. You see one window at a time.
+Windows are like browser tabs. Each window has its own shell. You see one window
+at a time.
 
 ### Exercises
 
 1. **Create a session and add windows**
+
    ```bash
    tmux new -s dev
    # C-b c    Create window
@@ -65,6 +71,7 @@ Windows are like browser tabs. Each window has its own shell. You see one window
    ```
 
 2. **Navigate windows**
+
    ```bash
    # C-b n    Next window
    # C-b p    Previous window
@@ -74,12 +81,14 @@ Windows are like browser tabs. Each window has its own shell. You see one window
    ```
 
 3. **Name your windows**
+
    ```bash
    # C-b ,    Rename current window
    # Type: editor
    ```
 
 4. **Close a window**
+
    ```bash
    # C-b &    Kill window (confirms first)
    # Or just type: exit
@@ -97,7 +106,8 @@ Create 3 windows named "editor", "server", "logs". Jump between them by number.
 
 ### Concepts
 
-Panes divide a window into sections. All panes in a window display simultaneously.
+Panes divide a window into sections. All panes in a window display
+simultaneously.
 
 - `C-b %` splits left/right (think: % has two circles side by side)
 - `C-b "` splits top/bottom (think: " has two dots stacked)
@@ -105,6 +115,7 @@ Panes divide a window into sections. All panes in a window display simultaneousl
 ### Exercises
 
 1. **Split and navigate**
+
    ```bash
    # Start fresh
    tmux new -s panes
@@ -115,18 +126,21 @@ Panes divide a window into sections. All panes in a window display simultaneousl
    ```
 
 2. **Zoom a pane**
+
    ```bash
    # C-b z     Toggle fullscreen on current pane
    # C-b z     Toggle back
    ```
 
 3. **Close panes**
+
    ```bash
    # C-b x     Kill pane (with confirmation)
    # Or: exit
    ```
 
 4. **Resize panes**
+
    ```bash
    # C-b C-←↑↓→    Resize (small steps)
    # C-b M-←↑↓→    Resize (big steps)
@@ -136,7 +150,7 @@ Panes divide a window into sections. All panes in a window display simultaneousl
 
 Create this layout:
 
-```
+```text
 +--------+--------+
 |        |   B    |
 |   A    +--------+
@@ -154,17 +168,20 @@ Start in window → split right → go to right pane → split down.
 
 ### Concepts
 
-Terminals lose scrollback when they fill. Copy mode lets you scroll, search, and yank text.
+Terminals lose scrollback when they fill. Copy mode lets you scroll, search, and
+yank text.
 
 ### Exercises
 
 1. **Generate scrollback**
+
    ```bash
    tmux new -s copy
    seq 1 500          # Print 500 lines
    ```
 
 2. **Enter copy mode and scroll**
+
    ```bash
    # C-b [         Enter copy mode
    # ↑ ↓           Scroll line by line
@@ -175,6 +192,7 @@ Terminals lose scrollback when they fill. Copy mode lets you scroll, search, and
    ```
 
 3. **Search**
+
    ```bash
    # C-b [         Enter copy mode
    # /250          Search forward for "250"
@@ -183,6 +201,7 @@ Terminals lose scrollback when they fill. Copy mode lets you scroll, search, and
    ```
 
 4. **Copy and paste**
+
    ```bash
    # C-b [         Enter copy mode
    # Space         Start selection
@@ -204,11 +223,13 @@ Copy lines 100-110 from your scrollback and paste them.
 ### Exercises
 
 1. **Create a config file**
+
    ```bash
    touch ~/.tmux.conf
    ```
 
 2. **Add basic improvements**
+
    ```bash
    # ~/.tmux.conf
 
@@ -227,6 +248,7 @@ Copy lines 100-110 from your scrollback and paste them.
    ```
 
 3. **Reload config**
+
    ```bash
    # Inside tmux:
    # C-b :
@@ -234,6 +256,7 @@ Copy lines 100-110 from your scrollback and paste them.
    ```
 
 4. **Add intuitive splits**
+
    ```bash
    # ~/.tmux.conf (append)
 
@@ -254,11 +277,13 @@ Your config loads. `C-b |` splits horizontally. Mouse scrolling works.
 
 ### Concepts
 
-One session per project keeps contexts separate. Detach from one, attach to another.
+One session per project keeps contexts separate. Detach from one, attach to
+another.
 
 ### Exercises
 
 1. **Create project sessions**
+
    ```bash
    tmux new -s project-a -d    # -d = detached
    tmux new -s project-b -d
@@ -266,6 +291,7 @@ One session per project keeps contexts separate. Detach from one, attach to anot
    ```
 
 2. **Switch sessions**
+
    ```bash
    tmux attach -t project-a
    # C-b s         List sessions (interactive)
@@ -274,6 +300,7 @@ One session per project keeps contexts separate. Detach from one, attach to anot
    ```
 
 3. **Session within session (avoid this)**
+
    ```bash
    # If you see "sessions should be nested..." you're in tmux already.
    # Use C-b s to switch, don't nest.
@@ -292,6 +319,7 @@ Maintain 2 project sessions. Switch between them without detaching.
 ### Exercises
 
 1. **Create a dev script**
+
    ```bash
    #!/bin/bash
    # ~/bin/dev-session.sh
@@ -325,11 +353,13 @@ Maintain 2 project sessions. Switch between them without detaching.
    ```
 
 2. **Make it executable**
+
    ```bash
    chmod +x ~/bin/dev-session.sh
    ```
 
 3. **Use target syntax**
+
    ```bash
    # session:window.pane
    tmux send-keys -t dev:editor.0 "echo hello" C-m
@@ -349,6 +379,7 @@ Run your script. It creates your ideal workspace in one command.
 ### Exercises
 
 1. **Synchronize panes** (run command on all panes)
+
    ```bash
    # Create 3 panes
    # C-b :
@@ -358,6 +389,7 @@ Run your script. It creates your ideal workspace in one command.
    ```
 
 2. **Capture pane to file**
+
    ```bash
    # C-b :
    # capture-pane -S -3000
@@ -365,17 +397,20 @@ Run your script. It creates your ideal workspace in one command.
    ```
 
 3. **Break pane to window**
+
    ```bash
    # C-b !    Move current pane to its own window
    ```
 
 4. **Join windows**
+
    ```bash
    # C-b :
    # join-pane -s 2 -t 1    # Move window 2 into window 1 as pane
    ```
 
 5. **Pipe pane output**
+
    ```bash
    # C-b :
    # pipe-pane -o 'cat >> ~/output.log'
@@ -393,12 +428,14 @@ Sync 3 panes. Run `uptime` in all of them simultaneously.
 ### Project 1: Monitoring Dashboard
 
 Create a session with:
+
 - Window 1: `htop`
 - Window 2: Split into 4 panes showing different log files
 
 ### Project 2: Dev Environment
 
 Script that creates:
+
 - Window "code": editor
 - Window "run": split with server and file watcher
 - Window "test": test runner
@@ -406,14 +443,15 @@ Script that creates:
 
 ### Project 3: SSH Resilience
 
-SSH to a server, start tmux, run a long job, disconnect intentionally, reconnect, verify job continued.
+SSH to a server, start tmux, run a long job, disconnect intentionally,
+reconnect, verify job continued.
 
 ---
 
 ## Key Bindings Summary
 
-| Stage    | Must Know                                         |
-| -------- | ------------------------------------------------- |
+| Stage    | Must Know                                          |
+| -------- | -------------------------------------------------- |
 | Beginner | `C-b d` `C-b c` `C-b n` `C-b %` `C-b "` `C-b ←↑↓→` |
 | Daily    | `C-b z` `C-b [` `C-b s` `C-b w` `C-b ,` `C-b x`    |
-| Power    | `C-b :` `C-b !` `C-b &` sync-panes, scripting     |
+| Power    | `C-b :` `C-b !` `C-b &` sync-panes, scripting      |
