@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   pull_request:
+  schedule:
+    - cron: "0 9 * * 1" # Monday 9am UTC
+  workflow_dispatch:
 
 jobs:
   lint:
@@ -38,4 +41,4 @@ jobs:
 
       - name: Check external links
         run: lychee '**/*.md'
-        continue-on-error: true
+        continue-on-error: ${{ github.event_name != 'schedule' }}
