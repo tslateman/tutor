@@ -38,6 +38,16 @@ Mental models, principles, frameworks.
 | [Problem-solving](why/problem-solving.md) | Polya's method, divide-and-conquer, rubber duck        |
 | [Thinking](why/thinking.md)               | Mental models, systems thinking, asking good questions |
 
+## learn/
+
+Progressive lesson plans with exercises.
+
+| Topic                                                       | Description                               |
+| ----------------------------------------------------------- | ----------------------------------------- |
+| [Git](learn/git-lesson-plan.md)                             | 8 lessons from commits to workflows       |
+| [Technical Writing](learn/technical-writing-lesson-plan.md) | 8 lessons on clarity, structure, audience |
+| [tmux](learn/tmux-lesson-plan.md)                           | 8 lessons from basics to scripting        |
+
 ## Setup
 
 ```bash
