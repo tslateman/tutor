@@ -199,6 +199,24 @@ Thinking about your thinking.
 
 The ability to accurately assess your own understanding is a skill. Develop it.
 
+### Intellectual Humility
+
+Admitting what you don't know signals mastery, not weakness.
+
+**Strong opinions, loosely held:**
+
+- Have conviction based on experience
+- Actively seek information that would change your mind
+- Update publicly when you're wrong
+- The best outcome is sometimes being proven wrong
+
+**Why it works**: Pretending to know everything erodes trust. Leaders who model
+fallibility create environments where others grow. "I don't know yet, but here's
+how I'll find out" is a strength.
+
+**The paradox**: Expertise enables humility. Beginners overestimate their
+knowledge (Dunning-Kruger). Masters know how much they don't know.
+
 ## What Doesn't Work
 
 | Technique              | Problem                                                                    |

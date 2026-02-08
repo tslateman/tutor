@@ -35,6 +35,33 @@ Judgment scales; AI commoditizes execution.
 | **Satisficing**         | "Good enough" beats endless optimization       |
 | **Reversible defaults** | When uncertain, choose what's easiest to undo  |
 
+## Compound vs Linear Value
+
+Work that keeps paying dividends vs. work that's consumed once.
+
+| Linear Value            | Compound Value                                 |
+| ----------------------- | ---------------------------------------------- |
+| Shipping a feature      | Establishing a pattern others follow           |
+| Fixing a bug            | Creating monitoring that catches bugs early    |
+| Writing code            | Writing documentation that trains 10 engineers |
+| Solving today's problem | Preventing tomorrow's category of problems     |
+| Answering a question    | Writing docs so 50 people don't ask it         |
+| Helping one person      | Building tools that help everyone              |
+
+**The test**: When you leave, does your impact persist? If it requires your
+ongoing presence to maintain value, it's linear. If it continues without you, it
+compounds.
+
+**Levels of help**:
+
+1. **1:1** — Answer a colleague's question
+2. **1:many** — Write documentation so 50 people don't ask
+3. **Systemic** — Build tools that prevent the question from arising
+
+**How to shift**: Each time you solve a problem, ask: "Can I create something
+that solves this for everyone?" The answer isn't always yes—but asking changes
+what you build.
+
 ## Systems Thinking
 
 ### Core Concepts
@@ -74,6 +101,21 @@ Judgment scales; AI commoditizes execution.
 | **Ignoring delays**    | Impatience leads to over-correction                         |
 
 ## Asking Good Questions
+
+Different questions serve different purposes. Choose deliberately.
+
+### Question Types
+
+| Type           | Purpose                       | Example                                          |
+| -------------- | ----------------------------- | ------------------------------------------------ |
+| **Clarifying** | Surface hidden assumptions    | "What would have to be true for this to work?"   |
+| **Reframing**  | Shift the problem itself      | "Are we solving the right problem?"              |
+| **Aligning**   | Build consensus               | "What concerns need addressing to move forward?" |
+| **Unlocking**  | Develop others                | "What do you think should be done?"              |
+| **Preventing** | Stop expensive mistakes early | "What would we see if this was failing?"         |
+| **Diagnostic** | Isolate root cause            | "What changed? Can I reproduce it?"              |
+
+The expert knows which questions to ask, not just how to answer.
 
 ### Before Building
 
