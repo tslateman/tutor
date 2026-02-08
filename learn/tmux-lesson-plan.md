@@ -448,6 +448,108 @@ reconnect, verify job continued.
 
 ---
 
+## Lesson 9: iTerm2 Integration
+
+**Goal:** Use tmux with iTerm2's native integration for a smoother experience.
+
+### Concepts
+
+iTerm2 has a Control Center mode (`-CC`) that makes tmux feel native:
+
+- tmux windows become iTerm tabs
+- tmux panes become iTerm split panes
+- Native scrollback instead of tmux's limited buffer
+- Native copy/paste, search, and selection
+- No prefix keys needed for common operations
+
+The session still persists when you close iTerm.
+
+### Exercises
+
+1. **Start an integrated session**
+
+   ```bash
+   tmux -CC new -s integrated
+   ```
+
+   Notice: iTerm takes over the UI. The window looks like a normal iTerm window.
+
+2. **Use native shortcuts**
+
+   ```bash
+   # Instead of C-b c:
+   Cmd+T              # New tab (tmux window)
+
+   # Instead of C-b % and C-b ":
+   Cmd+D              # Split right
+   Cmd+Shift+D        # Split down
+
+   # Instead of C-b ←↑↓→:
+   Cmd+Option+Arrow   # Navigate panes
+
+   # Instead of C-b x:
+   Cmd+W              # Close pane
+   ```
+
+3. **Scroll and search natively**
+
+   ```bash
+   seq 1 500          # Generate output
+   # Scroll with trackpad or mouse wheel
+   Cmd+F              # Search (iTerm's search, not tmux copy mode)
+   ```
+
+4. **Detach and reattach**
+
+   ```bash
+   # Option 1: Close iTerm entirely (Cmd+Q)
+   # Option 2: tmux detach (or C-b d still works)
+
+   # Later:
+   tmux -CC attach -t integrated
+   ```
+
+5. **Configure iTerm for tmux**
+
+   Open iTerm Preferences (Cmd+,) → General → tmux:
+   - "Open tmux windows as": Tabs in a new window
+   - Check "Automatically hide the tmux client session"
+   - Check "When attaching, restore windows as tabs"
+
+6. **Mix integration with regular tmux**
+
+   ```bash
+   # In iTerm with -CC:
+   tmux -CC new -s work
+
+   # From another terminal (SSH, different machine):
+   tmux attach -t work    # Regular attach works alongside
+   ```
+
+7. **Escape hatch**
+
+   ```bash
+   # If you need to exit integration mode without detaching:
+   Cmd+Shift+I        # Detach from integration, return to normal iTerm
+   ```
+
+### When to use -CC vs regular tmux
+
+| Use -CC when...                 | Use regular tmux when...           |
+| ------------------------------- | ---------------------------------- |
+| Working locally on Mac          | SSH'd into a remote server         |
+| You prefer native Mac shortcuts | You want consistent cross-platform |
+| You want unlimited scrollback   | You need multiple clients viewing  |
+| You're already an iTerm user    | You use a different terminal       |
+
+### Checkpoint
+
+Start `tmux -CC new -s test`. Create 3 tabs and split one into panes using only
+Cmd shortcuts. Close iTerm entirely. Reopen and run `tmux -CC attach -t test`.
+Everything should restore.
+
+---
+
 ## Key Bindings Summary
 
 | Stage    | Must Know                                          |
@@ -455,3 +557,4 @@ reconnect, verify job continued.
 | Beginner | `C-b d` `C-b c` `C-b n` `C-b %` `C-b "` `C-b ←↑↓→` |
 | Daily    | `C-b z` `C-b [` `C-b s` `C-b w` `C-b ,` `C-b x`    |
 | Power    | `C-b :` `C-b !` `C-b &` sync-panes, scripting      |
+| iTerm    | `Cmd+T` `Cmd+D` `Cmd+Shift+D` `Cmd+Option+Arrow`   |
