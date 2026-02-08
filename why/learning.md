@@ -244,6 +244,43 @@ testing. The system is a loop, not a sequence.
 
 The system matters less than consistency. Pick tools you'll actually use.
 
+## Learning to Learn Faster
+
+The meta-skill is **metacognition**—noticing when you're learning vs. just busy.
+
+### Accelerators
+
+**Shorten feedback loops.** Test yourself immediately after learning, not days
+later. Wrong answers surface gaps faster than re-reading.
+
+**Systematize, don't improvise.** Pick one SRS tool, one note system, one
+practice rhythm. Deciding how to learn burns time you could spend learning.
+
+**Learn domains, not just skills.** Each new domain (language, instrument,
+sport) trains the learning process itself. The pattern—confusion → frustration →
+competence → fluency—becomes familiar.
+
+### The Counterintuitive Truth
+
+What feels slow often works fast:
+
+| Feels Inefficient      | Actually Effective Because                |
+| ---------------------- | ----------------------------------------- |
+| Struggle and confusion | Effortful encoding strengthens memory     |
+| Retrieval failure      | Failed attempts prime later success       |
+| Interleaving topics    | Forces discrimination, not pattern-match  |
+| Spacing over cramming  | Edge-of-forgetting retrieval consolidates |
+
+Fluent re-reading feels productive but evaporates. The techniques that feel
+hardest produce the most durable learning.
+
+### The Leverage Point
+
+Ten minutes of Anki beats two hours of "I should really review that."
+
+Knowing the techniques isn't the bottleneck—running the system daily is. Build
+the habit; the learning compounds.
+
 ## Tools
 
 > Landscape shifts fast. See
