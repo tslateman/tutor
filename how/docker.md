@@ -196,29 +196,186 @@ CMD ["node", "dist/server.js"]
 
 ### Best Practices
 
+**Version Pinning:**
+
 ```dockerfile
 # Use specific tags, not :latest
 FROM node:18.17-alpine
 
-# Combine RUN commands to reduce layers
+# For production, pin to digest for reproducibility
+FROM node:18.17-alpine@sha256:a1b2c3d4...
+```
+
+**Layer Caching:**
+
+```dockerfile
+# Order from least to most frequently changing
+# 1. Base image and system deps (rarely change)
+# 2. Application dependencies (change occasionally)
+# 3. Application code (changes often)
+
+FROM node:18-alpine
+WORKDIR /app
+
+# Dependencies first
+COPY package*.json ./
+RUN npm ci --only=production
+
+# Code last
+COPY . .
+```
+
+**Reduce Image Size:**
+
+```dockerfile
+# Combine RUN commands and clean up in same layer
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         curl \
         git && \
     rm -rf /var/lib/apt/lists/*
 
-# Copy dependency files first (cache optimization)
-COPY package*.json ./
-RUN npm ci --only=production
-COPY . .
+# Use multi-stage builds (see above)
+# Use minimal base images: alpine, slim, distroless
+```
 
-# Use non-root user
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+**Security:**
+
+```dockerfile
+# Create non-root user with explicit UID/GID
+RUN addgroup -g 1001 -S appgroup && \
+    adduser -u 1001 -S appuser -G appgroup
 USER appuser
 
-# Use .dockerignore to exclude files
-# node_modules, .git, *.log, etc.
+# Use COPY, not ADD (ADD auto-extracts unpredictably)
+COPY config.tar.gz /app/
+RUN tar -xzf config.tar.gz
+
+# Handle secrets with BuildKit (not ENV)
+RUN --mount=type=secret,id=npmrc,target=/root/.npmrc \
+    npm ci --only=production
 ```
+
+**Health Checks:**
+
+```dockerfile
+HEALTHCHECK --interval=30s --timeout=10s --retries=3 \
+    CMD curl -f http://localhost:3000/health || exit 1
+```
+
+### .dockerignore
+
+```text
+# Version control
+.git
+.gitignore
+
+# Dependencies (reinstalled in container)
+node_modules
+vendor
+
+# Build artifacts
+dist
+build
+*.log
+
+# Development files
+.env
+.env.local
+*.md
+Dockerfile*
+docker-compose*
+
+# IDE and OS
+.idea
+.vscode
+.DS_Store
+
+# Secrets (never include)
+*.pem
+*.key
+credentials.json
+```
+
+### Security Best Practices
+
+| Practice                      | Why                                               |
+| ----------------------------- | ------------------------------------------------- |
+| Use minimal base images       | Alpine (~5MB) or distroless reduce attack surface |
+| Run as non-root               | Limits damage if container is compromised         |
+| Pin image versions            | Prevents unexpected breaking changes              |
+| Use COPY over ADD             | ADD has unpredictable extraction behavior         |
+| Scan images                   | Use `docker scout`, Snyk, or Trivy in CI          |
+| Sign images                   | Docker Content Trust or cosign for verification   |
+| Don't store secrets in images | Use BuildKit secrets or runtime injection         |
+| Rebuild regularly             | Pick up security patches in base images           |
+
+### Production Patterns
+
+**Graceful Shutdown:**
+
+```dockerfile
+# Use exec form for proper signal handling
+CMD ["node", "server.js"]
+
+# Or with entrypoint script
+COPY docker-entrypoint.sh /
+RUN chmod +x /docker-entrypoint.sh
+ENTRYPOINT ["/docker-entrypoint.sh"]
+```
+
+```bash
+#!/bin/sh
+# docker-entrypoint.sh
+set -e
+
+# Handle SIGTERM gracefully
+trap 'kill -TERM $PID' TERM
+
+node server.js &
+PID=$!
+wait $PID
+```
+
+**Multi-environment Dockerfiles:**
+
+```dockerfile
+# Dockerfile.dev
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+CMD ["npm", "run", "dev"]
+
+# Dockerfile.prod (or use build args)
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+FROM node:18-alpine
+WORKDIR /app
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/node_modules ./node_modules
+USER node
+CMD ["node", "dist/server.js"]
+```
+
+### Anti-patterns
+
+| Anti-pattern           | Fix                                       |
+| ---------------------- | ----------------------------------------- |
+| Running as root        | Add `USER` with non-root user             |
+| Using `:latest`        | Pin specific version tags                 |
+| `apt-get update` alone | Combine with `install` in same RUN        |
+| `RUN cd /app`          | Use `WORKDIR /app`                        |
+| Copying everything     | Use `.dockerignore`, copy selectively     |
+| Large base images      | Use `-alpine`, `-slim`, or distroless     |
+| Secrets in ENV/ARG     | Use BuildKit secrets or runtime injection |
+| No health checks       | Add `HEALTHCHECK` instruction             |
 
 ### Instructions Reference
 
