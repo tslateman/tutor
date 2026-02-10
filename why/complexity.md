@@ -199,4 +199,5 @@ usually less than the cost of maintaining unused flexibility now.
 
 ## See Also
 
+- [Orchestration](orchestration.md) — Complexity in agent coordination
 - [Thinking](thinking.md) — Systems thinking helps manage complexity

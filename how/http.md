@@ -190,5 +190,6 @@ curl -s -o /dev/null -w "%{http_code}" https://api.example.com/health
 
 ## See Also
 
+- [Cryptography](cryptography.md) — TLS, certificates, and HMAC authentication
 - [jq](jq.md) — Process JSON responses
 - [Unix](unix.md) — Pipe curl output to other tools

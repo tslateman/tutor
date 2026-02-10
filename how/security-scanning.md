@@ -379,6 +379,12 @@ osv-scanner --lockfile=requirements.txt
 | Gitleaks    | Fast secrets scanning                | Pre-commit, history scanning  |
 | Socket      | Behavioral analysis                  | npm/PyPI deep analysis        |
 
+## See Also
+
+- [Cryptography](cryptography.md) — Hashing, encryption, and TLS commands
+- [Cryptography Lesson Plan](../learn/cryptography-lesson-plan.md) — Key
+  management and common mistakes
+
 ## Resources
 
 - [OpenSSF Scorecard](https://scorecard.dev/)

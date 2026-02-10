@@ -374,6 +374,13 @@ Attempt 4: Human intervention
 | Long-running work         | External tool (AoE, tmux)           |
 | Shared codebase knowledge | CLAUDE.md with conventions          |
 
+## See Also
+
+- [Orchestration Mental Model](../why/orchestration.md) — K8s-to-agents
+  parallels, context routing, failure modes
+- [Agentic Workflows Lesson Plan](../learn/agentic-workflows-lesson-plan.md) —
+  Progressive lessons on building agent systems
+
 ## Resources
 
 - [Agent of Empires](https://github.com/njbrake/agent-of-empires)

@@ -6,25 +6,26 @@ Personal reference for tools, languages, and techniques.
 
 Commands, syntax, quick reference.
 
-| Topic                           | Description                                         |
-| ------------------------------- | --------------------------------------------------- |
-| [AI CLI](how/ai-cli.md)         | Claude Code, context files, prompting, verification |
-| [Docker](how/docker.md)         | Images, containers, Dockerfile, Compose, networking |
-| [Git](how/git.md)               | Commits, branches, merging, rebasing, remotes       |
-| [HTTP](how/http.md)             | curl, headers, status codes, REST conventions       |
-| [jq](how/jq.md)                 | JSON processing, filters, transforms                |
-| [macOS](how/macos.md)           | Homebrew, defaults, Spotlight, launchctl            |
-| [Neovim](how/neovim.md)         | LazyVim keybindings, Telescope, code actions        |
-| [PostgreSQL](how/postgres.md)   | psql, indexes, window functions, admin              |
-| [Python](how/python.md)         | Data structures, comprehensions, typing, async      |
-| [Regex](how/regex.md)           | Patterns, quantifiers, groups, lookahead            |
-| [Rust](how/rust.md)             | Ownership, borrowing, lifetimes, traits, cargo      |
-| [Shell](how/shell.md)           | Scripting patterns, loops, conditionals, functions  |
-| [SQL](how/sql.md)               | Joins, CTEs, window functions                       |
-| [Testing](how/testing.md)       | pytest, Jest, Go, Rust test runners                 |
-| [tmux](how/tmux.md)             | Sessions, windows, panes, copy mode                 |
-| [TypeScript](how/typescript.md) | Types, generics, utility types, patterns            |
-| [Unix](how/unix.md)             | Shell commands, file ops, text processing, SSH      |
+| Topic                               | Description                                         |
+| ----------------------------------- | --------------------------------------------------- |
+| [AI CLI](how/ai-cli.md)             | Claude Code, context files, prompting, verification |
+| [Cryptography](how/cryptography.md) | Hashing, encryption, certificates, TLS, openssl     |
+| [Docker](how/docker.md)             | Images, containers, Dockerfile, Compose, networking |
+| [Git](how/git.md)                   | Commits, branches, merging, rebasing, remotes       |
+| [HTTP](how/http.md)                 | curl, headers, status codes, REST conventions       |
+| [jq](how/jq.md)                     | JSON processing, filters, transforms                |
+| [macOS](how/macos.md)               | Homebrew, defaults, Spotlight, launchctl            |
+| [Neovim](how/neovim.md)             | LazyVim keybindings, Telescope, code actions        |
+| [PostgreSQL](how/postgres.md)       | psql, indexes, window functions, admin              |
+| [Python](how/python.md)             | Data structures, comprehensions, typing, async      |
+| [Regex](how/regex.md)               | Patterns, quantifiers, groups, lookahead            |
+| [Rust](how/rust.md)                 | Ownership, borrowing, lifetimes, traits, cargo      |
+| [Shell](how/shell.md)               | Scripting patterns, loops, conditionals, functions  |
+| [SQL](how/sql.md)                   | Joins, CTEs, window functions                       |
+| [Testing](how/testing.md)           | pytest, Jest, Go, Rust test runners                 |
+| [tmux](how/tmux.md)                 | Sessions, windows, panes, copy mode                 |
+| [TypeScript](how/typescript.md)     | Types, generics, utility types, patterns            |
+| [Unix](how/unix.md)                 | Shell commands, file ops, text processing, SSH      |
 
 ## why/
 
@@ -58,6 +59,9 @@ Progressive lesson plans with exercises.
 | [Data Models](learn/data-models-lesson-plan.md)                 | 8 lessons from ER diagrams to model selection    |
 | [Agentic Workflows](learn/agentic-workflows-lesson-plan.md)     | 8 lessons on orchestrating AI agent systems      |
 | [Cryptography](learn/cryptography-lesson-plan.md)               | 8 lessons from hashing to TLS and key management |
+| [Networking](learn/networking-lesson-plan.md)                   | 8 lessons from DNS to sockets and debugging      |
+| [Security](learn/security-lesson-plan.md)                       | 8 lessons from threat modeling to OWASP Top 10   |
+| [System Design](learn/system-design-lesson-plan.md)             | 8 lessons from single server to distributed      |
 
 ## Setup
 

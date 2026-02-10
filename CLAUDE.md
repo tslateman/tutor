@@ -19,6 +19,7 @@ Commands, syntax, quick reference.
 | `agent-orchestration.md` | Multi-agent patterns, delegation, worktrees, monitoring     |
 | `ai-cli.md`              | Claude Code, context files, prompting, verification         |
 | `cli-pipelines.md`       | Pipes, substitution, xargs, fzf, history expansion          |
+| `cryptography.md`        | Hashing, encryption, certificates, TLS, openssl             |
 | `docker.md`              | Images, containers, Dockerfile, Compose, networking         |
 | `git.md`                 | Commits, branches, merging, rebasing, remotes, workflows    |
 | `http.md`                | curl, headers, status codes, REST conventions               |
@@ -75,6 +76,9 @@ Progressive lesson plans with exercises.
 | `data-models-lesson-plan.md`        | 8 lessons from ER diagrams to model selection      |
 | `agentic-workflows-lesson-plan.md`  | 8 lessons on orchestrating AI agent systems        |
 | `cryptography-lesson-plan.md`       | 8 lessons from hashing to TLS and key management   |
+| `networking-lesson-plan.md`         | 8 lessons from DNS to sockets and debugging        |
+| `security-lesson-plan.md`           | 8 lessons from threat modeling to OWASP Top 10     |
+| `system-design-lesson-plan.md`      | 8 lessons from single server to distributed        |
 
 ## Commands
 

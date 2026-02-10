@@ -375,5 +375,6 @@ spinner $!
 
 ## See Also
 
-- [Unix](unix.md) — Individual commands used in scripts
+- [Cryptography](cryptography.md) — openssl commands for scripting
 - [Regex](regex.md) — Pattern matching in scripts
+- [Unix](unix.md) — Individual commands used in scripts
