@@ -30,13 +30,14 @@ Commands, syntax, quick reference.
 
 Mental models, principles, frameworks.
 
-| Topic                                     | Description                                            |
-| ----------------------------------------- | ------------------------------------------------------ |
-| [Complexity](why/complexity.md)           | Essential vs accidental, techniques, heuristics        |
-| [Debugging](why/debugging.md)             | Scientific method, bisection, isolation techniques     |
-| [Learning](why/learning.md)               | Retention techniques, spaced repetition, active recall |
-| [Problem-solving](why/problem-solving.md) | Polya's method, divide-and-conquer, rubber duck        |
-| [Thinking](why/thinking.md)               | Mental models, systems thinking, asking good questions |
+| Topic                                     | Description                                             |
+| ----------------------------------------- | ------------------------------------------------------- |
+| [Complexity](why/complexity.md)           | Essential vs accidental, techniques, heuristics         |
+| [Debugging](why/debugging.md)             | Scientific method, bisection, isolation techniques      |
+| [Learning](why/learning.md)               | Retention techniques, spaced repetition, active recall  |
+| [Orchestration](why/orchestration.md)     | K8s-to-agents parallels, context routing, failure modes |
+| [Problem-solving](why/problem-solving.md) | Polya's method, divide-and-conquer, rubber duck         |
+| [Thinking](why/thinking.md)               | Mental models, systems thinking, asking good questions  |
 
 ## learn/
 
@@ -56,6 +57,7 @@ Progressive lesson plans with exercises.
 | [Context & Complexity](learn/context-complexity-lesson-plan.md) | 8 lessons on managing context as finite resource |
 | [Data Models](learn/data-models-lesson-plan.md)                 | 8 lessons from ER diagrams to model selection    |
 | [Agentic Workflows](learn/agentic-workflows-lesson-plan.md)     | 8 lessons on orchestrating AI agent systems      |
+| [Cryptography](learn/cryptography-lesson-plan.md)               | 8 lessons from hashing to TLS and key management |
 
 ## Setup
 

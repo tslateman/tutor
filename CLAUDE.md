@@ -50,6 +50,7 @@ Mental models, principles, frameworks.
 | `complexity.md`      | Essential vs accidental, techniques, heuristics          |
 | `debugging.md`       | Scientific method, bisection, isolation techniques       |
 | `learning.md`        | Retention techniques, spaced repetition, active recall   |
+| `orchestration.md`   | K8s-to-agents parallels, context routing, failure modes  |
 | `problem-solving.md` | Polya's method, divide-and-conquer, rubber duck          |
 | `testing.md`         | Pyramid, strategy, doubles, TDD, anti-patterns           |
 | `thinking.md`        | Mental models, systems thinking, asking good questions   |
@@ -73,6 +74,7 @@ Progressive lesson plans with exercises.
 | `context-complexity-lesson-plan.md` | 8 lessons on managing context as a finite resource |
 | `data-models-lesson-plan.md`        | 8 lessons from ER diagrams to model selection      |
 | `agentic-workflows-lesson-plan.md`  | 8 lessons on orchestrating AI agent systems        |
+| `cryptography-lesson-plan.md`       | 8 lessons from hashing to TLS and key management   |
 
 ## Commands
 
