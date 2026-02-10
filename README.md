@@ -42,16 +42,20 @@ Mental models, principles, frameworks.
 
 Progressive lesson plans with exercises.
 
-| Topic                                                       | Description                               |
-| ----------------------------------------------------------- | ----------------------------------------- |
-| [Git](learn/git-lesson-plan.md)                             | 8 lessons from commits to workflows       |
-| [GitHub](learn/github-lesson-plan.md)                       | 8 lessons from repos to Actions and API   |
-| [Go](learn/golang-lesson-plan.md)                           | 8 lessons from basics to concurrency      |
-| [Python](learn/python-lesson-plan.md)                       | 8 lessons from basics to async            |
-| [Rust](learn/rust-lesson-plan.md)                           | 8 lessons from ownership to lifetimes     |
-| [Technical Writing](learn/technical-writing-lesson-plan.md) | 8 lessons on clarity, structure, audience |
-| [tmux](learn/tmux-lesson-plan.md)                           | 8 lessons from basics to scripting        |
-| [TypeScript](learn/typescript-lesson-plan.md)               | 8 lessons from types to advanced patterns |
+| Topic                                                           | Description                                      |
+| --------------------------------------------------------------- | ------------------------------------------------ |
+| [Git](learn/git-lesson-plan.md)                                 | 8 lessons from commits to workflows              |
+| [GitHub](learn/github-lesson-plan.md)                           | 8 lessons from repos to Actions and API          |
+| [Go](learn/golang-lesson-plan.md)                               | 8 lessons from basics to concurrency             |
+| [Python](learn/python-lesson-plan.md)                           | 8 lessons from basics to async                   |
+| [Rust](learn/rust-lesson-plan.md)                               | 8 lessons from ownership to lifetimes            |
+| [Technical Writing](learn/technical-writing-lesson-plan.md)     | 8 lessons on clarity, structure, audience        |
+| [tmux](learn/tmux-lesson-plan.md)                               | 8 lessons from basics to scripting               |
+| [TypeScript](learn/typescript-lesson-plan.md)                   | 8 lessons from types to advanced patterns        |
+| [Operating Systems](learn/operating-systems-lesson-plan.md)     | 8 lessons from processes to system call tracing  |
+| [Context & Complexity](learn/context-complexity-lesson-plan.md) | 8 lessons on managing context as finite resource |
+| [Data Models](learn/data-models-lesson-plan.md)                 | 8 lessons from ER diagrams to model selection    |
+| [Agentic Workflows](learn/agentic-workflows-lesson-plan.md)     | 8 lessons on orchestrating AI agent systems      |
 
 ## Setup
 

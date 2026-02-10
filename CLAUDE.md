@@ -58,17 +58,21 @@ Mental models, principles, frameworks.
 
 Progressive lesson plans with exercises.
 
-| File                               | Topics                                             |
-| ---------------------------------- | -------------------------------------------------- |
-| `ghostty-lesson-plan.md`           | 8 lessons from install to workflow integration     |
-| `git-lesson-plan.md`               | 8 lessons from commits to workflows, with projects |
-| `github-lesson-plan.md`            | 8 lessons from repos to Actions and API            |
-| `golang-lesson-plan.md`            | 8 lessons from basics to concurrency               |
-| `python-lesson-plan.md`            | 8 lessons from basics to async                     |
-| `rust-lesson-plan.md`              | 8 lessons from ownership to lifetimes              |
-| `technical-writing-lesson-plan.md` | 8 lessons on clarity, structure, audience          |
-| `tmux-lesson-plan.md`              | 8 lessons from basics to scripting, with projects  |
-| `typescript-lesson-plan.md`        | 8 lessons from types to advanced patterns          |
+| File                                | Topics                                             |
+| ----------------------------------- | -------------------------------------------------- |
+| `ghostty-lesson-plan.md`            | 8 lessons from install to workflow integration     |
+| `git-lesson-plan.md`                | 8 lessons from commits to workflows, with projects |
+| `github-lesson-plan.md`             | 8 lessons from repos to Actions and API            |
+| `golang-lesson-plan.md`             | 8 lessons from basics to concurrency               |
+| `python-lesson-plan.md`             | 8 lessons from basics to async                     |
+| `rust-lesson-plan.md`               | 8 lessons from ownership to lifetimes              |
+| `technical-writing-lesson-plan.md`  | 8 lessons on clarity, structure, audience          |
+| `tmux-lesson-plan.md`               | 8 lessons from basics to scripting, with projects  |
+| `typescript-lesson-plan.md`         | 8 lessons from types to advanced patterns          |
+| `operating-systems-lesson-plan.md`  | 8 lessons from processes to system call tracing    |
+| `context-complexity-lesson-plan.md` | 8 lessons on managing context as a finite resource |
+| `data-models-lesson-plan.md`        | 8 lessons from ER diagrams to model selection      |
+| `agentic-workflows-lesson-plan.md`  | 8 lessons on orchestrating AI agent systems        |
 
 ## Commands
 
