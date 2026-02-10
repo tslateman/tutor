@@ -22,6 +22,7 @@ Commands, syntax, quick reference.
 | `git.md`                 | Commits, branches, merging, rebasing, remotes, workflows    |
 | `http.md`                | curl, headers, status codes, REST conventions               |
 | `jq.md`                  | JSON processing, filters, transforms, practical examples    |
+| `kubernetes.md`          | Pods, deployments, services, debugging, OrbStack            |
 | `learning-a-language.md` | Phases, daily routine, techniques, tools, anti-patterns     |
 | `macos.md`               | Homebrew, defaults, Spotlight, launchctl, AppleScript       |
 | `neovim.md`              | LazyVim keybindings, Telescope, navigation, code actions    |
@@ -56,6 +57,7 @@ Progressive lesson plans with exercises.
 
 | File                               | Topics                                             |
 | ---------------------------------- | -------------------------------------------------- |
+| `ghostty-lesson-plan.md`           | 8 lessons from install to workflow integration     |
 | `git-lesson-plan.md`               | 8 lessons from commits to workflows, with projects |
 | `github-lesson-plan.md`            | 8 lessons from repos to Actions and API            |
 | `golang-lesson-plan.md`            | 8 lessons from basics to concurrency               |
