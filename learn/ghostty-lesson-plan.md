@@ -742,6 +742,8 @@ splits for your typical layout, quick terminal for one-off commands.
 
 ## See Also
 
+- [iTerm2 vs Ghostty](../how/terminal-emulators.md) — Feature comparison and
+  decision guide
 - [Ghostty Documentation](https://ghostty.org/docs) — Official reference
 - [Ghostty Config Reference](https://ghostty.org/docs/config/reference) — All
   config options

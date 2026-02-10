@@ -18,6 +18,7 @@ Commands, syntax, quick reference.
 | ------------------------ | ----------------------------------------------------------- |
 | `agent-orchestration.md` | Multi-agent patterns, delegation, worktrees, monitoring     |
 | `ai-cli.md`              | Claude Code, context files, prompting, verification         |
+| `cli-pipelines.md`       | Pipes, substitution, xargs, fzf, history expansion          |
 | `docker.md`              | Images, containers, Dockerfile, Compose, networking         |
 | `git.md`                 | Commits, branches, merging, rebasing, remotes, workflows    |
 | `http.md`                | curl, headers, status codes, REST conventions               |
@@ -33,6 +34,7 @@ Commands, syntax, quick reference.
 | `security-scanning.md`   | Scorecard, Trivy, GuardDog, secrets, supply chain           |
 | `shell.md`               | Scripting patterns, loops, conditionals, functions          |
 | `sql.md`                 | General SQL, joins, CTEs, window functions                  |
+| `terminal-emulators.md`  | iTerm2 vs Ghostty, rendering, tmux -CC, decision guide      |
 | `testing.md`             | pytest, Jest, Go, Rust test commands, patterns              |
 | `tmux.md`                | Sessions, windows, panes, copy mode, configuration          |
 | `typescript.md`          | Types, generics, utility types, patterns                    |
@@ -42,14 +44,15 @@ Commands, syntax, quick reference.
 
 Mental models, principles, frameworks.
 
-| File                 | Topics                                                 |
-| -------------------- | ------------------------------------------------------ |
-| `complexity.md`      | Essential vs accidental, techniques, heuristics        |
-| `debugging.md`       | Scientific method, bisection, isolation techniques     |
-| `learning.md`        | Retention techniques, spaced repetition, active recall |
-| `problem-solving.md` | Polya's method, divide-and-conquer, rubber duck        |
-| `testing.md`         | Pyramid, strategy, doubles, TDD, anti-patterns         |
-| `thinking.md`        | Mental models, systems thinking, asking good questions |
+| File                 | Topics                                                   |
+| -------------------- | -------------------------------------------------------- |
+| `cli-first.md`       | Why terminal-first, core stack, tool replacements, habit |
+| `complexity.md`      | Essential vs accidental, techniques, heuristics          |
+| `debugging.md`       | Scientific method, bisection, isolation techniques       |
+| `learning.md`        | Retention techniques, spaced repetition, active recall   |
+| `problem-solving.md` | Polya's method, divide-and-conquer, rubber duck          |
+| `testing.md`         | Pyramid, strategy, doubles, TDD, anti-patterns           |
+| `thinking.md`        | Mental models, systems thinking, asking good questions   |
 
 ### learn/
 
