@@ -18,8 +18,10 @@ Commands, syntax, quick reference.
 | ------------------------ | ----------------------------------------------------------- |
 | `agent-orchestration.md` | Multi-agent patterns, delegation, worktrees, monitoring     |
 | `ai-cli.md`              | Claude Code, context files, prompting, verification         |
+| `ci-cd.md`               | GitHub Actions, caching, matrix builds, deployment          |
 | `cli-pipelines.md`       | Pipes, substitution, xargs, fzf, history expansion          |
 | `cryptography.md`        | Hashing, encryption, certificates, TLS, openssl             |
+| `debugging.md`           | pdb, lldb, strace/dtruss, py-spy, hyperfine, flame graphs   |
 | `docker.md`              | Images, containers, Dockerfile, Compose, networking         |
 | `git.md`                 | Commits, branches, merging, rebasing, remotes, workflows    |
 | `http.md`                | curl, headers, status codes, REST conventions               |
@@ -28,6 +30,7 @@ Commands, syntax, quick reference.
 | `learning-a-language.md` | Phases, daily routine, techniques, tools, anti-patterns     |
 | `macos.md`               | Homebrew, defaults, Spotlight, launchctl, AppleScript       |
 | `neovim.md`              | LazyVim keybindings, Telescope, navigation, code actions    |
+| `performance.md`         | Profiling, benchmarking, flame graphs, load testing         |
 | `postgres.md`            | psql commands, indexes, window functions, admin queries     |
 | `python.md`              | Data structures, comprehensions, typing, async              |
 | `regex.md`               | Patterns, quantifiers, groups, lookahead, language-specific |
@@ -47,6 +50,7 @@ Mental models, principles, frameworks.
 
 | File                 | Topics                                                   |
 | -------------------- | -------------------------------------------------------- |
+| `api-design.md`      | REST vs GraphQL vs gRPC, pagination, versioning, errors  |
 | `cli-first.md`       | Why terminal-first, core stack, tool replacements, habit |
 | `complexity.md`      | Essential vs accidental, techniques, heuristics          |
 | `debugging.md`       | Scientific method, bisection, isolation techniques       |
@@ -60,25 +64,26 @@ Mental models, principles, frameworks.
 
 Progressive lesson plans with exercises.
 
-| File                                | Topics                                             |
-| ----------------------------------- | -------------------------------------------------- |
-| `ghostty-lesson-plan.md`            | 8 lessons from install to workflow integration     |
-| `git-lesson-plan.md`                | 8 lessons from commits to workflows, with projects |
-| `github-lesson-plan.md`             | 8 lessons from repos to Actions and API            |
-| `golang-lesson-plan.md`             | 8 lessons from basics to concurrency               |
-| `python-lesson-plan.md`             | 8 lessons from basics to async                     |
-| `rust-lesson-plan.md`               | 8 lessons from ownership to lifetimes              |
-| `technical-writing-lesson-plan.md`  | 8 lessons on clarity, structure, audience          |
-| `tmux-lesson-plan.md`               | 8 lessons from basics to scripting, with projects  |
-| `typescript-lesson-plan.md`         | 8 lessons from types to advanced patterns          |
-| `operating-systems-lesson-plan.md`  | 8 lessons from processes to system call tracing    |
-| `context-complexity-lesson-plan.md` | 8 lessons on managing context as a finite resource |
-| `data-models-lesson-plan.md`        | 8 lessons from ER diagrams to model selection      |
-| `agentic-workflows-lesson-plan.md`  | 8 lessons on orchestrating AI agent systems        |
-| `cryptography-lesson-plan.md`       | 8 lessons from hashing to TLS and key management   |
-| `networking-lesson-plan.md`         | 8 lessons from DNS to sockets and debugging        |
-| `security-lesson-plan.md`           | 8 lessons from threat modeling to OWASP Top 10     |
-| `system-design-lesson-plan.md`      | 8 lessons from single server to distributed        |
+| File                                | Topics                                                      |
+| ----------------------------------- | ----------------------------------------------------------- |
+| `ghostty-lesson-plan.md`            | 8 lessons from install to workflow integration              |
+| `git-lesson-plan.md`                | 8 lessons from commits to workflows, with projects          |
+| `github-lesson-plan.md`             | 8 lessons from repos to Actions and API                     |
+| `golang-lesson-plan.md`             | 8 lessons from basics to concurrency                        |
+| `python-lesson-plan.md`             | 8 lessons from basics to async                              |
+| `rust-lesson-plan.md`               | 8 lessons from ownership to lifetimes                       |
+| `technical-writing-lesson-plan.md`  | 8 lessons on clarity, structure, audience                   |
+| `tmux-lesson-plan.md`               | 8 lessons from basics to scripting, with projects           |
+| `typescript-lesson-plan.md`         | 8 lessons from types to advanced patterns                   |
+| `operating-systems-lesson-plan.md`  | 8 lessons from processes to system call tracing             |
+| `context-complexity-lesson-plan.md` | 8 lessons on managing context as a finite resource          |
+| `data-models-lesson-plan.md`        | 8 lessons from ER diagrams to model selection               |
+| `agentic-workflows-lesson-plan.md`  | 8 lessons on orchestrating AI agent systems                 |
+| `cryptography-lesson-plan.md`       | 8 lessons from hashing to TLS and key management            |
+| `networking-lesson-plan.md`         | 8 lessons from DNS to sockets and debugging                 |
+| `security-lesson-plan.md`           | 8 lessons from threat modeling to OWASP Top 10              |
+| `concurrency-lesson-plan.md`        | 8 lessons on threads, channels, async across Go/Python/Rust |
+| `system-design-lesson-plan.md`      | 8 lessons from single server to distributed                 |
 
 ## Commands
 
