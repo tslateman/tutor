@@ -22,7 +22,7 @@ Commands, syntax, quick reference.
 | `git.md`                 | Commits, branches, merging, rebasing, remotes, workflows    |
 | `http.md`                | curl, headers, status codes, REST conventions               |
 | `jq.md`                  | JSON processing, filters, transforms, practical examples    |
-| `kubernetes.md`          | Pods, deployments, services, debugging, OrbStack            |
+| `k8s.md`                 | Pods, deployments, services, debugging, OrbStack            |
 | `learning-a-language.md` | Phases, daily routine, techniques, tools, anti-patterns     |
 | `macos.md`               | Homebrew, defaults, Spotlight, launchctl, AppleScript       |
 | `neovim.md`              | LazyVim keybindings, Telescope, navigation, code actions    |
