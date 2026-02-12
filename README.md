@@ -10,6 +10,7 @@ Commands, syntax, quick reference.
 | ----------------------------------- | --------------------------------------------------- |
 | [AI CLI](how/ai-cli.md)             | Claude Code, context files, prompting, verification |
 | [Cryptography](how/cryptography.md) | Hashing, encryption, certificates, TLS, openssl     |
+| [Diagramming](how/diagramming.md)   | Diagram types, Mermaid syntax, ASCII patterns       |
 | [Docker](how/docker.md)             | Images, containers, Dockerfile, Compose, networking |
 | [Git](how/git.md)                   | Commits, branches, merging, rebasing, remotes       |
 | [HTTP](how/http.md)                 | curl, headers, status codes, REST conventions       |
@@ -31,37 +32,40 @@ Commands, syntax, quick reference.
 
 Mental models, principles, frameworks.
 
-| Topic                                     | Description                                             |
-| ----------------------------------------- | ------------------------------------------------------- |
-| [Complexity](why/complexity.md)           | Essential vs accidental, techniques, heuristics         |
-| [Debugging](why/debugging.md)             | Scientific method, bisection, isolation techniques      |
-| [Learning](why/learning.md)               | Retention techniques, spaced repetition, active recall  |
-| [Orchestration](why/orchestration.md)     | K8s-to-agents parallels, context routing, failure modes |
-| [Problem-solving](why/problem-solving.md) | Polya's method, divide-and-conquer, rubber duck         |
-| [Thinking](why/thinking.md)               | Mental models, systems thinking, asking good questions  |
+| Topic                                                       | Description                                             |
+| ----------------------------------------------------------- | ------------------------------------------------------- |
+| [Complexity](why/complexity.md)                             | Essential vs accidental, techniques, heuristics         |
+| [Debugging](why/debugging.md)                               | Scientific method, bisection, isolation techniques      |
+| [Learning](why/learning.md)                                 | Retention techniques, spaced repetition, active recall  |
+| [Orchestration](why/orchestration.md)                       | K8s-to-agents parallels, context routing, failure modes |
+| [Problem-solving](why/problem-solving.md)                   | Polya's method, divide-and-conquer, rubber duck         |
+| [Information Architecture](why/information-architecture.md) | Four systems, Diataxis, findability heuristics          |
+| [Knowledge Design](why/knowledge-design.md)                 | Taxonomy, CTA, mental modeling, semantic labeling       |
+| [Thinking](why/thinking.md)                                 | Mental models, systems thinking, asking good questions  |
 
 ## learn/
 
 Progressive lesson plans with exercises.
 
-| Topic                                                           | Description                                      |
-| --------------------------------------------------------------- | ------------------------------------------------ |
-| [Git](learn/git-lesson-plan.md)                                 | 8 lessons from commits to workflows              |
-| [GitHub](learn/github-lesson-plan.md)                           | 8 lessons from repos to Actions and API          |
-| [Go](learn/golang-lesson-plan.md)                               | 8 lessons from basics to concurrency             |
-| [Python](learn/python-lesson-plan.md)                           | 8 lessons from basics to async                   |
-| [Rust](learn/rust-lesson-plan.md)                               | 8 lessons from ownership to lifetimes            |
-| [Technical Writing](learn/technical-writing-lesson-plan.md)     | 8 lessons on clarity, structure, audience        |
-| [tmux](learn/tmux-lesson-plan.md)                               | 8 lessons from basics to scripting               |
-| [TypeScript](learn/typescript-lesson-plan.md)                   | 8 lessons from types to advanced patterns        |
-| [Operating Systems](learn/operating-systems-lesson-plan.md)     | 8 lessons from processes to system call tracing  |
-| [Context & Complexity](learn/context-complexity-lesson-plan.md) | 8 lessons on managing context as finite resource |
-| [Data Models](learn/data-models-lesson-plan.md)                 | 8 lessons from ER diagrams to model selection    |
-| [Agentic Workflows](learn/agentic-workflows-lesson-plan.md)     | 8 lessons on orchestrating AI agent systems      |
-| [Cryptography](learn/cryptography-lesson-plan.md)               | 8 lessons from hashing to TLS and key management |
-| [Networking](learn/networking-lesson-plan.md)                   | 8 lessons from DNS to sockets and debugging      |
-| [Security](learn/security-lesson-plan.md)                       | 8 lessons from threat modeling to OWASP Top 10   |
-| [System Design](learn/system-design-lesson-plan.md)             | 8 lessons from single server to distributed      |
+| Topic                                                                     | Description                                      |
+| ------------------------------------------------------------------------- | ------------------------------------------------ |
+| [Git](learn/git-lesson-plan.md)                                           | 8 lessons from commits to workflows              |
+| [GitHub](learn/github-lesson-plan.md)                                     | 8 lessons from repos to Actions and API          |
+| [Go](learn/golang-lesson-plan.md)                                         | 8 lessons from basics to concurrency             |
+| [Python](learn/python-lesson-plan.md)                                     | 8 lessons from basics to async                   |
+| [Rust](learn/rust-lesson-plan.md)                                         | 8 lessons from ownership to lifetimes            |
+| [Technical Writing](learn/technical-writing-lesson-plan.md)               | 8 lessons on clarity, structure, audience        |
+| [tmux](learn/tmux-lesson-plan.md)                                         | 8 lessons from basics to scripting               |
+| [TypeScript](learn/typescript-lesson-plan.md)                             | 8 lessons from types to advanced patterns        |
+| [Operating Systems](learn/operating-systems-lesson-plan.md)               | 8 lessons from processes to system call tracing  |
+| [Context & Complexity](learn/context-complexity-lesson-plan.md)           | 8 lessons on managing context as finite resource |
+| [Data Models](learn/data-models-lesson-plan.md)                           | 8 lessons from ER diagrams to model selection    |
+| [Agentic Workflows](learn/agentic-workflows-lesson-plan.md)               | 8 lessons on orchestrating AI agent systems      |
+| [Cryptography](learn/cryptography-lesson-plan.md)                         | 8 lessons from hashing to TLS and key management |
+| [Networking](learn/networking-lesson-plan.md)                             | 8 lessons from DNS to sockets and debugging      |
+| [Security](learn/security-lesson-plan.md)                                 | 8 lessons from threat modeling to OWASP Top 10   |
+| [Information Architecture](learn/information-architecture-lesson-plan.md) | 8 lessons from organization to full audit        |
+| [System Design](learn/system-design-lesson-plan.md)                       | 8 lessons from single server to distributed      |
 
 ## Setup
 
