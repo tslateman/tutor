@@ -24,6 +24,7 @@ Commands, syntax, quick reference.
 | `debugging.md`           | pdb, lldb, strace/dtruss, py-spy, hyperfine, flame graphs   |
 | `diagramming.md`         | Diagram types, Mermaid syntax, ASCII patterns, concept maps |
 | `docker.md`              | Images, containers, Dockerfile, Compose, networking         |
+| `filesystem.md`          | FHS, inodes, permissions, locking, atomic ops, inotify      |
 | `git.md`                 | Commits, branches, merging, rebasing, remotes, workflows    |
 | `http.md`                | curl, headers, status codes, REST conventions               |
 | `jq.md`                  | JSON processing, filters, transforms, practical examples    |
