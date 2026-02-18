@@ -383,7 +383,42 @@ Attempt 4: Human intervention
 
 ## Resources
 
-- [Agent of Empires](https://github.com/njbrake/agent-of-empires)
-- [Claude-Flow](https://github.com/ruvnet/claude-flow)
+### Tools
+
+- [Agent of Empires](https://github.com/njbrake/agent-of-empires) — Terminal
+  session manager for multiple AI agents
+- [Claude-Flow](https://github.com/ruvnet/claude-flow) — Orchestration framework
+  for Claude Code
+- [Summarize](https://github.com/steipete/summarize) — Multi-source content
+  summarizer (URLs, YouTube, PDFs, audio)
+
+### Frameworks
+
+- [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) —
+  Graph/DAG orchestration with time-travel checkpointing
+- [AgenticFleet](https://github.com/Qredence/agentic-fleet) — Adaptive routing
+  with typed DSPy signatures, built on Agent Framework
+- [Antfarm](https://github.com/snarktank/antfarm) — Minimal dev workflow
+  automation with clean context per step and doer/verifier separation
+
+### Claude Ecosystem
+
+- [claude-mem](https://github.com/thedotmack/claude-mem) — Persistent memory via
+  hooks, progressive disclosure retrieval
+- [claude-code-templates](https://github.com/davila7/claude-code-templates) —
+  Installable marketplace of agents, commands, hooks, MCPs
+- [Claude Quickstarts](https://github.com/anthropics/claude-quickstarts) —
+  Official reference implementations (RAG, computer use, autonomous coding)
+
+### Memory Systems
+
+- [Graphiti](https://github.com/getzep/graphiti) — Temporal knowledge graph with
+  bi-temporal tracking
+- [Mem0](https://github.com/mem0ai/mem0) — Multi-level vector memory middleware
+- [CASS](https://github.com/Dicklesworthstone/cass_memory_system) — Three-layer
+  cognitive memory with confidence decay and anti-pattern inversion
+
+### Patterns and Architecture
+
 - [Microsoft AI Agent Patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)
 - [OpenAI Multi-Agent Docs](https://openai.github.io/openai-agents-python/multi_agent/)

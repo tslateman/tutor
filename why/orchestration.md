@@ -89,6 +89,72 @@ gradient.
 **The gap:** K8s never has to ask "is this output _correct_?" It only asks "is
 the process alive?" Agent orchestration must answer both.
 
+## Patterns from Production Systems
+
+Real agent fleets reveal patterns that theory alone misses.
+
+### Clean Context per Step
+
+Each agent in a pipeline starts with a fresh context window, receiving only
+explicit inputs from the previous step. This directly counters the drift
+problem: an agent at step 7 works with a different implicit model than the agent
+at step 1.
+
+The tradeoff: you must explicitly design what context passes between steps. This
+forces clarity about what actually matters at each stage.
+
+_Source: [Antfarm](https://github.com/snarktank/antfarm)_
+
+### Doer/Verifier Separation
+
+The developer doesn't mark their own homework. A separate agent verifies
+implementation against acceptance criteria.
+
+This catches a class of errors that self-review cannot: rationalization,
+satisfied-by-construction failures, and blind spots from having written the
+code. Simple to implement. Most systems skip it.
+
+_Source: [Antfarm](https://github.com/snarktank/antfarm)_
+
+### Typed Routing Decisions
+
+Routing decisions — which agent handles a task — should be structured artifacts,
+not prose. Pydantic models or equivalent typed schemas prevent the orchestration
+layer from becoming the weakest link.
+
+_Source: [AgenticFleet](https://github.com/Qredence/agentic-fleet) (via DSPy
+signatures)_
+
+### Execution Mode as Vocabulary
+
+Name your modes: **sequential**, **parallel**, **delegated**, **handoff**,
+**discussion**. The vocabulary itself improves reasoning about agent
+coordination, regardless of which framework you use.
+
+"Discussion" as a first-class mode — multi-agent deliberation — acknowledges
+that some problems need deliberation, not just delegation.
+
+_Source: [AgenticFleet](https://github.com/Qredence/agentic-fleet)_
+
+### Time-Travel Checkpointing
+
+Checkpoint workflow state so you can rewind and replay from any point. Without
+it, debugging a failed multi-agent run means replaying from scratch.
+
+Rare in practice. High engineering cost. Invaluable when you need it.
+
+_Source:
+[Microsoft Agent Framework](https://github.com/microsoft/agent-framework)_
+
+### Deterministic Nodes in Agent Graphs
+
+Not every step needs an LLM. Mixing deterministic functions with agent calls in
+the same orchestration graph — with the same interface — prevents the common
+failure of using an LLM where `json.loads()` suffices.
+
+_Source:
+[Microsoft Agent Framework](https://github.com/microsoft/agent-framework)_
+
 ## Heuristics
 
 ### When Designing Agent Systems
@@ -133,6 +199,7 @@ from ambition.
 
 ## See Also
 
+- [Agent Memory](agent-memory.md) -- Temporal tracking, cognitive layers, decay
 - [Complexity](complexity.md) -- Essential vs accidental in orchestration design
 - [Thinking](thinking.md) -- Systems thinking for feedback loops and delays
 - [Agentic Workflows Lesson Plan](../learn/agentic-workflows-lesson-plan.md) --

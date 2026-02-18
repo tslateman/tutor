@@ -52,6 +52,7 @@ Mental models, principles, frameworks.
 
 | File                          | Topics                                                   |
 | ----------------------------- | -------------------------------------------------------- |
+| `agent-memory.md`             | Temporal tracking, cognitive layers, decay, retrieval    |
 | `api-design.md`               | REST vs GraphQL vs gRPC, pagination, versioning, errors  |
 | `cli-first.md`                | Why terminal-first, core stack, tool replacements, habit |
 | `complexity.md`               | Essential vs accidental, techniques, heuristics          |
