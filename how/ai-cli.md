@@ -301,6 +301,8 @@ Here's the error: [paste error]"
 
 ## See Also
 
+- [Claude Code Extensibility](claude-code.md) — Agents, hooks, plugins, MCP,
+  memory, configuration
 - [Git](git.md) — Version control for tracking AI changes
 - [Shell](shell.md) — Commands AI agents execute
 - [Debugging](../why/debugging.md) — Systematic approach to fixing AI bugs

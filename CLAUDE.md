@@ -18,6 +18,7 @@ Commands, syntax, quick reference.
 | ------------------------ | ----------------------------------------------------------- |
 | `agent-orchestration.md` | Multi-agent patterns, delegation, worktrees, monitoring     |
 | `ai-cli.md`              | Claude Code, context files, prompting, verification         |
+| `claude-code.md`         | Agents, hooks, plugins, MCP, memory, settings, teams        |
 | `ci-cd.md`               | GitHub Actions, caching, matrix builds, deployment          |
 | `cli-pipelines.md`       | Pipes, substitution, xargs, fzf, history expansion          |
 | `cryptography.md`        | Hashing, encryption, certificates, TLS, openssl             |
