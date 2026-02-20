@@ -1,25 +1,33 @@
 #!/bin/bash
 
-# Format markdown files
-prettier --write '**/*.md' --ignore-path .gitignore >/dev/null 2>&1
+# Only check staged markdown files (added, copied, modified)
+staged=$(git diff --cached --name-only --diff-filter=ACM -- '*.md')
 
-# Re-stage any formatted files
-git diff --name-only | grep '\.md$' | xargs -r git add
+if [ -z "$staged" ]; then
+    exit 0
+fi
 
-# Run markdownlint
-if ! markdownlint '**/*.md' --ignore .vale; then
+# Format staged files and re-stage them
+echo "$staged" | xargs prettier --write >/dev/null 2>&1
+echo "$staged" | xargs git add
+
+# Lint staged files
+if ! echo "$staged" | xargs markdownlint --ignore .vale; then
     echo "markdownlint failed. Fix errors before committing."
     exit 1
 fi
 
-# Run vale
-if ! vale how/*.md why/*.md CLAUDE.md; then
-    echo "vale failed. Fix prose issues before committing."
-    exit 1
+# Run vale on staged prose files (how/, why/, CLAUDE.md only)
+prose=$(echo "$staged" | grep -E '^(how/|why/|CLAUDE\.md)')
+if [ -n "$prose" ]; then
+    if ! echo "$prose" | xargs vale; then
+        echo "vale failed. Fix prose issues before committing."
+        exit 1
+    fi
 fi
 
-# Check internal links
-if ! lychee --offline '**/*.md' 2>/dev/null; then
+# Check internal links in staged files
+if ! echo "$staged" | xargs lychee --offline 2>/dev/null; then
     echo "Broken links found. Fix before committing."
     exit 1
 fi

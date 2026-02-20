@@ -455,6 +455,105 @@ git clean -fx              # Include ignored files
 git clean -fdx             # Everything untracked
 ```
 
+## Hooks
+
+### Built-in Hooks
+
+Hooks live in `.git/hooks/`. Make executable with `chmod +x`.
+
+```bash
+# List available hook templates
+ls .git/hooks/*.sample
+
+# Enable a hook (remove .sample suffix)
+cp .git/hooks/pre-commit.sample .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+| Hook                 | Trigger                  | Use for                            |
+| -------------------- | ------------------------ | ---------------------------------- |
+| `pre-commit`         | Before commit is created | Lint, format, secrets detection    |
+| `commit-msg`         | After message is entered | Validate conventional commit style |
+| `pre-push`           | Before push to remote    | Run tests, type-check              |
+| `prepare-commit-msg` | Before editor opens      | Inject branch name or template     |
+| `post-commit`        | After commit is created  | Notifications, local CI trigger    |
+| `post-merge`         | After merge completes    | Reinstall deps if lockfile changed |
+| `post-checkout`      | After checkout/switch    | Rebuild assets, warn env changes   |
+
+### Hook Managers
+
+Raw `.git/hooks/` scripts aren't version-controlled. Use a manager instead.
+
+```yaml
+# .pre-commit-config.yaml (pre-commit framework)
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: end-of-file-fixer
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.4
+    hooks:
+      - id: gitleaks
+```
+
+```bash
+# Install pre-commit framework
+pip install pre-commit    # or brew install pre-commit
+pre-commit install        # writes .git/hooks/pre-commit
+pre-commit run --all-files  # test against entire repo
+pre-commit autoupdate     # bump hook versions
+```
+
+| Manager        | Language | Config file               | Notes                       |
+| -------------- | -------- | ------------------------- | --------------------------- |
+| **pre-commit** | Python   | `.pre-commit-config.yaml` | Largest hook ecosystem      |
+| **husky**      | Node     | `.husky/`                 | Pairs with `lint-staged`    |
+| **lefthook**   | Go       | `lefthook.yml`            | Fast, no runtime dependency |
+
+### Writing a Custom Hook
+
+```bash
+#!/usr/bin/env bash
+# .git/hooks/commit-msg — enforce conventional commits
+commit_msg=$(cat "$1")
+pattern='^(feat|fix|docs|refactor|test|chore|ci|style|perf|build)(\(.+\))?: .+'
+
+if ! echo "$commit_msg" | grep -qE "$pattern"; then
+  echo "ERROR: Commit message must match conventional format"
+  echo "  e.g., feat: Add user authentication"
+  exit 1
+fi
+```
+
+```bash
+#!/usr/bin/env bash
+# .git/hooks/post-merge — reinstall deps when lockfile changes
+changed_files=$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)
+
+if echo "$changed_files" | grep -q "package-lock.json"; then
+  echo "lockfile changed — running npm install"
+  npm install
+fi
+```
+
+### Best Practices
+
+- **Keep pre-commit hooks under 5 seconds.** Slow hooks train `--no-verify`
+  habits.
+- **Lint staged files, not the whole repo.** Use `lint-staged` (Node) or
+  `pre-commit`'s built-in staging support.
+- **Hooks are convenience, not security.** Anyone can `--no-verify`. CI is the
+  authoritative gate.
+- **Ship a setup command.** `make setup` or `npm prepare` that installs hooks
+  automatically.
+- **Fail with actionable messages.** Print what broke and how to fix it.
+- **Layer by speed:** pre-commit (fast: format, lint) → pre-push (slow: tests,
+  type-check) → CI (authoritative).
+
 ## Useful Aliases
 
 Add to `~/.gitconfig`:
