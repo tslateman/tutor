@@ -373,3 +373,11 @@ function createUserId(id: string): UserId {
   return id as UserId;
 }
 ```
+
+## See Also
+
+- [TypeScript Lesson Plan](../learn/typescript-lesson-plan.md) — 8 lessons from
+  types to advanced patterns
+- [Testing](testing.md) — Jest commands and patterns
+- [Learning a Language](learning-a-language.md) — Phases, techniques,
+  anti-patterns

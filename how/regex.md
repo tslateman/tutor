@@ -298,3 +298,10 @@ sed -E 's/(group)/\1/'              # Backreference (ERE)
 
 8. **Catastrophic backtracking**: Avoid nested quantifiers like `(a+)+` on long
    strings
+
+## See Also
+
+- [Shell](shell.md) — grep, sed, awk patterns that use regex
+- [CLI Pipelines](cli-pipelines.md) — Text processing with pipes
+- [Python](python.md) — `re` module usage
+- [jq](jq.md) — JSON filtering with regex tests

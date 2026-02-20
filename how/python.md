@@ -270,3 +270,12 @@ value = cache.setdefault(key, compute_value())
 # Safe dictionary access
 value = data.get('key', {}).get('nested', default)
 ```
+
+## See Also
+
+- [Python Lesson Plan](../learn/python-lesson-plan.md) — 8 lessons from basics
+  to async
+- [Testing](testing.md) — pytest commands and patterns
+- [Debugging](debugging.md) — pdb, py-spy, flame graphs
+- [Learning a Language](learning-a-language.md) — Phases, techniques,
+  anti-patterns

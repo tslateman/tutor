@@ -308,3 +308,12 @@ tmux list-keys | grep split  # Filter
 | Command mode     | `C-b :`               |
 | List sessions    | `C-b s`               |
 | List windows     | `C-b w`               |
+
+## See Also
+
+- [tmux Lesson Plan](../learn/tmux-lesson-plan.md) — 8 lessons from basics to
+  scripting
+- [Terminal Emulators](terminal-emulators.md) — iTerm2 vs Ghostty, tmux -CC
+  integration
+- [Agent Orchestration](agent-orchestration.md) — tmux for multi-agent sessions
+- [Shell](shell.md) — Scripting patterns for tmux automation

@@ -567,3 +567,12 @@ git branch -d temp-branch
 | Apply stash      | `git stash pop`           |
 | Undo last commit | `git reset --soft HEAD~1` |
 | Discard changes  | `git restore file`        |
+
+## See Also
+
+- [Git Lesson Plan](../learn/git-lesson-plan.md) — 8 lessons from commits to
+  workflows
+- [GitHub Lesson Plan](../learn/github-lesson-plan.md) — Repos, PRs, Actions,
+  and API
+- [CI/CD](ci-cd.md) — GitHub Actions, caching, matrix builds
+- [AI CLI Patterns](ai-cli.md) — Version control discipline with AI agents

@@ -315,3 +315,11 @@ defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock
 # Prevent .DS_Store on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```
+
+## See Also
+
+- [Shell](shell.md) — Scripting patterns, loops, conditionals, functions
+- [Unix](unix.md) — Shell commands, file ops, text processing
+- [Terminal Emulators](terminal-emulators.md) — iTerm2 vs Ghostty, rendering,
+  decision guide
+- [CLI-First](../why/cli-first.md) — Why terminal-first workflows

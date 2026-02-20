@@ -680,3 +680,13 @@ pub use crate::traits::{Parse, Validate};
 // In other modules
 use crate::prelude::*;
 ```
+
+## See Also
+
+- [Rust Lesson Plan](../learn/rust-lesson-plan.md) — 8 lessons from ownership to
+  lifetimes
+- [Testing](testing.md) — Rust test commands and patterns
+- [Concurrency Lesson Plan](../learn/concurrency-lesson-plan.md) — Threads,
+  channels, async across Go/Python/Rust
+- [Learning a Language](learning-a-language.md) — Phases, techniques,
+  anti-patterns

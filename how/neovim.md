@@ -81,3 +81,9 @@ Once in Telescope:
 ## Discovery
 
 Press `<leader>` and wait for which-key to show all available mappings.
+
+## See Also
+
+- [tmux](tmux.md) — Sessions, windows, panes, copy mode
+- [Terminal Emulators](terminal-emulators.md) — iTerm2 vs Ghostty, rendering
+- [CLI-First](../why/cli-first.md) — Why terminal-first workflows
