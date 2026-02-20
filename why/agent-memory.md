@@ -176,6 +176,24 @@ control. Parseable by later processing stages.
 Neither wins universally. The best systems use automatic capture with
 deterministic curation — comprehensive input, filtered output.
 
+## Theoretical Foundations
+
+Google's
+[Titans](https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/)
+architecture offers a model-level analog to the agent patterns above. Its core
+idea: use **surprise** (gradient magnitude) as the retention signal — store what
+contradicts existing knowledge, skip what confirms it. This inverts time-based
+decay: relevance drives retention, not recency.
+
+The companion MIRAS framework decomposes any sequence memory system into four
+design axes: memory architecture, attentional bias, retention gate, and memory
+algorithm. The three architectures in this guide map onto those axes, suggesting
+a more general taxonomy exists beneath the practical tools.
+
+No agent-layer system has adopted surprise-based gating yet. When one does,
+expect it to outperform pure time-decay on long-lived knowledge bases where old
+facts remain relevant.
+
 ## Heuristics
 
 1. **Track two timestamps** — "when learned" and "when true" answer different
