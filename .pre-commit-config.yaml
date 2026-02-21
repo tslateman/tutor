@@ -1,0 +1,25 @@
+repos:
+  - repo: local
+    hooks:
+      - id: prettier
+        name: prettier
+        entry: prettier --write
+        language: system
+        files: '\.md$'
+        exclude: '^\.claude/'
+      - id: markdownlint
+        name: markdownlint
+        entry: markdownlint --ignore .vale
+        language: system
+        files: '\.md$'
+        exclude: '^\.claude/'
+      - id: vale
+        name: vale
+        entry: vale
+        language: system
+        files: '^(how|why)/.*\.md$|^CLAUDE\.md$'
+      - id: lychee
+        name: lychee
+        entry: lychee --offline
+        language: system
+        files: '\.md$'

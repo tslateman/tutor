@@ -37,8 +37,7 @@ fix: format lint
 
 # Install git hooks
 setup:
-	cp hooks/pre-commit .git/hooks/pre-commit
-	chmod +x .git/hooks/pre-commit
+	pre-commit install
 	@echo "Git hooks installed"
 
 # Download vale style packages
