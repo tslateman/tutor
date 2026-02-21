@@ -279,6 +279,7 @@ Techniques compose well:
 
 ## See Also
 
+- [Reasoning](reasoning.md) — Fallacies and biases that derail problem-solving
 - [Debugging](debugging.md) — Problem-solving applied to bugs
 - [Thinking](thinking.md) — Mental models for approach selection
 - [Complexity](complexity.md) — Understanding what makes problems hard

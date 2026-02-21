@@ -238,6 +238,8 @@ Einstein
 
 ## See Also
 
+- [Reasoning](reasoning.md) — Fallacies, cognitive biases, and debiasing
+  techniques
 - [Debugging](debugging.md) — Apply systematic thinking to find bugs
 - [Orchestration](orchestration.md) — Systems thinking applied to agent
   coordination

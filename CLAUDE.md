@@ -64,6 +64,7 @@ Mental models, principles, frameworks.
 | `orchestration.md`            | K8s-to-agents parallels, context routing, failure modes  |
 | `problem-solving.md`          | Polya's method, divide-and-conquer, rubber duck          |
 | `testing.md`                  | Pyramid, strategy, doubles, TDD, anti-patterns           |
+| `reasoning.md`                | Fallacies, cognitive biases, debiasing, System 1/2       |
 | `thinking.md`                 | Mental models, systems thinking, asking good questions   |
 
 ### learn/
@@ -90,6 +91,7 @@ Progressive lesson plans with exercises.
 | `security-lesson-plan.md`                 | 8 lessons from threat modeling to OWASP Top 10              |
 | `concurrency-lesson-plan.md`              | 8 lessons on threads, channels, async across Go/Python/Rust |
 | `information-architecture-lesson-plan.md` | 8 lessons from organization to full audit                   |
+| `reasoning-lesson-plan.md`                | 8 lessons from fallacies to systemic debiasing              |
 | `system-design-lesson-plan.md`            | 8 lessons from single server to distributed                 |
 
 ## Commands
