@@ -339,9 +339,47 @@ Where the k8s analogy holds: worktrees are like separate pods with their own
 filesystem. Where it breaks: pods share a network namespace; agents share a
 codebase and must eventually merge into a single coherent state.
 
+**Before parallelizing, justify the cost.** Token spend scales with agent count,
+but useful output does not. Coordination overhead -- dispatching, status checks,
+conflict resolution -- consumes tokens without producing code. Real measurement
+from a 20-agent swarm completing 15 tasks: 8M tokens (~$60). The same tasks done
+sequentially: 1.2M tokens (~$9). The swarm finished 2 hours faster. That 2-hour
+speedup cost $51 in coordination overhead. For most projects, this is not a
+worthwhile trade.
+
+Errors also compound multiplicatively at integration boundaries, not additively.
+Three agents at a 5% error rate produce roughly a 14.3% aggregate failure
+probability -- and that is optimistic. The worst failures are semantic: each
+agent's output passes its local checks, but the combined result is incoherent.
+No test catches the type hierarchy that three agents each modified
+independently.
+
+**Swarms are justified in narrow cases:** (1) truly independent tasks with zero
+shared state, (2) embarrassingly parallel work like generating test cases or
+exploring a large design space, (3) large-scale exploration of a legacy codebase
+to build a knowledge graph, (4) learning and research into multi-agent behavior
+itself, (5) time-critical sprints where 2 hours genuinely matters and the cost
+is acceptable. Most day-to-day engineering work is deeply interconnected and
+benefits from a single agent with coherent context.
+
 ### Exercises
 
-1. **Set up isolated agent workspaces**
+1. **Evaluate whether to parallelize at all**
+
+   Before launching agents in parallel, run this checklist:
+
+   ```markdown
+   - [ ] Tasks touch zero shared files (check with `comm` or overlap analysis)
+   - [ ] Each task fits independently in one context window
+   - [ ] Success criteria are objectively verifiable per task
+   - [ ] Time saved > coordination cost (estimate: $7-10/agent/hour in overhead)
+   - [ ] Semantic conflicts are detectable at merge time
+   ```
+
+   If any box is unchecked, run sequentially. The single-agent path is always
+   the baseline to beat.
+
+2. **Set up isolated agent workspaces**
 
    ```bash
    # Create a coordination directory
@@ -356,7 +394,7 @@ codebase and must eventually merge into a single coherent state.
      > /tmp/agents/messages/coordinator.json
    ```
 
-2. **Detect conflicts before they happen**
+3. **Detect conflicts before they happen**
 
    ```bash
    # Before launching parallel agents, check for file overlap
@@ -371,7 +409,7 @@ codebase and must eventually merge into a single coherent state.
    # If overlap exists, serialize those tasks or split the file
    ```
 
-3. **Implement a merge protocol**
+4. **Implement a merge protocol**
 
    ```bash
    # After agents complete, merge systematically
@@ -390,7 +428,7 @@ codebase and must eventually merge into a single coherent state.
    }
    ```
 
-4. **Use tmux for agent monitoring**
+5. **Use tmux for agent monitoring**
 
    ```bash
    # Create a monitoring session
@@ -778,6 +816,7 @@ minutes and measure how many tasks complete correctly.
 | ----------------- | ------------------------------- | --------------------------------- |
 | Task sizing       | Fits in 60% of context window   | "Read everything and fix it"      |
 | Parallelism       | Git worktrees, isolated state   | Multiple agents in same directory |
+| Swarm decision    | Justify cost before spawning    | Parallelize by default            |
 | Verification      | Separate agent reviews output   | Trust first output                |
 | Context           | Minimal, specific, actionable   | Dump entire codebase              |
 | Failure detection | Semantic checks, diff audits    | "It compiled so it works"         |
@@ -795,3 +834,9 @@ minutes and measure how many tasks complete correctly.
   agent systems
 - [Problem Solving](../why/problem-solving.md) -- Systematic debugging for
   non-deterministic systems
+- [Overstory STEELMAN.md](https://github.com/jayminwest/overstory/blob/main/STEELMAN.md)
+  -- 12-point case against swarms with real cost data; required reading before
+  deploying multi-agent infrastructure
+- [Agentic Engineering Book](https://jayminwest.com/agentic-engineering-book) --
+  Comprehensive practitioner guide to prompts, models, context, and tooling;
+  local copy at `~/dev/opt/agentic-engineering-book`
