@@ -1,91 +1,43 @@
 # Tutor
 
-Personal reference for tools, languages, and techniques.
+Personal reference site -- commands, mental models, and lesson plans for
+software engineers.
 
-## how/
+**Live site: [tslateman.github.io/tutor](https://tslateman.github.io/tutor/)**
 
-Commands, syntax, quick reference.
+## Content
 
-| Topic                               | Description                                         |
-| ----------------------------------- | --------------------------------------------------- |
-| [AI CLI](how/ai-cli.md)             | Claude Code, context files, prompting, verification |
-| [Cryptography](how/cryptography.md) | Hashing, encryption, certificates, TLS, openssl     |
-| [Diagramming](how/diagramming.md)   | Diagram types, Mermaid syntax, ASCII patterns       |
-| [Docker](how/docker.md)             | Images, containers, Dockerfile, Compose, networking |
-| [Git](how/git.md)                   | Commits, branches, merging, rebasing, remotes       |
-| [HTTP](how/http.md)                 | curl, headers, status codes, REST conventions       |
-| [jq](how/jq.md)                     | JSON processing, filters, transforms                |
-| [macOS](how/macos.md)               | Homebrew, defaults, Spotlight, launchctl            |
-| [Neovim](how/neovim.md)             | LazyVim keybindings, Telescope, code actions        |
-| [PostgreSQL](how/postgres.md)       | psql, indexes, window functions, admin              |
-| [Python](how/python.md)             | Data structures, comprehensions, typing, async      |
-| [Regex](how/regex.md)               | Patterns, quantifiers, groups, lookahead            |
-| [Rust](how/rust.md)                 | Ownership, borrowing, lifetimes, traits, cargo      |
-| [Shell](how/shell.md)               | Scripting patterns, loops, conditionals, functions  |
-| [SQL](how/sql.md)                   | Joins, CTEs, window functions                       |
-| [Testing](how/testing.md)           | pytest, Jest, Go, Rust test runners                 |
-| [tmux](how/tmux.md)                 | Sessions, windows, panes, copy mode                 |
-| [TypeScript](how/typescript.md)     | Types, generics, utility types, patterns            |
-| [Unix](how/unix.md)                 | Shell commands, file ops, text processing, SSH      |
+| Section       | Directory                 | Count | Description                               |
+| ------------- | ------------------------- | ----- | ----------------------------------------- |
+| Reference     | `src/content/docs/how/`   | 30    | Commands, syntax, quick reference         |
+| Mental Models | `src/content/docs/why/`   | 14    | Principles, frameworks, heuristics        |
+| Lesson Plans  | `src/content/docs/learn/` | 20    | Progressive 8-lesson plans with exercises |
 
-## why/
+## Development
 
-Mental models, principles, frameworks.
+```bash
+npm install           # Install dependencies
+npm run dev           # Start dev server
+npm run build         # Production build
+npm run preview       # Preview production build
+```
 
-| Topic                                                       | Description                                             |
-| ----------------------------------------------------------- | ------------------------------------------------------- |
-| [Complexity](why/complexity.md)                             | Essential vs accidental, techniques, heuristics         |
-| [Debugging](why/debugging.md)                               | Scientific method, bisection, isolation techniques      |
-| [Learning](why/learning.md)                                 | Retention techniques, spaced repetition, active recall  |
-| [Orchestration](why/orchestration.md)                       | K8s-to-agents parallels, context routing, failure modes |
-| [Problem-solving](why/problem-solving.md)                   | Polya's method, divide-and-conquer, rubber duck         |
-| [Information Architecture](why/information-architecture.md) | Four systems, Diataxis, findability heuristics          |
-| [Knowledge Design](why/knowledge-design.md)                 | Taxonomy, CTA, mental modeling, semantic labeling       |
-| [Thinking](why/thinking.md)                                 | Mental models, systems thinking, asking good questions  |
-
-## learn/
-
-Progressive lesson plans with exercises.
-
-| Topic                                                                     | Description                                      |
-| ------------------------------------------------------------------------- | ------------------------------------------------ |
-| [Git](learn/git-lesson-plan.md)                                           | 8 lessons from commits to workflows              |
-| [GitHub](learn/github-lesson-plan.md)                                     | 8 lessons from repos to Actions and API          |
-| [Go](learn/golang-lesson-plan.md)                                         | 8 lessons from basics to concurrency             |
-| [Python](learn/python-lesson-plan.md)                                     | 8 lessons from basics to async                   |
-| [Rust](learn/rust-lesson-plan.md)                                         | 8 lessons from ownership to lifetimes            |
-| [Technical Writing](learn/technical-writing-lesson-plan.md)               | 8 lessons on clarity, structure, audience        |
-| [tmux](learn/tmux-lesson-plan.md)                                         | 8 lessons from basics to scripting               |
-| [TypeScript](learn/typescript-lesson-plan.md)                             | 8 lessons from types to advanced patterns        |
-| [Operating Systems](learn/operating-systems-lesson-plan.md)               | 8 lessons from processes to system call tracing  |
-| [Context & Complexity](learn/context-complexity-lesson-plan.md)           | 8 lessons on managing context as finite resource |
-| [Data Models](learn/data-models-lesson-plan.md)                           | 8 lessons from ER diagrams to model selection    |
-| [Agentic Workflows](learn/agentic-workflows-lesson-plan.md)               | 8 lessons on orchestrating AI agent systems      |
-| [Cryptography](learn/cryptography-lesson-plan.md)                         | 8 lessons from hashing to TLS and key management |
-| [Networking](learn/networking-lesson-plan.md)                             | 8 lessons from DNS to sockets and debugging      |
-| [Security](learn/security-lesson-plan.md)                                 | 8 lessons from threat modeling to OWASP Top 10   |
-| [Information Architecture](learn/information-architecture-lesson-plan.md) | 8 lessons from organization to full audit        |
-| [System Design](learn/system-design-lesson-plan.md)                       | 8 lessons from single server to distributed      |
-
-## Setup
+## Linting
 
 ```bash
 brew install markdownlint-cli prettier vale lychee
-make sync     # Download vale style packages
-make setup    # Install git hooks
+make sync             # Download vale style packages
+make setup            # Install git hooks
+make lint             # Check style (markdownlint + vale + links)
+make format           # Format with prettier
+make fix              # Format then lint
 ```
 
-## Commands
+## Adding content
 
 ```bash
-make help     # Show all commands
-make lint     # Check style (markdownlint + vale + links)
-make format   # Format with prettier
-make fix      # Format then lint
-make new      # Create new guide (NAME=foo TYPE=how|why)
-make prose    # Review prose with Claude (Strunk's rules)
+make new NAME=foo TYPE=how    # Scaffold new guide
+make new NAME=bar TYPE=why    # Scaffold new mental model
 ```
 
-The `make prose` command uses the bundled
-[elements-of-style](https://github.com/obra/the-elements-of-style) Claude Code
-plugin to review writing with Strunk's rules.
+Built with [Astro Starlight](https://starlight.astro.build/).
