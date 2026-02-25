@@ -15,7 +15,7 @@ if [ "$TYPE" != "how" ] && [ "$TYPE" != "why" ]; then
   exit 1
 fi
 
-FILE="$TYPE/$NAME.md"
+FILE="src/content/docs/$TYPE/$NAME.md"
 
 if [ -f "$FILE" ]; then
   echo "Error: $FILE already exists"
@@ -64,5 +64,5 @@ fi
 echo "Created $FILE"
 echo ""
 echo "Next steps:"
-echo "  1. Update CLAUDE.md table in $TYPE/ section"
+echo "  1. Update CLAUDE.md table in src/content/docs/$TYPE/ section"
 echo "  2. Update README.md table"

@@ -1,2 +1,7 @@
 # Vale styles (downloaded via `make sync`)
 .vale/
+
+# Astro build artifacts
+node_modules/
+dist/
+.astro/

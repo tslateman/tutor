@@ -1,9 +1,12 @@
-.PHONY: help lint format check fix setup sync prose links new
+.PHONY: help lint format check fix setup sync prose links new dev build preview
 
 help:
 	@echo "Usage: make [target]"
 	@echo ""
 	@echo "Targets:"
+	@echo "  dev     Start Astro dev server"
+	@echo "  build   Build Astro site"
+	@echo "  preview Preview Astro production build"
 	@echo "  lint    Run markdownlint, vale, and link checker"
 	@echo "  format  Format markdown with prettier"
 	@echo "  check   Check formatting (no changes)"
@@ -14,10 +17,22 @@ help:
 	@echo "  links   Check markdown links (internal only)"
 	@echo "  new     Create new guide (NAME=foo TYPE=how|why)"
 
+# Astro dev server
+dev:
+	npm run dev
+
+# Build Astro site
+build:
+	npm run build
+
+# Preview Astro production build
+preview:
+	npm run preview
+
 # Lint markdown files
 lint:
 	markdownlint '**/*.md' --ignore .vale
-	vale how/*.md why/*.md CLAUDE.md
+	vale src/content/docs/how/*.md src/content/docs/why/*.md CLAUDE.md
 	lychee --offline '**/*.md'
 
 # Check markdown links (internal only, fast)
@@ -46,7 +61,7 @@ sync:
 
 # Review prose with Claude (Strunk's Elements of Style)
 prose:
-	claude -p "/elements-of-style:writing-clearly-and-concisely how/ why/"
+	claude -p "/elements-of-style:writing-clearly-and-concisely src/content/docs/how/ src/content/docs/why/"
 
 # Create a new guide
 new:
