@@ -1,0 +1,37 @@
+---
+title: Tutor
+description: Commands, mental models, and lesson plans for software engineers.
+template: splash
+hero:
+  tagline: Quick reference. Deep thinking. Hands-on learning.
+  actions:
+    - text: Reference
+      link: /tutor/how/git/
+      icon: open-book
+    - text: Mental Models
+      link: /tutor/why/reasoning/
+      variant: minimal
+    - text: Lesson Plans
+      link: /tutor/learn/git-lesson-plan/
+      variant: minimal
+---
+
+import { CardGrid, LinkCard } from "@astrojs/starlight/components";
+
+<CardGrid>
+  <LinkCard
+    title="Reference"
+    description="Commands, syntax, and lookup tables for 30 tools and languages — Git, Docker, SQL, Kubernetes, and more."
+    href="/tutor/how/git/"
+  />
+  <LinkCard
+    title="Mental Models"
+    description="Principles and frameworks for software engineering decisions — complexity, debugging, API design, AI adoption."
+    href="/tutor/why/reasoning/"
+  />
+  <LinkCard
+    title="Lesson Plans"
+    description="8-lesson progressive paths with exercises and projects — Git, Python, Rust, system design, agentic workflows."
+    href="/tutor/learn/git-lesson-plan/"
+  />
+</CardGrid>
