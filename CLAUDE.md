@@ -53,6 +53,7 @@ Mental models, principles, frameworks.
 
 | File                          | Topics                                                   |
 | ----------------------------- | -------------------------------------------------------- |
+| `ai-adoption.md`              | Tooling without mandate, what stays human, codeowners    |
 | `agent-memory.md`             | Temporal tracking, cognitive layers, decay, retrieval    |
 | `api-design.md`               | REST vs GraphQL vs gRPC, pagination, versioning, errors  |
 | `cli-first.md`                | Why terminal-first, core stack, tool replacements, habit |
