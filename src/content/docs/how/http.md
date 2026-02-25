@@ -1,5 +1,8 @@
 ---
 title: "HTTP Cheat Sheet"
+description:
+  Status codes, curl commands, headers, authentication, REST conventions, and
+  caching.
 ---
 
 ## Status Codes

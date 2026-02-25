@@ -1,5 +1,8 @@
 ---
 title: "Python Lesson Plan"
+description:
+  Eight lessons from basic types and functions to data structures,
+  comprehensions, typing, and async in Python.
 ---
 
 A progressive curriculum to master Python through hands-on practice.

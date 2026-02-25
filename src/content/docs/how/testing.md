@@ -1,5 +1,8 @@
 ---
 title: "Testing Cheat Sheet"
+description:
+  Test runner commands and patterns for pytest, Jest, Go test, and Rust cargo
+  test.
 ---
 
 Commands, flags, and patterns for test runners across languages.

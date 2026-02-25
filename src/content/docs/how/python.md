@@ -1,5 +1,8 @@
 ---
 title: "Python Cheat Sheet"
+description:
+  Data structures, comprehensions, string formatting, typing, decorators, and
+  async patterns.
 ---
 
 ## Data Structures

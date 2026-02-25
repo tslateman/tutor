@@ -1,5 +1,8 @@
 ---
 title: "Go Lesson Plan"
+description:
+  Eight lessons from basic types and functions to goroutines, channels, and
+  interfaces in Go.
 ---
 
 A progressive curriculum to master Go through hands-on practice.

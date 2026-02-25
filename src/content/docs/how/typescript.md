@@ -1,5 +1,8 @@
 ---
 title: "TypeScript Cheat Sheet"
+description:
+  Types, interfaces, generics, utility types, type guards, and advanced
+  type-level patterns.
 ---
 
 ## Basic Types

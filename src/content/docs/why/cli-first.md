@@ -1,5 +1,8 @@
 ---
 title: "CLI-First"
+description:
+  Why terminal-first workflows win on composability, speed, and reproducibility,
+  and how to adopt them.
 ---
 
 Why some developers route their entire workflow through the terminal — and how

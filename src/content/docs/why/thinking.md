@@ -1,5 +1,8 @@
 ---
 title: "Thinking Cheat Sheet"
+description:
+  Mental models for technical decisions, systems thinking, and asking questions
+  that surface the real problem.
 ---
 
 Judgment scales; AI commoditizes execution.

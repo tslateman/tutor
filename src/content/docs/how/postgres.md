@@ -1,5 +1,8 @@
 ---
 title: "PostgreSQL Cheat Sheet"
+description:
+  psql commands, connection strings, indexes, window functions, JSON operators,
+  and admin queries.
 ---
 
 ## Connection

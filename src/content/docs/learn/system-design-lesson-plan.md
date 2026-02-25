@@ -1,5 +1,8 @@
 ---
 title: "System Design Lesson Plan"
+description:
+  Eight lessons from single-server capacity planning to distributed systems,
+  covering load balancing, caching, and tradeoffs.
 ---
 
 How to think about building systems that handle real traffic -- from one server

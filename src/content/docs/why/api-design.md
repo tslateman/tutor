@@ -1,5 +1,8 @@
 ---
 title: "API Design Cheat Sheet"
+description:
+  Tradeoffs between REST, GraphQL, and gRPC plus pagination, versioning, and
+  error-handling patterns.
 ---
 
 Design decisions and tradeoffs for building APIs that survive contact with real

@@ -1,5 +1,8 @@
 ---
 title: "Managing Context and Complexity Lesson Plan"
+description:
+  Eight lessons on treating working memory as a finite resource and managing
+  complexity through chunking, abstraction, and offloading.
 ---
 
 A progressive curriculum for treating context as a finite resource and

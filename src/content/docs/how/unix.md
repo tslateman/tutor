@@ -1,5 +1,8 @@
 ---
 title: "Unix CLI Cheat Sheet"
+description:
+  File navigation, text processing, find/grep, permissions, SSH, and portable
+  shell commands.
 ---
 
 Portable commands for Linux, macOS, and other Unix-like systems.

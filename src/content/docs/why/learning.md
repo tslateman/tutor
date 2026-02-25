@@ -1,5 +1,8 @@
 ---
 title: "Learning"
+description:
+  Evidence-based retention techniques including active recall, spaced
+  repetition, interleaving, and the Feynman method.
 ---
 
 Evidence-based techniques for retaining knowledge. Research over intuition.

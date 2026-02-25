@@ -1,5 +1,8 @@
 ---
 title: "macOS CLI Cheat Sheet"
+description:
+  Homebrew, defaults, Spotlight, clipboard, launchctl, disk utilities, and
+  AppleScript from the terminal.
 ---
 
 macOS-specific commands and tools.

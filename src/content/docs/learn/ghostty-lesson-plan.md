@@ -1,5 +1,8 @@
 ---
 title: "Ghostty Lesson Plan"
+description:
+  Eight lessons on Ghostty terminal emulator, from installation and
+  configuration to splits, themes, and workflow integration.
 ---
 
 A progressive curriculum to master Ghostty through hands-on practice.

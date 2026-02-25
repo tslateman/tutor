@@ -1,5 +1,8 @@
 ---
 title: "Debugging Tools Cheat Sheet"
+description:
+  Commands for pdb, lldb, strace/dtruss, py-spy, hyperfine, and flame graph
+  generation.
 ---
 
 Commands, flags, and workflows for debugging, profiling, and performance

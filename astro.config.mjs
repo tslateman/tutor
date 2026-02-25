@@ -9,6 +9,11 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Tutor",
+      editLink: {
+        baseUrl: "https://github.com/tslateman/tutor/edit/main/",
+      },
+      lastUpdated: true,
+      tableOfContents: { maxHeadingLevel: 3 },
       sidebar: [
         {
           label: "Reference",

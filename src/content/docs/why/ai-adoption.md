@@ -1,5 +1,8 @@
 ---
 title: "AI Adoption"
+description:
+  Principles for introducing AI coding tools without mandates, preserving code
+  ownership and human judgment.
 ---
 
 Principles for introducing AI coding tools to an engineering team without

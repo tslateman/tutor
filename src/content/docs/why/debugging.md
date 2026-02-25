@@ -1,5 +1,8 @@
 ---
 title: "Debugging Cheat Sheet"
+description:
+  Scientific method for bugs, bisection strategy, isolation techniques, and
+  first principles of diagnosis.
 ---
 
 ## The Scientific Method for Bugs

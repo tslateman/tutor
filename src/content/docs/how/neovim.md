@@ -1,5 +1,8 @@
 ---
 title: "Neovim Commands (LazyVim)"
+description:
+  LazyVim keybindings for Telescope, neo-tree, buffers, LSP code actions, and
+  split navigation.
 ---
 
 ## Search (Telescope + FZF)

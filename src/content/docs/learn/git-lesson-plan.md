@@ -1,5 +1,8 @@
 ---
 title: "Git Lesson Plan"
+description:
+  Eight lessons from first commit to advanced workflows, covering branches,
+  merging, rebasing, and collaboration patterns.
 ---
 
 A progressive curriculum to master git through hands-on practice.

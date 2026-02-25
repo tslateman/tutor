@@ -1,5 +1,8 @@
 ---
 title: "Security Scanning Cheat Sheet"
+description:
+  OpenSSF Scorecard, Trivy, GuardDog, secret detection, and supply chain
+  verification commands.
 ---
 
 Verify open source repos and dependencies before use.

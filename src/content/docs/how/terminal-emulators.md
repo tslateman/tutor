@@ -1,5 +1,8 @@
 ---
 title: "Terminal Emulators: iTerm2 vs Ghostty"
+description:
+  Feature comparison of iTerm2 and Ghostty covering rendering, tmux integration,
+  and migration trade-offs.
 ---
 
 A comparison of the two leading macOS terminal emulators to help you choose — or

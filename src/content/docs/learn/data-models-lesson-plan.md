@@ -1,5 +1,8 @@
 ---
 title: "Data Models Lesson Plan"
+description:
+  Eight lessons from ER diagrams and normalization to schema evolution, covering
+  how data modeling shapes queries, APIs, and performance.
 ---
 
 How you model data shapes everything downstream -- queries, APIs, UIs,

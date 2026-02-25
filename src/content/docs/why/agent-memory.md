@@ -1,5 +1,8 @@
 ---
 title: "Agent Memory"
+description:
+  Mental models for agent memory architectures, temporal tracking, knowledge
+  decay, and retrieval strategies.
 ---
 
 Mental models for how AI agents persist and retrieve knowledge across sessions.

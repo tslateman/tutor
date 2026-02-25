@@ -1,5 +1,8 @@
 ---
 title: "Operating Systems Lesson Plan"
+description:
+  Eight lessons on processes, memory, filesystems, and system calls, learned by
+  observing your OS directly.
 ---
 
 A progressive curriculum to understand how your OS works by observing it

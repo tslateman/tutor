@@ -1,5 +1,8 @@
 ---
 title: "Knowledge Design"
+description:
+  Five skills for structuring knowledge transfer, from taxonomy and cognitive
+  task analysis to semantic labeling.
 ---
 
 How to structure knowledge for transfer, not storage. The difference between

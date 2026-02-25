@@ -1,5 +1,8 @@
 ---
 title: "Cryptography Cheat Sheet"
+description:
+  Hashing, encryption, certificates, TLS inspection, and key management with
+  openssl and related tools.
 ---
 
 Commands for hashing, encryption, certificates, and TLS inspection.

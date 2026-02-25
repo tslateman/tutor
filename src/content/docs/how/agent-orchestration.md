@@ -1,5 +1,8 @@
 ---
 title: "Agent Orchestration Cheat Sheet"
+description:
+  Task decomposition, context boundaries, delegation patterns, and monitoring
+  for multi-agent AI workflows.
 ---
 
 Coordinate multiple AI coding agents for parallel and complex work.

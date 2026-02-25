@@ -1,5 +1,8 @@
 ---
 title: "CI/CD Cheat Sheet"
+description:
+  GitHub Actions workflow syntax, caching, matrix builds, secrets, and
+  deployment strategies.
 ---
 
 Pipeline patterns, caching, matrix builds, and deployment strategies for GitHub

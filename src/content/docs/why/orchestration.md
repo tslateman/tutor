@@ -1,5 +1,8 @@
 ---
 title: "Orchestration Cheat Sheet"
+description:
+  Kubernetes-to-agent parallels for coordinating autonomous workers, context
+  routing, and failure modes.
 ---
 
 Coordinating autonomous workers -- containers or agents -- is the same problem

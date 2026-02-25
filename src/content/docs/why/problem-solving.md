@@ -1,5 +1,8 @@
 ---
 title: "Problem Solving Cheat Sheet"
+description:
+  "Polya's method, divide-and-conquer, rubber duck debugging, and other
+  structured approaches to hard problems."
 ---
 
 Structured approaches to breaking down hard problems.

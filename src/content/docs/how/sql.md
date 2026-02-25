@@ -1,5 +1,8 @@
 ---
 title: "SQL Cheat Sheet"
+description:
+  SELECT, joins, CTEs, window functions, subqueries, and aggregation in portable
+  SQL syntax.
 ---
 
 General SQL syntax (portable across databases). See `postgres-cheatsheet.md` for

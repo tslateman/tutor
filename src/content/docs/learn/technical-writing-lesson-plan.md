@@ -1,5 +1,8 @@
 ---
 title: "Technical Writing Lesson Plan"
+description:
+  Eight lessons on clarity, structure, and audience based on Google's Technical
+  Writing courses.
 ---
 
 A progressive curriculum based on Google's Technical Writing courses.

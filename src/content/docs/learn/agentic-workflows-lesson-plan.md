@@ -1,5 +1,8 @@
 ---
 title: "Agentic Workflows Lesson Plan"
+description:
+  Eight lessons on orchestrating AI agents, covering delegation patterns,
+  failure modes, cost control, and swarm architectures.
 ---
 
 Orchestration patterns, failure modes, and engineering discipline for managing

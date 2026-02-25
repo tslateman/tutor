@@ -1,5 +1,8 @@
 ---
 title: "Networking Lesson Plan"
+description:
+  Eight lessons from DNS and the TCP/IP stack to sockets and network debugging
+  with hands-on packet inspection.
 ---
 
 A progressive curriculum to understand computer networking by sending packets

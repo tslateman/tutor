@@ -1,5 +1,8 @@
 ---
 title: "Diagramming Cheat Sheet"
+description:
+  Diagram type selection, Mermaid syntax for flowcharts and sequence diagrams,
+  and ASCII patterns.
 ---
 
 ## Diagram Type Selection

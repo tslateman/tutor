@@ -1,5 +1,8 @@
 ---
 title: "Rust Lesson Plan"
+description:
+  Eight lessons from basic syntax and cargo to ownership, borrowing, lifetimes,
+  and traits in Rust.
 ---
 
 A progressive curriculum to master Rust through hands-on practice.

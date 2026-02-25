@@ -1,5 +1,8 @@
 ---
 title: "jq Cheat Sheet"
+description:
+  JSON filtering, transformation, and extraction with jq selectors, builtins,
+  and practical examples.
 ---
 
 `jq` is a lightweight command-line JSON processor.

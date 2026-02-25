@@ -1,5 +1,8 @@
 ---
 title: "Reasoning Cheat Sheet"
+description:
+  Logical fallacies, cognitive biases, Kahneman's dual-process model, and
+  debiasing techniques for better decisions.
 ---
 
 Your brain is a heuristic engine optimized for survival, not correctness.

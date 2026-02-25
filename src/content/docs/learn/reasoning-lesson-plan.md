@@ -1,5 +1,8 @@
 ---
 title: "Reasoning Lesson Plan"
+description:
+  Eight lessons from spotting logical fallacies to recognizing cognitive biases
+  and building systemic debiasing habits.
 ---
 
 Recognizing flawed reasoning in others is easy. Catching it in yourself is the

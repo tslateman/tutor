@@ -1,5 +1,8 @@
 ---
 title: "Cryptography Lesson Plan"
+description:
+  Eight lessons covering hashing, symmetric and asymmetric encryption, TLS,
+  certificates, and key management for engineers.
 ---
 
 Practical cryptography for engineers -- what to use, when, and why, without the

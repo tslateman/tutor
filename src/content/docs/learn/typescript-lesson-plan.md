@@ -1,5 +1,8 @@
 ---
 title: "TypeScript Lesson Plan"
+description:
+  Eight lessons from basic types and setup to generics, utility types, and
+  advanced type patterns in TypeScript.
 ---
 
 A progressive curriculum to master TypeScript through hands-on practice.

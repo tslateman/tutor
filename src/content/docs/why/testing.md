@@ -1,5 +1,8 @@
 ---
 title: "Testing"
+description:
+  Testing strategy over ceremony, covering the pyramid, test doubles, TDD
+  tradeoffs, and common anti-patterns.
 ---
 
 Why, when, and how much to test. Strategy over ceremony.

@@ -1,5 +1,8 @@
 ---
 title: "Information Architecture Lesson Plan"
+description:
+  Eight lessons on organizing documentation using the four IA systems, Diataxis
+  framework, and findability heuristics.
 ---
 
 How to organize project documentation so people find what they need -- the four

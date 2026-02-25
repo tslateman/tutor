@@ -1,5 +1,8 @@
 ---
 title: "Information Architecture"
+description:
+  Structural design of shared information spaces using organization, labeling,
+  navigation, and search systems.
 ---
 
 How to structure shared information so people find what they need without

@@ -1,5 +1,8 @@
 ---
 title: "Rust Cheat Sheet"
+description:
+  Ownership, borrowing, lifetimes, traits, error handling, pattern matching, and
+  cargo commands.
 ---
 
 ## Quick Reference

@@ -1,5 +1,8 @@
 ---
 title: "Concurrency Lesson Plan"
+description:
+  Eight lessons on threads, channels, and async patterns across Go, Python, and
+  Rust with hands-on exercises.
 ---
 
 A progressive curriculum to master concurrency patterns through hands-on

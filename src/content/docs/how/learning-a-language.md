@@ -1,5 +1,8 @@
 ---
 title: "Learning a Programming Language"
+description:
+  Four-phase workflow, daily routine, techniques, tools, and anti-patterns for
+  picking up any language.
 ---
 
 A practical workflow for learning any language, whether first or fifteenth.

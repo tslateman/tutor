@@ -1,5 +1,8 @@
 ---
 title: "Regex Cheat Sheet"
+description:
+  Patterns, quantifiers, character classes, groups, lookahead/lookbehind, and
+  language-specific syntax.
 ---
 
 ## Basic Patterns

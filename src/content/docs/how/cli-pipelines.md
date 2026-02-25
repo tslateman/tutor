@@ -1,5 +1,8 @@
 ---
 title: "CLI Pipelines: Keeping Data in the Stream"
+description:
+  Pipes, process substitution, xargs, fzf, and history expansion for composing
+  shell commands.
 ---
 
 How to work with command output without reaching for the mouse. The core idea:

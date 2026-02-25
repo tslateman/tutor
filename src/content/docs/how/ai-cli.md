@@ -1,5 +1,8 @@
 ---
 title: "AI CLI Cheat Sheet"
+description:
+  Context management, CLAUDE.md structure, prompting techniques, and
+  verification for AI coding assistants.
 ---
 
 > Last updated: 2026-02-06

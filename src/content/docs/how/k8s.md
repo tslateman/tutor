@@ -1,5 +1,8 @@
 ---
 title: "Kubernetes Cheat Sheet"
+description:
+  kubectl commands for pods, deployments, services, ConfigMaps, secrets, and
+  cluster debugging.
 ---
 
 Container orchestration. Pods, deployments, services, debugging.

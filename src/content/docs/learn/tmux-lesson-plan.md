@@ -1,5 +1,8 @@
 ---
 title: "tmux Lesson Plan"
+description:
+  Eight lessons from sessions and panes to scripting and project workflows in
+  tmux.
 ---
 
 A progressive curriculum to master tmux through hands-on practice.

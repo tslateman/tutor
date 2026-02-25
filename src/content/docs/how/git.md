@@ -1,5 +1,8 @@
 ---
 title: "Git Cheat Sheet"
+description:
+  Configuration, commits, branches, merging, rebasing, remotes, stashing, and
+  workflows.
 ---
 
 ## Configuration

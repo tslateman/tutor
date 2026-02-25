@@ -1,5 +1,8 @@
 ---
 title: "Performance Profiling Cheat Sheet"
+description:
+  Profiling with cProfile, py-spy, and pprof; benchmarking with hyperfine; flame
+  graph generation.
 ---
 
 Commands and tools for measuring, profiling, and optimizing performance.

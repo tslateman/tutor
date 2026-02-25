@@ -1,5 +1,8 @@
 ---
 title: "Shell Scripting Cheat Sheet"
+description:
+  Bash script setup, variables, conditionals, loops, functions, arrays, and
+  error handling patterns.
 ---
 
 ## Script Setup

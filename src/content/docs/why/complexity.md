@@ -1,5 +1,8 @@
 ---
 title: "Complexity Cheat Sheet"
+description:
+  Essential vs. accidental complexity, Ousterhout's symptoms, and techniques for
+  managing software complexity.
 ---
 
 The central challenge of software engineering.

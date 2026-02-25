@@ -1,5 +1,8 @@
 ---
 title: "tmux Cheat Sheet"
+description:
+  Sessions, windows, panes, copy mode, keybindings, and configuration for tmux
+  multiplexing.
 ---
 
 The default prefix key is `Ctrl+b` (shown as `C-b` below).

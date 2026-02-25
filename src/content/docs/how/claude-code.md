@@ -1,5 +1,8 @@
 ---
 title: "Claude Code Extensibility Cheat Sheet"
+description:
+  Agents, skills, hooks, plugins, MCP servers, memory, and settings for
+  extending Claude Code.
 ---
 
 Agents, commands, hooks, plugins, MCP servers, memory, and configuration.

@@ -1,5 +1,8 @@
 ---
 title: "GitHub Lesson Plan"
+description:
+  Eight lessons from repository setup to Actions and the GitHub API, covering
+  PRs, issues, and collaboration workflows.
 ---
 
 A progressive curriculum to master GitHub through hands-on practice.

@@ -1,5 +1,8 @@
 ---
 title: "Security Lesson Plan"
+description:
+  Eight lessons on threat modeling, authentication, authorization, and OWASP Top
+  10 defenses for application security.
 ---
 
 Application security beyond cryptography -- threat modeling, authentication,

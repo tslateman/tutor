@@ -1,5 +1,8 @@
 ---
 title: "Docker Cheat Sheet"
+description:
+  Image builds, container lifecycle, Dockerfile patterns, Compose, volumes, and
+  networking.
 ---
 
 ## Images

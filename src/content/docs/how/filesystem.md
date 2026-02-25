@@ -1,5 +1,8 @@
 ---
 title: "Unix Filesystem Cheat Sheet"
+description:
+  FHS layout, inodes, permissions, file locking, atomic operations, and
+  inotify/fswatch.
 ---
 
 Filesystem fundamentals, permissions, atomic operations, locking, and change
