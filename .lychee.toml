@@ -5,7 +5,7 @@
 offline = true
 
 # Exclude vale style directory
-exclude_path = [".vale"]
+exclude_path = [".vale", "node_modules"]
 
 # Don't require HTTPS for local file links
 require_https = false

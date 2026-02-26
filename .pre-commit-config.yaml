@@ -17,7 +17,7 @@ repos:
         name: vale
         entry: vale
         language: system
-        files: '^(how|why)/.*\.md$|^CLAUDE\.md$'
+        files: '^src/content/docs/(how|why|learn)/.*\.md$|^CLAUDE\.md$'
       - id: lychee
         name: lychee
         entry: lychee --offline

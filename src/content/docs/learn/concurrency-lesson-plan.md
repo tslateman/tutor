@@ -228,7 +228,7 @@ Sequential Processes) guarantees channel-only communication prevents data races.
    }
    ```
 
-2. **Python queue.Queue for thread communication**
+2. **Python `queue.Queue` for thread communication**
 
    ```python
    import queue, threading, time

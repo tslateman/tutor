@@ -15,7 +15,7 @@ help:
 	@echo "  sync    Download vale style packages"
 	@echo "  prose   Review prose with Claude (Strunk's rules)"
 	@echo "  links   Check markdown links (internal only)"
-	@echo "  new     Create new guide (NAME=foo TYPE=how|why)"
+	@echo "  new     Create new guide (NAME=foo TYPE=how|why|learn)"
 
 # Astro dev server
 dev:
@@ -29,23 +29,26 @@ build:
 preview:
 	npm run preview
 
+# Markdown sources (excludes node_modules, .vale)
+MD_FILES = src/content/docs/**/*.md CLAUDE.md README.md
+
 # Lint markdown files
 lint:
-	markdownlint '**/*.md' --ignore .vale
-	vale src/content/docs/how/*.md src/content/docs/why/*.md CLAUDE.md
-	lychee --offline '**/*.md'
+	markdownlint $(MD_FILES)
+	vale src/content/docs/how/*.md src/content/docs/why/*.md src/content/docs/learn/*.md CLAUDE.md
+	lychee --offline $(MD_FILES)
 
 # Check markdown links (internal only, fast)
 links:
-	lychee --offline '**/*.md'
+	lychee --offline $(MD_FILES)
 
 # Format markdown files
 format:
-	prettier --write '**/*.md'
+	prettier --write $(MD_FILES)
 
 # Check formatting (no changes)
 check:
-	prettier --check '**/*.md'
+	prettier --check $(MD_FILES)
 
 # Fix everything
 fix: format lint

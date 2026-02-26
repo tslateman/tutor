@@ -30,7 +30,7 @@ jobs:
       - name: Run markdownlint and vale
         run: |
           markdownlint '**/*.md' --ignore .vale
-          vale src/content/docs/how/*.md src/content/docs/why/*.md CLAUDE.md
+          vale src/content/docs/how/*.md src/content/docs/why/*.md src/content/docs/learn/*.md CLAUDE.md
 
       - name: Check formatting
         run: make check
