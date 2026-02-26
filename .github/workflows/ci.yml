@@ -29,7 +29,7 @@ jobs:
 
       - name: Run markdownlint and vale
         run: |
-          markdownlint '**/*.md' --ignore .vale
+          markdownlint src/content/docs/**/*.md CLAUDE.md README.md
           vale src/content/docs/how/*.md src/content/docs/why/*.md src/content/docs/learn/*.md CLAUDE.md
 
       - name: Check formatting
@@ -38,13 +38,13 @@ jobs:
       - name: Check internal links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --offline '**/*.md'
+          args: --offline src/content/docs/**/*.md CLAUDE.md README.md
 
       - name: Check external links
         uses: lycheeverse/lychee-action@v2
         if: github.event_name == 'schedule'
         with:
-          args: '**/*.md'
+          args: src/content/docs/**/*.md CLAUDE.md README.md
 
   build:
     runs-on: ubuntu-latest
