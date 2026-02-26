@@ -33,7 +33,7 @@ Commands, syntax, quick reference.
 | `k8s.md`                 | Pods, deployments, services, debugging, OrbStack            |
 | `learning-a-language.md` | Phases, daily routine, techniques, tools, anti-patterns     |
 | `macos.md`               | Homebrew, defaults, Spotlight, launchctl, AppleScript       |
-| `neovim.md`              | LazyVim keybindings, Telescope, navigation, code actions    |
+| `neovim.md`              | LazyVim keybindings, Telescope, LSP, DAP, config patterns   |
 | `performance.md`         | Profiling, benchmarking, flame graphs, load testing         |
 | `postgres.md`            | psql commands, indexes, window functions, admin queries     |
 | `python.md`              | Data structures, comprehensions, typing, async              |
