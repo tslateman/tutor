@@ -107,13 +107,17 @@ single elements, duplicates, very large inputs.
 
 ## Formal Methods for Working Engineers
 
-TLA+ and Alloy are not academic exercises. AWS uses TLA+ across seven teams.
-Engineers become productive in 2–3 weeks. TLA+ found bugs in S3, DynamoDB, and
-EBS that testing could not reach.
+TLA+ and Alloy are not academic exercises. AWS started with seven teams using
+TLA+ in 2015. By 2024, formal methods — TLA+, P, Dafny, Kani — had spread across
+teams building S3, DynamoDB, EBS, Aurora, EC2, and more. Engineers learn TLA+
+from scratch and get useful results in 2–3 weeks. AWS also adopted the P
+language as a more programmer-friendly alternative for engineers who found
+TLA+'s mathematical notation steep.
 
 | Tool      | Creator        | Best for                                         | Entry point              |
 | --------- | -------------- | ------------------------------------------------ | ------------------------ |
 | **TLA+**  | Leslie Lamport | Concurrency, distributed systems, state machines | PlusCal (sequential DSL) |
+| **P**     | Microsoft/AWS  | Distributed systems, state machines              | Imperative syntax        |
 | **Alloy** | Daniel Jackson | Data models, structural constraints, small scope | Alloy 6 (adds temporal)  |
 
 ### Why testing is insufficient for concurrency
@@ -121,9 +125,10 @@ EBS that testing could not reach.
 A concurrent system with _n_ threads and _m_ states has _m^n_ possible
 interleavings. Tests exercise a handful. A model checker explores all of them.
 
-Hillel Wayne found a concurrency bug in 31 minutes with TLA+ that took 16 hours
-to find with unit tests. The bug existed in an interleaving that tests never
-hit.
+Hillel Wayne modeled Tom Cargill's `BoundedBuffer` challenge in TLA+ and found
+the deadlock bug in 31 minutes. Don Wells solved the same challenge with unit
+tests in 16 hours. The bug existed in a `notify()` interleaving that tests
+rarely hit.
 
 ### What TLA+ specifications look like
 
@@ -206,6 +211,7 @@ insufficient.
 - Bertrand Meyer — _Object-Oriented Software Construction_ (1997)
 - Hillel Wayne — [learntla.com](https://learntla.com) (free tutorial)
 - AWS — _How Amazon Web Services Uses Formal Methods_ (CACM 2015)
+- AWS — _Systems Correctness Practices at AWS_ (CACM 2024)
 
 ## See Also
 
