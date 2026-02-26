@@ -25,7 +25,8 @@ Commands, syntax, quick reference.
 | `debugging.md`           | pdb, lldb, strace/dtruss, py-spy, hyperfine, flame graphs   |
 | `diagramming.md`         | Diagram types, Mermaid syntax, ASCII patterns, concept maps |
 | `docker.md`              | Images, containers, Dockerfile, Compose, networking         |
-| `filesystem.md`          | FHS, inodes, permissions, locking, atomic ops, inotify      |
+| `filesystem.md`          | FHS, inodes, permissions, file descriptors, security        |
+| `filesystem-advanced.md` | Atomic operations, locking, inotify/FSEvents, performance   |
 | `git.md`                 | Commits, branches, merging, rebasing, remotes, workflows    |
 | `http.md`                | curl, headers, status codes, REST conventions               |
 | `jq.md`                  | JSON processing, filters, transforms, practical examples    |
@@ -66,6 +67,7 @@ Mental models, principles, frameworks.
 | `problem-solving.md`          | Polya's method, divide-and-conquer, rubber duck          |
 | `testing.md`                  | Pyramid, strategy, doubles, TDD, anti-patterns           |
 | `reasoning.md`                | Fallacies, cognitive biases, debiasing, System 1/2       |
+| `specification.md`            | Specification spectrum, DbC, TLA+, agent constraints     |
 | `thinking.md`                 | Mental models, systems thinking, asking good questions   |
 
 ### learn/
@@ -93,6 +95,7 @@ Progressive lesson plans with exercises.
 | `concurrency-lesson-plan.md`              | 8 lessons on threads, channels, async across Go/Python/Rust |
 | `information-architecture-lesson-plan.md` | 8 lessons from organization to full audit                   |
 | `reasoning-lesson-plan.md`                | 8 lessons from fallacies to systemic debiasing              |
+| `specification-lesson-plan.md`            | 8 lessons from decision tables to TLA+ and agent contracts  |
 | `system-design-lesson-plan.md`            | 8 lessons from single server to distributed                 |
 
 ## Commands
@@ -103,5 +106,5 @@ make format    # Format with prettier
 make fix       # Format then lint
 make sync      # Download vale style packages
 make setup     # Install git hooks
-make new       # Create new guide (NAME=foo TYPE=how|why)
+make new       # Create new guide (NAME=foo TYPE=how|why|learn)
 ```
