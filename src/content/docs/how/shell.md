@@ -37,6 +37,33 @@ ${var:+alt}        # Use alt if var IS set
 ${var:?error msg}  # Exit with error if unset/empty
 ```
 
+## Command Substitution
+
+`$()` runs a command and substitutes its output. Use it to capture results into
+variables or embed output in strings.
+
+```bash
+# Assign output to a variable
+current_branch=$(git branch --show-current)
+
+# Embed in a string
+tar czf "backup-$(date +%Y%m%d).tar.gz" ./src
+
+# Capture output and check status
+if output=$(git pull 2>&1); then
+    echo "Success: $output"
+else
+    echo "Failed: $output"
+fi
+
+# Capture exit code
+some_command
+status=$?
+```
+
+> See [CLI Pipelines](cli-pipelines.md#command-substitution) for `$()` used in
+> pipeline composition — inline arguments, nesting, and fzf selection.
+
 ## String Operations
 
 ```bash
@@ -196,7 +223,7 @@ while IFS= read -r line; do
   echo "$line"
 done < input.txt
 
-# Read lines from command
+# Read lines from command (see CLI Pipelines for process substitution)
 while IFS= read -r line; do
   echo "$line"
 done < <(some_command)
@@ -257,17 +284,30 @@ read -rsp "Password: " pass
 read -rt 5 -p "Quick! " answer
 ```
 
-### Here Documents
+### Here Documents and Here Strings
 
 ```bash
+# Here document — multi-line input with variable expansion
 cat <<EOF
 Line 1
 Line 2 with $variable expansion
 EOF
 
+# Quoted delimiter — suppress expansion
 cat <<'EOF'
 Line with $literal dollar signs
 EOF
+
+# Indented (<<- strips leading tabs)
+if true; then
+	cat <<-EOF
+	indented body
+	EOF
+fi
+
+# Here string — single-line input
+grep "error" <<< "$log_output"
+bc <<< "2 ^ 10"                      # 1024
 ```
 
 ### Redirection
@@ -382,6 +422,8 @@ spinner $!
 
 ## See Also
 
+- [CLI Pipelines](cli-pipelines.md) — Pipes, xargs, fzf, process substitution,
+  and composing commands into data streams
 - [Cryptography](cryptography.md) — openssl commands for scripting
 - [Regex](regex.md) — Pattern matching in scripts
 - [Unix](unix.md) — Individual commands used in scripts

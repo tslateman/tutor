@@ -194,21 +194,8 @@ git show $(git log --oneline | fzf --preview 'git show {1}' | awk '{print $1}')
 
 ## Here Documents and Here Strings
 
-Feed multi-line or single-line input without temp files.
-
-```bash
-# Here document (multi-line input)
-cat <<EOF
-line one
-line two
-EOF
-
-# Here string (single-line input)
-grep "error" <<< "$log_output"
-
-# Useful for commands that read stdin
-bc <<< "2 ^ 10"                      # 1024
-```
+> See [Shell Scripting](shell.md#here-documents-and-here-strings) for heredoc
+> syntax, quoting variants, and here strings.
 
 ## Tee
 
@@ -227,23 +214,10 @@ echo "log entry" | tee -a debug.log
 
 ## Variable Capture Patterns
 
-```bash
-# Capture exit code
-some_command
-status=$?
-
-# Capture output and check status
-if output=$(git pull 2>&1); then
-    echo "Success: $output"
-else
-    echo "Failed: $output"
-fi
-
-# Read line by line from a command
-while IFS= read -r line; do
-    echo "Processing: $line"
-done < <(find . -name "*.md")
-```
+> See [Shell Scripting](shell.md#command-substitution) for variable assignment,
+> exit status (`$?`), and output capture. The `while read` loop fed by process
+> substitution `< <(cmd)` combines a shell loop with
+> [process substitution](#process-substitution).
 
 ## Combining Patterns
 
@@ -292,6 +266,7 @@ comm -23 \
 
 ## See Also
 
-- [Shell Scripting](shell.md) — Variables, functions, control flow
+- [Shell Scripting](shell.md) — Variables, heredocs, functions, loops, and error
+  handling for scripts that use these pipeline patterns
 - [Unix CLI](unix.md) — Core commands for file ops and text processing
 - [jq](jq.md) — JSON processing in pipelines

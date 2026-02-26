@@ -1,4 +1,4 @@
-.PHONY: help lint format check fix setup sync prose links new dev build preview
+.PHONY: help lint format check fix setup sync prose links new dev build preview check-refs check-counts
 
 help:
 	@echo "Usage: make [target]"
@@ -75,3 +75,35 @@ ifndef TYPE
 	$(error TYPE is required. Usage: make new NAME=kubernetes TYPE=how)
 endif
 	@./scripts/new-guide.sh "$(NAME)" "$(TYPE)"
+
+# Verify See Also links resolve to actual files
+check-refs:
+	@err=0; \
+	for f in src/content/docs/**/*.md; do \
+		dir=$$(dirname "$$f"); \
+		sed -n '/^## See Also/,/^## /p' "$$f" \
+		| grep -oE '\([^)]+\.md\)' \
+		| tr -d '()' \
+		| grep -v '^http' \
+		| while read -r link; do \
+			target="$$dir/$$link"; \
+			if [ ! -f "$$target" ]; then \
+				echo "BROKEN: $$f -> $$link"; \
+				exit 1; \
+			fi; \
+		done || err=1; \
+	done; \
+	if [ "$$err" = "1" ]; then exit 1; fi
+
+# Verify CLAUDE.md table row counts match actual file counts
+check-counts:
+	@err=0; \
+	for dir in how why learn; do \
+		actual=$$(find src/content/docs/$$dir -maxdepth 1 -name '*.md' | wc -l | tr -d ' '); \
+		listed=$$(sed -n "/^### $$dir\//,/^##[# ]/p" CLAUDE.md | grep -c '| `.*\.md`'); \
+		if [ "$$actual" != "$$listed" ]; then \
+			echo "MISMATCH: $$dir/ has $$actual files but CLAUDE.md lists $$listed"; \
+			err=1; \
+		fi; \
+	done; \
+	if [ "$$err" = "1" ]; then exit 1; fi

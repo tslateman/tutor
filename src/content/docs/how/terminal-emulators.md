@@ -32,8 +32,8 @@ instant replay. If a terminal feature exists, iTerm2 probably has it.
 into native iTerm2 tabs and tmux panes into native splits. You get tmux session
 persistence with macOS-native UI — no prefix keys, native scrollback, trackpad
 resize. See the
-[tmux lesson plan](../learn/tmux-lesson-plan.md#lesson-9-iterm2-integration) for
-details.
+[tmux lesson plan](../learn/tmux-lesson-plan.md#terminal-emulator-integration)
+for details.
 
 **Semantic History.** `Cmd+Click` on file paths in terminal output opens them in
 your editor. Understands `filename:line_number` to jump to the right line. Works
@@ -128,6 +128,6 @@ those who depend on `-CC` integration, broadcast input, or the scripting API.
 - [Ghostty Lesson Plan](../learn/ghostty-lesson-plan.md) — 8-lesson progressive
   curriculum
 - [tmux Lesson Plan](../learn/tmux-lesson-plan.md) — Includes iTerm2 `-CC`
-  integration in Lesson 9
+  integration in Lesson 8
 - [Ghostty Documentation](https://ghostty.org/docs)
 - [iTerm2 Documentation](https://iterm2.com/documentation.html)

@@ -377,9 +377,9 @@ Run your script. It creates your ideal workspace in one command.
 
 ---
 
-## Lesson 8: Advanced Tricks
+## Lesson 8: Advanced Tricks and Integration
 
-**Goal:** Power user techniques.
+**Goal:** Power user techniques and terminal emulator integration.
 
 ### Exercises
 
@@ -426,50 +426,13 @@ Run your script. It creates your ideal workspace in one command.
 
 Sync 3 panes. Run `uptime` in all of them simultaneously.
 
----
+### Terminal Emulator Integration
 
-## Practice Projects
-
-### Project 1: Monitoring Dashboard
-
-Create a session with:
-
-- Window 1: `htop`
-- Window 2: Split into 4 panes showing different log files
-
-### Project 2: Dev Environment
-
-Script that creates:
-
-- Window "code": editor
-- Window "run": split with server and file watcher
-- Window "test": test runner
-- Window "git": git status and lazygit
-
-### Project 3: SSH Resilience
-
-SSH to a server, start tmux, run a long job, disconnect intentionally,
-reconnect, verify job continued.
-
----
-
-## Lesson 9: iTerm2 Integration
-
-**Goal:** Use tmux with iTerm2's native integration for a smoother experience.
-
-### Concepts
-
-iTerm2 has a Control Center mode (`-CC`) that makes tmux feel native:
-
-- tmux windows become iTerm tabs
-- tmux panes become iTerm split panes
-- Native scrollback instead of tmux's limited buffer
-- Native copy/paste, search, and selection
-- No prefix keys needed for common operations
-
-The session still persists when you close iTerm.
-
-### Exercises
+iTerm2's Control mode (`-CC`) makes tmux feel native: tmux windows become iTerm
+tabs, tmux panes become iTerm splits, and you get native scrollback, copy/paste,
+and search. The session persists when you close iTerm. See
+[Terminal Emulators](../how/terminal-emulators.md) for a full comparison of
+`-CC` mode vs standard tmux and guidance on when each approach fits.
 
 1. **Start an integrated session**
 
@@ -477,7 +440,7 @@ The session still persists when you close iTerm.
    tmux -CC new -s integrated
    ```
 
-   Notice: iTerm takes over the UI. The window looks like a normal iTerm window.
+   iTerm takes over the UI. The window looks like a normal iTerm window.
 
 2. **Use native shortcuts**
 
@@ -504,7 +467,7 @@ The session still persists when you close iTerm.
    Cmd+F              # Search (iTerm's search, not tmux copy mode)
    ```
 
-4. **Detach and reattach**
+4. **Detach and reattach through -CC**
 
    ```bash
    # Option 1: Close iTerm entirely (Cmd+Q)
@@ -516,7 +479,7 @@ The session still persists when you close iTerm.
 
 5. **Configure iTerm for tmux**
 
-   Open iTerm Preferences (Cmd+,) → General → tmux:
+   Open iTerm Preferences (Cmd+,) then General then tmux:
    - "Open tmux windows as": Tabs in a new window
    - Check "Automatically hide the tmux client session"
    - Check "When attaching, restore windows as tabs"
@@ -538,20 +501,36 @@ The session still persists when you close iTerm.
    Cmd+Shift+I        # Detach from integration, return to normal iTerm
    ```
 
-### When to use -CC vs regular tmux
-
-| Use -CC when...                 | Use regular tmux when...           |
-| ------------------------------- | ---------------------------------- |
-| Working locally on Mac          | SSH'd into a remote server         |
-| You prefer native Mac shortcuts | You want consistent cross-platform |
-| You want unlimited scrollback   | You need multiple clients viewing  |
-| You're already an iTerm user    | You use a different terminal       |
-
-### Checkpoint
+### Final Checkpoint
 
 Start `tmux -CC new -s test`. Create 3 tabs and split one into panes using only
 Cmd shortcuts. Close iTerm entirely. Reopen and run `tmux -CC attach -t test`.
 Everything should restore.
+
+---
+
+## Practice Projects
+
+### Project 1: Monitoring Dashboard
+
+Create a session with:
+
+- Window 1: `htop`
+- Window 2: Split into 4 panes showing different log files
+
+### Project 2: Dev Environment
+
+Script that creates:
+
+- Window "code": editor
+- Window "run": split with server and file watcher
+- Window "test": test runner
+- Window "git": git status and lazygit
+
+### Project 3: SSH Resilience
+
+SSH to a server, start tmux, run a long job, disconnect intentionally,
+reconnect, verify job continued.
 
 ---
 
