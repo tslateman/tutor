@@ -97,6 +97,7 @@ export default defineConfig({
                 { label: "API Design", slug: "why/api-design" },
                 { label: "Information Architecture", slug: "why/information-architecture" },
                 { label: "Knowledge Design", slug: "why/knowledge-design" },
+                { label: "Specification", slug: "why/specification" },
               ],
             },
             {
@@ -141,6 +142,7 @@ export default defineConfig({
                 { label: "Concurrency", slug: "learn/concurrency-lesson-plan" },
                 { label: "Security", slug: "learn/security-lesson-plan" },
                 { label: "Cryptography", slug: "learn/cryptography-lesson-plan" },
+                { label: "Specification", slug: "learn/specification-lesson-plan" },
               ],
             },
             {

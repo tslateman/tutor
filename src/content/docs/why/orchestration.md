@@ -209,3 +209,5 @@ from ambition.
 - [Thinking](thinking.md) -- Systems thinking for feedback loops and delays
 - [Agentic Workflows Lesson Plan](../learn/agentic-workflows-lesson-plan.md) --
   Progressive lessons on building agent systems
+- [Specification](specification.md) -- Agent contracts and constraint
+  specification

@@ -849,3 +849,5 @@ minutes and measure how many tasks complete correctly.
 - [Agentic Engineering Book](https://jayminwest.com/agentic-engineering-book) --
   Comprehensive practitioner guide to prompts, models, context, and tooling;
   local copy at `~/dev/opt/agentic-engineering-book`
+- [Specification Lesson Plan](specification-lesson-plan.md) -- Decision tables,
+  Design by Contract, TLA+, and agent constraint specification

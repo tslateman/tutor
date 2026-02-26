@@ -192,7 +192,13 @@ Property-based: for any list L, sort(L) has same length as L
                 for any list L, sort(L) contains same elements as L
 ```
 
-Properties find edge cases humans don't think of. Use for:
+Properties find edge cases humans don't think of. Property-based tests are
+_executable specifications_ — they define what must hold, and the framework
+verifies it across thousands of inputs. Tools: Hypothesis (Python), QuickCheck
+(Haskell, ported widely), `icontract-hypothesis` (bridges Design by Contract
+with automatic test generation).
+
+Use for:
 
 - Pure functions with clear invariants
 - Serialization round-trips (encode then decode = identity)
@@ -225,3 +231,5 @@ You have enough tests when:
   finds the cause
 - [Complexity](complexity.md) — Hard-to-test code is a complexity symptom
 - [Thinking](thinking.md) — Testing is hypothesis verification applied to code
+- [Specification](specification.md) — Property-based testing as executable
+  specification; Design by Contract

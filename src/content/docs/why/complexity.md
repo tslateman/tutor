@@ -207,3 +207,5 @@ usually less than the cost of maintaining unused flexibility now.
 - [Reasoning](reasoning.md) — Cognitive biases that create accidental complexity
 - [Orchestration](orchestration.md) — Complexity in agent coordination
 - [Thinking](thinking.md) — Systems thinking helps manage complexity
+- [Specification](specification.md) — Specification defines abstraction
+  boundaries
