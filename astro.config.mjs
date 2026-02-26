@@ -53,6 +53,7 @@ export default defineConfig({
                 { label: "HTTP", slug: "how/http" },
                 { label: "PostgreSQL", slug: "how/postgres" },
                 { label: "Kubernetes", slug: "how/k8s" },
+                { label: "System Design", slug: "how/system-design" },
                 { label: "Performance", slug: "how/performance" },
                 { label: "jq", slug: "how/jq" },
               ],
