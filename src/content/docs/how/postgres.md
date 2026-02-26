@@ -25,3 +25,13 @@ psql -l                 # List databases
 | `\l`    | List databases |
 
 | `
+
+## See Also
+
+- [SQL](sql.md) — Portable SQL syntax: joins, CTEs, window functions
+- [Performance](performance.md) — Profiling and benchmarking, including database
+  queries
+- [Docker](docker.md) — Running PostgreSQL in containers
+- [Kubernetes](k8s.md) — Deploying PostgreSQL on k8s
+- [Data Models Lesson Plan](../learn/data-models-lesson-plan.md) — ER diagrams
+  to model selection

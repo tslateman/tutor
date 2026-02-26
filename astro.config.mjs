@@ -49,6 +49,7 @@ export default defineConfig({
                 { label: "Unix CLI", slug: "how/unix" },
                 { label: "macOS", slug: "how/macos" },
                 { label: "Filesystem", slug: "how/filesystem" },
+                { label: "Filesystem (Advanced)", slug: "how/filesystem-advanced" },
                 { label: "HTTP", slug: "how/http" },
                 { label: "PostgreSQL", slug: "how/postgres" },
                 { label: "Kubernetes", slug: "how/k8s" },

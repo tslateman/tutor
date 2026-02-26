@@ -563,3 +563,13 @@ Everything should restore.
 | Daily    | `C-b z` `C-b [` `C-b s` `C-b w` `C-b ,` `C-b x`    |
 | Power    | `C-b :` `C-b !` `C-b &` sync-panes, scripting      |
 | iTerm    | `Cmd+T` `Cmd+D` `Cmd+Shift+D` `Cmd+Option+Arrow`   |
+
+## See Also
+
+- [tmux](../how/tmux.md) — Quick reference: key bindings, config, scripting
+- [Terminal Emulators](../how/terminal-emulators.md) — iTerm2 vs Ghostty, tmux
+  -CC integration
+- [Ghostty Lesson Plan](ghostty-lesson-plan.md) — 8 lessons for the terminal
+  emulator alongside tmux
+- [Operating Systems Lesson Plan](operating-systems-lesson-plan.md) — Processes,
+  signals, and the environment tmux manages
