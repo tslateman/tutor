@@ -135,6 +135,7 @@ export default defineConfig({
                 { label: "TypeScript", slug: "learn/typescript-lesson-plan" },
                 { label: "Rust", slug: "learn/rust-lesson-plan" },
                 { label: "Go", slug: "learn/golang-lesson-plan" },
+                { label: "Regex", slug: "learn/regex-lesson-plan" },
               ],
             },
             {
@@ -142,9 +143,9 @@ export default defineConfig({
               items: [
                 { label: "Git", slug: "learn/git-lesson-plan" },
                 { label: "GitHub", slug: "learn/github-lesson-plan" },
+                { label: "Docker", slug: "learn/docker-lesson-plan" },
                 { label: "tmux", slug: "learn/tmux-lesson-plan" },
                 { label: "Ghostty", slug: "learn/ghostty-lesson-plan" },
-                { label: "Docker", slug: "learn/docker-lesson-plan" },
                 {
                   label: "Operating Systems",
                   slug: "learn/operating-systems-lesson-plan",

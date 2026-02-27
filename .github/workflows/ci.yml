@@ -37,6 +37,7 @@ jobs:
           make check-refs
           make check-counts
           make audit-sidebar
+          make check-structure
 
       - name: Check formatting
         run: make check

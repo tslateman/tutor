@@ -309,4 +309,6 @@ sed -E 's/(group)/\1/'              # Backreference (ERE)
 - [Shell](shell.md) — grep, sed, awk patterns that use regex
 - [CLI Pipelines](cli-pipelines.md) — Text processing with pipes
 - [Python](python.md) — `re` module usage
+- [Regex Lesson Plan](../learn/regex-lesson-plan.md) — 8 lessons from literals
+  to lookahead and extraction
 - [jq](jq.md) — JSON filtering with regex tests

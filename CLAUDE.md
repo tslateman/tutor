@@ -93,6 +93,7 @@ Progressive lesson plans with exercises.
 | `operating-systems-lesson-plan.md`        | 8 lessons from processes to system call tracing             |
 | `python-lesson-plan.md`                   | 8 lessons from basics to async                              |
 | `reasoning-lesson-plan.md`                | 8 lessons from fallacies to systemic debiasing              |
+| `regex-lesson-plan.md`                    | 8 lessons from literals to lookahead and extraction         |
 | `rust-lesson-plan.md`                     | 8 lessons from ownership to lifetimes                       |
 | `security-lesson-plan.md`                 | 8 lessons from threat modeling to OWASP Top 10              |
 | `specification-lesson-plan.md`            | 8 lessons from decision tables to TLA+ and agent contracts  |

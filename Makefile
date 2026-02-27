@@ -1,4 +1,4 @@
-.PHONY: help lint format check fix setup sync prose links new dev build preview check-refs check-counts audit-sidebar
+.PHONY: help lint format check fix setup sync prose links new dev build preview check-refs check-counts audit-sidebar check-structure
 
 help:
 	@echo "Usage: make [target]"
@@ -17,6 +17,7 @@ help:
 	@echo "  links   Check markdown links (internal only)"
 	@echo "  new           Create new guide (NAME=foo TYPE=how|why|learn)"
 	@echo "  audit-sidebar Verify all docs appear in sidebar"
+	@echo "  check-structure  Verify lesson plan structure"
 
 # Astro dev server
 dev:
@@ -132,3 +133,7 @@ audit-sidebar:
 	done; \
 	if [ "$$err" = "1" ]; then exit 1; fi; \
 	echo "All docs verified in sidebar"
+
+# Verify lesson plan structure (8 lessons, required sections)
+check-structure:
+	@./scripts/check-lesson-structure.sh
