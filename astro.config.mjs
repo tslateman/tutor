@@ -1,11 +1,38 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import { visit } from "unist-util-visit";
+import path from "node:path";
+
+function remarkRewriteMdLinks() {
+  // @ts-ignore – remark passes untyped tree/file in plain JS
+  return (tree, file) => {
+    visit(tree, "link", (node) => {
+      const url = node.url;
+      // Skip external links, anchors, and non-.md links
+      if (!url || url.startsWith("http") || url.startsWith("#") || !url.endsWith(".md")) return;
+
+      // Resolve the link target relative to the source file's directory
+      const sourceDir = path.dirname(file.history[0]);
+      const resolved = path.resolve(sourceDir, url);
+
+      // Compute slug relative to src/content/docs/
+      const docsRoot = path.resolve("src/content/docs");
+      const rel = path.relative(docsRoot, resolved); // e.g. "learn/git-lesson-plan.md"
+      const slug = rel.replace(/\.md$/, ""); // e.g. "learn/git-lesson-plan"
+
+      node.url = `/tutor/${slug}/`;
+    });
+  };
+}
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://tslateman.github.io",
   base: "/tutor",
+  markdown: {
+    remarkPlugins: [remarkRewriteMdLinks],
+  },
   integrations: [
     starlight({
       title: "Tutor",
