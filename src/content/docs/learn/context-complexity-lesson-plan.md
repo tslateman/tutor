@@ -8,6 +8,12 @@ description:
 A progressive curriculum for treating context as a finite resource and
 complexity as its overflow.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Experience reading and modifying existing codebases.
+Familiarity with [Complexity](../why/complexity.md) concepts helps.
+:::
+
 ## Lesson 1: Context as Resource
 
 **Goal:** Recognize that working memory is limited and learn techniques to stay

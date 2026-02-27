@@ -7,6 +7,12 @@ description:
 
 Verify open source repos and dependencies before use.
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[Security Lesson Plan](../learn/security-lesson-plan.md).
+:::
+
 ## Quick Start
 
 ```bash

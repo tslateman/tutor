@@ -8,6 +8,12 @@ description:
 Application security beyond cryptography -- threat modeling, authentication,
 authorization, and the defenses that keep real systems from getting owned.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Working knowledge of [HTTP](../how/http.md) and
+[Unix CLI](../how/unix.md). Basic familiarity with web applications.
+:::
+
 ## Lesson 1: Threat Modeling
 
 **Goal:** Systematically identify what can go wrong before writing a single line

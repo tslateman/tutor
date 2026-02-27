@@ -319,8 +319,14 @@ the habit; the learning compounds.
 | Coding practice    | Exercism, LeetCode, project-based learning |
 | Reading retention  | Readwise (syncs highlights to SRS)         |
 
-## Sources
+## See Also
 
+- [Knowledge Design](knowledge-design.md) — Structuring knowledge for transfer
+  (the teaching side of learning)
+- [Complexity](complexity.md) — Chunking relates to managing cognitive load
+- [Learning a Programming Language](../how/learning-a-language.md)
+- [Technical Writing](../learn/technical-writing-lesson-plan.md)
+- [Agent Memory](agent-memory.md)
 - Dunlosky et al. (2013).
   [Improving Students' Learning With Effective Learning Techniques](https://doi.org/10.1177/1529100612453266).
   Psychological Science in the Public Interest.
@@ -336,12 +342,3 @@ the habit; the learning compounds.
 - Roediger & Butler (2011).
   [The Critical Role of Retrieval Practice in Long-Term Retention](https://doi.org/10.1016/j.tics.2010.09.003).
   Trends in Cognitive Sciences.
-
-## See Also
-
-- [Knowledge Design](knowledge-design.md) — Structuring knowledge for transfer
-  (the teaching side of learning)
-- [Complexity](complexity.md) — Chunking relates to managing cognitive load
-- [Learning a Programming Language](../how/learning-a-language.md)
-- [Technical Writing](../learn/technical-writing-lesson-plan.md)
-- [Agent Memory](agent-memory.md)

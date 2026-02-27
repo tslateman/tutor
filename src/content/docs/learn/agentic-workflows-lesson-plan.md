@@ -8,6 +8,13 @@ description:
 Orchestration patterns, failure modes, and engineering discipline for managing
 AI agents that do real work.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Comfortable with [Git](../how/git.md) and
+[Shell Scripting](../how/shell.md). Familiarity with at least one programming
+language.
+:::
+
 ## Lesson 1: The Agent as Worker
 
 **Goal:** Distinguish agents from functions and identify when agent delegation

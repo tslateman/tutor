@@ -11,6 +11,12 @@ systems of IA applied to repos, docs directories, and README files.
 Reference: Rosenfeld, Morville & Arango, _Information Architecture_ (4th ed.)
 and the [Diataxis framework](https://diataxis.fr/).
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Experience organizing content or documentation. No
+technical prerequisites.
+:::
+
 ## Lesson 1: What Is Information Architecture
 
 **Goal:** Learn the four systems that govern findability in a codebase.

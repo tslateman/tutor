@@ -5,6 +5,12 @@ description:
   distributed patterns"
 ---
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[System Design Lesson Plan](../learn/system-design-lesson-plan.md).
+:::
+
 ## Quick Reference
 
 | Concept            | When to Use                            | Key Trade-off                               |

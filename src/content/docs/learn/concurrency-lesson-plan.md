@@ -8,6 +8,12 @@ description:
 A progressive curriculum to master concurrency patterns through hands-on
 practice.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Working knowledge of [Python](../how/python.md) or
+[Go](../how/shell.md). Basic understanding of processes and threads.
+:::
+
 ## Lesson 1: Processes, Threads, and Coroutines
 
 **Goal:** Distinguish concurrency from parallelism and understand the three main

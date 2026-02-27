@@ -9,6 +9,12 @@ Recognizing flawed reasoning in others is easy. Catching it in yourself is the
 real skill. This plan builds from external detection to internal awareness to
 systemic change.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+No technical prerequisites. Willingness to examine your
+own thinking.
+:::
+
 ## Lesson 1: Logical Fallacies — Spotting Broken Arguments
 
 **Goal:** Identify common reasoning errors in technical arguments.

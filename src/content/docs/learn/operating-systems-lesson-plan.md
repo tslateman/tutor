@@ -8,6 +8,12 @@ description:
 A progressive curriculum to understand how your OS works by observing it
 directly.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Comfortable with [Unix CLI](../how/unix.md) and
+[Shell Scripting](../how/shell.md).
+:::
+
 ## Lesson 1: Processes
 
 **Goal:** Understand what a process is, how processes are created, and how to

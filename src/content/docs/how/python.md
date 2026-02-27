@@ -5,6 +5,12 @@ description:
   async patterns.
 ---
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[Python Lesson Plan](../learn/python-lesson-plan.md).
+:::
+
 ## Data Structures
 
 ### Lists

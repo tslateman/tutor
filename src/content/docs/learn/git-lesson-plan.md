@@ -7,6 +7,12 @@ description:
 
 A progressive curriculum to master git through hands-on practice.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Comfortable with [Unix CLI](../how/unix.md) basics —
+navigating directories, creating files.
+:::
+
 ## Lesson 1: First Commit
 
 **Goal:** Understand the basic commit workflow.

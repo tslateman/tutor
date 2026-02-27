@@ -7,6 +7,12 @@ description:
 
 A progressive curriculum to master TypeScript through hands-on practice.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Working knowledge of JavaScript. Comfortable with
+[Unix CLI](../how/unix.md) and npm.
+:::
+
 ## Lesson 1: First Steps
 
 **Goal:** Set up TypeScript and understand basic types.

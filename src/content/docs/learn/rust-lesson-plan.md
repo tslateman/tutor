@@ -7,6 +7,12 @@ description:
 
 A progressive curriculum to master Rust through hands-on practice.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Experience with at least one systems or compiled
+language. Comfortable with [Unix CLI](../how/unix.md).
+:::
+
 ## Lesson 1: First Steps
 
 **Goal:** Run Rust and understand basic syntax.

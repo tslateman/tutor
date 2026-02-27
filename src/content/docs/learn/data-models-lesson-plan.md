@@ -8,6 +8,12 @@ description:
 How you model data shapes everything downstream -- queries, APIs, UIs,
 performance, team boundaries.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Basic [SQL](../how/sql.md) and familiarity with at least
+one programming language.
+:::
+
 ## Lesson 1: Entities and Relationships
 
 **Goal:** Identify the nouns in a system and how they relate to each other.

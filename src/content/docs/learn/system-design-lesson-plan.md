@@ -8,6 +8,12 @@ description:
 How to think about building systems that handle real traffic -- from one server
 to many, and all the tradeoffs along the way.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Working knowledge of [HTTP](../how/http.md),
+[SQL](../how/sql.md), and basic [Unix CLI](../how/unix.md).
+:::
+
 ## Lesson 1: Single-Server Foundations
 
 **Goal:** Understand what one machine can handle and learn to measure its limits

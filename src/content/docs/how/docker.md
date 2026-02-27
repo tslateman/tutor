@@ -5,6 +5,12 @@ description:
   networking.
 ---
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[Docker Lesson Plan](../learn/docker-lesson-plan.md).
+:::
+
 ## Images
 
 ### Listing & Inspecting

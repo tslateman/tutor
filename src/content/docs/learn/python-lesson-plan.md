@@ -7,6 +7,12 @@ description:
 
 A progressive curriculum to master Python through hands-on practice.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Comfortable with [Unix CLI](../how/unix.md) basics. No
+prior Python experience needed.
+:::
+
 ## Lesson 1: First Steps
 
 **Goal:** Run Python and understand basic types.

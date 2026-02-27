@@ -5,6 +5,12 @@ description:
   workflows.
 ---
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn Git step by step? See the
+[Git Lesson Plan](../learn/git-lesson-plan.md).
+:::
+
 ## Configuration
 
 ```bash

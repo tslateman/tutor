@@ -7,6 +7,12 @@ description:
 
 Coordinate multiple AI coding agents for parallel and complex work.
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[Agentic Workflows Lesson Plan](../learn/agentic-workflows-lesson-plan.md).
+:::
+
 ## Core Concepts
 
 ### Task Decomposition

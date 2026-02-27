@@ -7,6 +7,12 @@ description:
 
 The default prefix key is `Ctrl+b` (shown as `C-b` below).
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[tmux Lesson Plan](../learn/tmux-lesson-plan.md).
+:::
+
 ## Sessions
 
 ### Command Line

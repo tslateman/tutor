@@ -7,6 +7,12 @@ description:
 
 Commands for hashing, encryption, certificates, and TLS inspection.
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn cryptography step by step? See the
+[Cryptography Lesson Plan](../learn/cryptography-lesson-plan.md).
+:::
+
 ## Hashing
 
 ```bash

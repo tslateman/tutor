@@ -8,6 +8,12 @@ description:
 How to structure shared information so people find what they need without
 asking.
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[Information Architecture Lesson Plan](../learn/information-architecture-lesson-plan.md).
+:::
+
 ## What It Is
 
 Information architecture is the structural design of shared information

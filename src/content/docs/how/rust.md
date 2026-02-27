@@ -5,6 +5,12 @@ description:
   cargo commands.
 ---
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[Rust Lesson Plan](../learn/rust-lesson-plan.md).
+:::
+
 ## Quick Reference
 
 | Concept             | Syntax/Example                      |

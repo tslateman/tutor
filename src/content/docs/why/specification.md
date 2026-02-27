@@ -14,6 +14,12 @@ system must do — is the skill that compounds in an era of automated execution.
 > "If you're thinking without writing, you only think you're thinking." — Leslie
 > Lamport
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[Specification Lesson Plan](../learn/specification-lesson-plan.md).
+:::
+
 ## The Specification-Execution Spectrum
 
 Every specification sits on a spectrum from informal to formal. Match the level
@@ -193,25 +199,16 @@ Ask three people to implement the same specification independently. If they
 produce meaningfully different implementations, the specification is
 insufficient.
 
-## Key Quotes
-
-- "There are two ways of constructing software: One way is to make it so simple
-  that there are obviously no deficiencies. The other way is to make it so
-  complicated that there are no obvious deficiencies." — C.A.R. Hoare
-- "The hardest single part of building a software system is deciding precisely
-  what to build." — Fred Brooks
-- "Specifications are thinking tools, not proof systems." — Hillel Wayne
-- "Prompt engineering is tactical execution; specification is strategic intent."
-
-## Further Reading
-
-- Leslie Lamport — _Specifying Systems_ (2002, free PDF)
-- Hillel Wayne — _Practical TLA+_ (2018)
-- Daniel Jackson — _The Essence of Software_ (2021)
-- Bertrand Meyer — _Object-Oriented Software Construction_ (1997)
-- Hillel Wayne — [learntla.com](https://learntla.com) (free tutorial)
-- AWS — _How Amazon Web Services Uses Formal Methods_ (CACM 2015)
-- AWS — _Systems Correctness Practices at AWS_ (CACM 2024)
+> "There are two ways of constructing software: One way is to make it so simple
+> that there are obviously no deficiencies. The other way is to make it so
+> complicated that there are no obvious deficiencies." — C.A.R. Hoare
+>
+> "The hardest single part of building a software system is deciding precisely
+> what to build." — Fred Brooks
+>
+> "Specifications are thinking tools, not proof systems." — Hillel Wayne
+>
+> "Prompt engineering is tactical execution; specification is strategic intent."
 
 ## See Also
 
@@ -223,3 +220,10 @@ insufficient.
 - [Thinking](thinking.md) — Specification as a thinking discipline
 - [Specification Lesson Plan](../learn/specification-lesson-plan.md) — Eight
   lessons from decision tables to TLA+
+- Leslie Lamport — _Specifying Systems_ (2002, free PDF)
+- Hillel Wayne — _Practical TLA+_ (2018)
+- Daniel Jackson — _The Essence of Software_ (2021)
+- Bertrand Meyer — _Object-Oriented Software Construction_ (1997)
+- Hillel Wayne — [learntla.com](https://learntla.com) (free tutorial)
+- AWS — _How Amazon Web Services Uses Formal Methods_ (CACM 2015)
+- AWS — _Systems Correctness Practices at AWS_ (CACM 2024)

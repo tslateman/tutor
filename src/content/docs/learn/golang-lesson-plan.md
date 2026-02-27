@@ -7,6 +7,12 @@ description:
 
 A progressive curriculum to master Go through hands-on practice.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Experience with at least one programming language.
+Comfortable with [Unix CLI](../how/unix.md).
+:::
+
 ## Lesson 1: First Steps
 
 **Goal:** Run Go and understand basic types.

@@ -7,6 +7,12 @@ description:
 
 A progressive curriculum to master tmux through hands-on practice.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Comfortable with [Unix CLI](../how/unix.md) basics —
+navigating, running commands.
+:::
+
 ## Lesson 1: First Contact
 
 **Goal:** Understand what tmux does and run your first session.

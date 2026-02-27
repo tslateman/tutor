@@ -6,6 +6,12 @@ description:
 
 A progressive curriculum to master Docker through hands-on practice.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Comfortable with [Unix CLI](../how/unix.md) and
+[Shell Scripting](../how/shell.md).
+:::
+
 ## Lesson 1: Images and Layers
 
 **Goal:** Understand how Docker images work and how layers affect builds.

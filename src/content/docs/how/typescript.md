@@ -5,6 +5,12 @@ description:
   type-level patterns.
 ---
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[TypeScript Lesson Plan](../learn/typescript-lesson-plan.md).
+:::
+
 ## Basic Types
 
 ```typescript

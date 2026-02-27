@@ -7,6 +7,12 @@ description:
 
 A progressive curriculum to master Ghostty through hands-on practice.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Comfortable with [Unix CLI](../how/unix.md). No prior
+terminal emulator configuration needed.
+:::
+
 ## Lesson 1: Installation and First Launch
 
 **Goal:** Install Ghostty and understand what makes it different.

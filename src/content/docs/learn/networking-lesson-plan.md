@@ -8,6 +8,12 @@ description:
 A progressive curriculum to understand computer networking by sending packets
 and inspecting what happens on the wire.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Comfortable with [Unix CLI](../how/unix.md) and basic
+[HTTP](../how/http.md) concepts.
+:::
+
 ## Lesson 1: The Network Stack
 
 **Goal:** Understand the layered model that makes networking work and see the

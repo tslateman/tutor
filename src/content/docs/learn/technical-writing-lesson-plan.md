@@ -9,6 +9,12 @@ A progressive curriculum based on Google's Technical Writing courses.
 
 Reference: [Technical Writing 101](https://lisafc.github.io/tw101-reading/)
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+No technical prerequisites. Experience writing anything —
+emails, docs, code comments.
+:::
+
 ## Lesson 1: Words
 
 **Goal:** Choose precise terminology and eliminate ambiguity.

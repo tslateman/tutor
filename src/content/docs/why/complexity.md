@@ -7,6 +7,12 @@ description:
 
 The central challenge of software engineering.
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[Context Complexity Lesson Plan](../learn/context-complexity-lesson-plan.md).
+:::
+
 ## The Fundamental Distinction
 
 | Type           | Source                 | Reducible?                  | Example                           |
@@ -183,24 +189,17 @@ complexity.
 **Resolution:** Bias toward simplicity. The cost of adding flexibility later is
 usually less than the cost of maintaining unused flexibility now.
 
-## Key Quotes
-
-- "Controlling complexity is the essence of computer programming." — Brian
-  Kernighan
-- "Simplicity is prerequisite for reliability." — Edsger Dijkstra
-- "There are two ways of constructing software: One way is to make it so simple
-  that there are obviously no deficiencies. The other way is to make it so
-  complicated that there are no obvious deficiencies." — C.A.R. Hoare
-- "The purpose of software engineering is to control complexity, not to create
-  it." — Pamela Zave
-
-## Further Reading
-
-- Fred Brooks — _No Silver Bullet_ (1986)
-- John Ousterhout — _A Philosophy of Software Design_ (2018)
-- Rich Hickey — _Simple Made Easy_ (2011 talk)
-- Sandi Metz — _Practical Object-Oriented Design_ (2012)
-- Dave Farley — _Modern Software Engineering_ (2021)
+> "Controlling complexity is the essence of computer programming." — Brian
+> Kernighan
+>
+> "Simplicity is prerequisite for reliability." — Edsger Dijkstra
+>
+> "There are two ways of constructing software: One way is to make it so simple
+> that there are obviously no deficiencies. The other way is to make it so
+> complicated that there are no obvious deficiencies." — C.A.R. Hoare
+>
+> "The purpose of software engineering is to control complexity, not to create
+> it." — Pamela Zave
 
 ## See Also
 
@@ -210,3 +209,8 @@ usually less than the cost of maintaining unused flexibility now.
 - [Specification](specification.md) — Specification defines abstraction
   boundaries
 - [Testing](testing.md) — Testing as complexity management
+- Fred Brooks — _No Silver Bullet_ (1986)
+- John Ousterhout — _A Philosophy of Software Design_ (2018)
+- Rich Hickey — _Simple Made Easy_ (2011 talk)
+- Sandi Metz — _Practical Object-Oriented Design_ (2012)
+- Dave Farley — _Modern Software Engineering_ (2021)

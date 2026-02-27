@@ -8,6 +8,12 @@ description:
 Learn to specify before you implement. Each lesson builds a different
 specification skill, progressing from pen-and-paper methods to formal tools.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Experience writing or reviewing software requirements.
+Familiarity with [Testing](../why/testing.md) concepts.
+:::
+
 ## Lesson 1: The Cost of Vagueness
 
 **Goal:** Experience specification failure firsthand.

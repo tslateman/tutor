@@ -8,6 +8,12 @@ description:
 Practical cryptography for engineers -- what to use, when, and why, without the
 math PhD.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Comfortable with [Shell Scripting](../how/shell.md) and
+[HTTP](../how/http.md) basics.
+:::
+
 ## Lesson 1: Hashing
 
 **Goal:** Understand hash functions, their properties, and practical uses.

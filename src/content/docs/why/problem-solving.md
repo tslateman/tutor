@@ -273,14 +273,15 @@ Techniques compose well:
 | **Analysis paralysis**     | Overthinking instead of experimenting           | Time-box analysis, then try something     |
 | **Complexity bias**        | Assuming hard problems need complex solutions   | Try the dumbest thing first               |
 
-## Key Quotes
-
-- "If you can't solve a problem, there is an easier problem you can solve: find
-  it." — George Polya
-- "The art of debugging is figuring out what you really told your program to do
-  rather than what you thought you told it to do." — Andrew Singer
-- "Weeks of coding can save you hours of planning." — Unknown
-- "Make it work, make it right, make it fast." — Kent Beck
+> "If you can't solve a problem, there is an easier problem you can solve: find
+> it." — George Polya
+>
+> "The art of debugging is figuring out what you really told your program to do
+> rather than what you thought you told it to do." — Andrew Singer
+>
+> "Weeks of coding can save you hours of planning." — Unknown
+>
+> "Make it work, make it right, make it fast." — Kent Beck
 
 ## See Also
 

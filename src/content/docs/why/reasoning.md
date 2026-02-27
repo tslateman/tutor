@@ -7,6 +7,12 @@ description:
 
 Your brain is a heuristic engine optimized for survival, not correctness.
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn this topic step by step? See the
+[Reasoning Lesson Plan](../learn/reasoning-lesson-plan.md).
+:::
+
 ## The Dual Process Model
 
 Daniel Kahneman's framework for how humans think.
@@ -252,24 +258,16 @@ time pressure, unclear requirements, missing guardrails.
 - **After an incident:** What system failed, not who failed? (attribution error)
 - **When confident:** Am I pattern-matching or reasoning? (System 1 vs 2)
 
-## Key Quotes
-
-- "The first principle is that you must not fool yourself — and you are the
-  easiest person to fool." — Richard Feynman
-- "It is difficult to get a man to understand something when his salary depends
-  on his not understanding it." — Upton Sinclair
-- "We don't see things as they are, we see them as we are." — Anais Nin
-- "The greatest enemy of knowledge is not ignorance, it is the illusion of
-  knowledge." — Daniel Boorstin
-
-## Further Reading
-
-- Daniel Kahneman — _Thinking, Fast and Slow_ (2011)
-- Philip Tetlock — _Superforecasting_ (2015)
-- Atul Gawande — _The Checklist Manifesto_ (2009)
-- Donella Meadows — _Thinking in Systems_ (2008)
-- Gary Klein — _Sources of Power_ (1998)
-- Buster Benson — "Cognitive Bias Codex" (2016)
+> "The first principle is that you must not fool yourself — and you are the
+> easiest person to fool." — Richard Feynman
+>
+> "It is difficult to get a man to understand something when his salary depends
+> on his not understanding it." — Upton Sinclair
+>
+> "We don't see things as they are, we see them as we are." — Anais Nin
+>
+> "The greatest enemy of knowledge is not ignorance, it is the illusion of
+> knowledge." — Daniel Boorstin
 
 ## See Also
 
@@ -279,3 +277,9 @@ time pressure, unclear requirements, missing guardrails.
 - [Complexity](complexity.md) — Essential vs accidental; the paradox of fighting
   complexity with complexity
 - [Reasoning](../learn/reasoning-lesson-plan.md)
+- Daniel Kahneman — _Thinking, Fast and Slow_ (2011)
+- Philip Tetlock — _Superforecasting_ (2015)
+- Atul Gawande — _The Checklist Manifesto_ (2009)
+- Donella Meadows — _Thinking in Systems_ (2008)
+- Gary Klein — _Sources of Power_ (1998)
+- Buster Benson — "Cognitive Bias Codex" (2016)

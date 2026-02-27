@@ -7,6 +7,12 @@ description:
 
 A progressive curriculum to master GitHub through hands-on practice.
 
+<!-- prettier-ignore -->
+:::note[Prerequisites]
+Working knowledge of [Git](../how/git.md) — commits,
+branches, and merges.
+:::
+
 ## Lesson 1: Repository Basics
 
 **Goal:** Create and configure repositories.
