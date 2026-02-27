@@ -15,7 +15,18 @@ if [ "$TYPE" != "how" ] && [ "$TYPE" != "why" ] && [ "$TYPE" != "learn" ]; then
   exit 1
 fi
 
-FILE="src/content/docs/$TYPE/$NAME.md"
+# Title-case the name: convert hyphens to spaces, capitalize each word
+# "api-design" → "Api Design", "system-design" → "System Design"
+TITLE=$(echo "$NAME" | tr '-' ' ' | awk '{for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2)}1')
+
+# Build slug: learn/ files get "-lesson-plan" suffix
+if [ "$TYPE" = "learn" ]; then
+  SLUG="$TYPE/${NAME}-lesson-plan"
+  FILE="src/content/docs/$TYPE/${NAME}-lesson-plan.md"
+else
+  SLUG="$TYPE/$NAME"
+  FILE="src/content/docs/$TYPE/$NAME.md"
+fi
 
 if [ -f "$FILE" ]; then
   echo "Error: $FILE already exists"
@@ -25,8 +36,8 @@ fi
 if [ "$TYPE" = "how" ]; then
   cat > "$FILE" <<EOF
 ---
-title: "${NAME^}"
-description: "Commands, syntax, and quick reference for ${NAME,,}."
+title: "$TITLE"
+description: "Commands, syntax, and quick reference for $NAME."
 ---
 
 ## Quick Reference
@@ -49,8 +60,8 @@ EOF
 elif [ "$TYPE" = "why" ]; then
   cat > "$FILE" <<EOF
 ---
-title: "${NAME^}"
-description: "Mental models and principles for ${NAME,,}."
+title: "$TITLE"
+description: "Mental models and principles for $NAME."
 ---
 
 ## Core Concepts
@@ -72,15 +83,15 @@ EOF
 else
   cat > "$FILE" <<EOF
 ---
-title: "${NAME^} Lesson Plan"
-description: "Eight lessons covering the fundamentals of ${NAME,,}, with progressive exercises and checkpoints."
+title: "$TITLE Lesson Plan"
+description: "Eight lessons covering the fundamentals of $NAME, with progressive exercises and checkpoints."
 ---
 
-A progressive curriculum to master ${NAME,,} through hands-on practice.
+A progressive curriculum to master $NAME through hands-on practice.
 
 ## Lesson 1: Foundations
 
-**Goal:** Understand the core concepts of ${NAME,,}.
+**Goal:** Understand the core concepts of $NAME.
 
 ### Concepts
 
@@ -148,8 +159,14 @@ Confirm progress before advancing.
 EOF
 fi
 
+SIDEBAR_LABEL="$TITLE"
+SIDEBAR_LINE="{ label: \"$SIDEBAR_LABEL\", slug: \"$SLUG\" }"
+
 echo "Created $FILE"
 echo ""
 echo "Next steps:"
-echo "  1. Update astro.config.mjs sidebar configuration for the '$TYPE' section"
+echo "  1. Add this line to astro.config.mjs sidebar (in the '$TYPE' section):"
+echo ""
+echo "     $SIDEBAR_LINE"
+echo ""
 echo "  2. Add content to the file"
