@@ -27,6 +27,7 @@ export default defineConfig({
                 { label: "SQL", slug: "how/sql" },
                 { label: "Regex", slug: "how/regex" },
                 { label: "Shell Scripting", slug: "how/shell" },
+                { label: "Python CLI", slug: "how/python-cli" },
               ],
             },
             {
@@ -40,7 +41,10 @@ export default defineConfig({
                 { label: "CI/CD", slug: "how/ci-cd" },
                 { label: "Debugging", slug: "how/debugging" },
                 { label: "Terminal Emulators", slug: "how/terminal-emulators" },
-                { label: "Learning a Language", slug: "how/learning-a-language" },
+                {
+                  label: "Learning a Language",
+                  slug: "how/learning-a-language",
+                },
               ],
             },
             {
@@ -49,7 +53,10 @@ export default defineConfig({
                 { label: "Unix CLI", slug: "how/unix" },
                 { label: "macOS", slug: "how/macos" },
                 { label: "Filesystem", slug: "how/filesystem" },
-                { label: "Filesystem (Advanced)", slug: "how/filesystem-advanced" },
+                {
+                  label: "Filesystem (Advanced)",
+                  slug: "how/filesystem-advanced",
+                },
                 { label: "HTTP", slug: "how/http" },
                 { label: "PostgreSQL", slug: "how/postgres" },
                 { label: "Kubernetes", slug: "how/k8s" },
@@ -63,7 +70,10 @@ export default defineConfig({
               items: [
                 { label: "AI CLI", slug: "how/ai-cli" },
                 { label: "Claude Code", slug: "how/claude-code" },
-                { label: "Agent Orchestration", slug: "how/agent-orchestration" },
+                {
+                  label: "Agent Orchestration",
+                  slug: "how/agent-orchestration",
+                },
                 { label: "CLI Pipelines", slug: "how/cli-pipelines" },
                 { label: "Diagramming", slug: "how/diagramming" },
               ],
@@ -96,7 +106,10 @@ export default defineConfig({
                 { label: "Complexity", slug: "why/complexity" },
                 { label: "Testing", slug: "why/testing" },
                 { label: "API Design", slug: "why/api-design" },
-                { label: "Information Architecture", slug: "why/information-architecture" },
+                {
+                  label: "Information Architecture",
+                  slug: "why/information-architecture",
+                },
                 { label: "Knowledge Design", slug: "why/knowledge-design" },
                 { label: "Specification", slug: "why/specification" },
               ],
@@ -131,34 +144,58 @@ export default defineConfig({
                 { label: "GitHub", slug: "learn/github-lesson-plan" },
                 { label: "tmux", slug: "learn/tmux-lesson-plan" },
                 { label: "Ghostty", slug: "learn/ghostty-lesson-plan" },
-                { label: "Operating Systems", slug: "learn/operating-systems-lesson-plan" },
+                {
+                  label: "Operating Systems",
+                  slug: "learn/operating-systems-lesson-plan",
+                },
                 { label: "Networking", slug: "learn/networking-lesson-plan" },
               ],
             },
             {
               label: "Engineering",
               items: [
-                { label: "System Design", slug: "learn/system-design-lesson-plan" },
+                {
+                  label: "System Design",
+                  slug: "learn/system-design-lesson-plan",
+                },
                 { label: "Data Models", slug: "learn/data-models-lesson-plan" },
                 { label: "Concurrency", slug: "learn/concurrency-lesson-plan" },
                 { label: "Security", slug: "learn/security-lesson-plan" },
-                { label: "Cryptography", slug: "learn/cryptography-lesson-plan" },
-                { label: "Specification", slug: "learn/specification-lesson-plan" },
+                {
+                  label: "Cryptography",
+                  slug: "learn/cryptography-lesson-plan",
+                },
+                {
+                  label: "Specification",
+                  slug: "learn/specification-lesson-plan",
+                },
               ],
             },
             {
               label: "Thinking & Communication",
               items: [
-                { label: "Technical Writing", slug: "learn/technical-writing-lesson-plan" },
+                {
+                  label: "Technical Writing",
+                  slug: "learn/technical-writing-lesson-plan",
+                },
                 { label: "Reasoning", slug: "learn/reasoning-lesson-plan" },
-                { label: "Information Architecture", slug: "learn/information-architecture-lesson-plan" },
+                {
+                  label: "Information Architecture",
+                  slug: "learn/information-architecture-lesson-plan",
+                },
               ],
             },
             {
               label: "AI & Context",
               items: [
-                { label: "Agentic Workflows", slug: "learn/agentic-workflows-lesson-plan" },
-                { label: "Context & Complexity", slug: "learn/context-complexity-lesson-plan" },
+                {
+                  label: "Agentic Workflows",
+                  slug: "learn/agentic-workflows-lesson-plan",
+                },
+                {
+                  label: "Context & Complexity",
+                  slug: "learn/context-complexity-lesson-plan",
+                },
               ],
             },
           ],

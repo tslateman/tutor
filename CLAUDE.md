@@ -37,6 +37,7 @@ Commands, syntax, quick reference.
 | `performance.md`         | Profiling, benchmarking, flame graphs, load testing         |
 | `postgres.md`            | psql commands, indexes, window functions, admin queries     |
 | `python.md`              | Data structures, comprehensions, typing, async              |
+| `python-cli.md`          | Typer, Click, argparse, Django wrappers, packaging          |
 | `regex.md`               | Patterns, quantifiers, groups, lookahead, language-specific |
 | `rust.md`                | Ownership, borrowing, lifetimes, traits, cargo              |
 | `security-scanning.md`   | Scorecard, Trivy, GuardDog, secrets, supply chain           |
