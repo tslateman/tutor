@@ -144,6 +144,7 @@ export default defineConfig({
                 { label: "GitHub", slug: "learn/github-lesson-plan" },
                 { label: "tmux", slug: "learn/tmux-lesson-plan" },
                 { label: "Ghostty", slug: "learn/ghostty-lesson-plan" },
+                { label: "Docker", slug: "learn/docker-lesson-plan" },
                 {
                   label: "Operating Systems",
                   slug: "learn/operating-systems-lesson-plan",

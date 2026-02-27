@@ -664,4 +664,6 @@ docker events --since 1h
 - [Kubernetes](k8s.md)
 - [PostgreSQL](postgres.md)
 - [System Design](system-design.md)
+- [Docker Lesson Plan](../learn/docker-lesson-plan.md) — 8 lessons from images
+  to Compose and security
 - [System Design Lesson Plan](../learn/system-design-lesson-plan.md)

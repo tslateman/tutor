@@ -83,6 +83,7 @@ Progressive lesson plans with exercises.
 | `context-complexity-lesson-plan.md`       | 8 lessons on managing context as a finite resource          |
 | `cryptography-lesson-plan.md`             | 8 lessons from hashing to TLS and key management            |
 | `data-models-lesson-plan.md`              | 8 lessons from ER diagrams to model selection               |
+| `docker-lesson-plan.md`                   | 8 lessons from images to Compose and security               |
 | `ghostty-lesson-plan.md`                  | 8 lessons from install to workflow integration              |
 | `git-lesson-plan.md`                      | 8 lessons from commits to workflows, with projects          |
 | `github-lesson-plan.md`                   | 8 lessons from repos to Actions and API                     |
