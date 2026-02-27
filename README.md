@@ -11,7 +11,7 @@ software engineers.
 | ------------- | ------------------------- | ----- | ----------------------------------------- |
 | Reference     | `src/content/docs/how/`   | 33    | Commands, syntax, quick reference         |
 | Mental Models | `src/content/docs/why/`   | 15    | Principles, frameworks, heuristics        |
-| Lesson Plans  | `src/content/docs/learn/` | 23    | Progressive 8-lesson plans with exercises |
+| Lesson Plans  | `src/content/docs/learn/` | 26    | Progressive 8-lesson plans with exercises |
 
 ## Development
 

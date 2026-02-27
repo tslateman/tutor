@@ -83,6 +83,7 @@ Progressive lesson plans with exercises.
 | `context-complexity-lesson-plan.md`       | 8 lessons on managing context as a finite resource          |
 | `cryptography-lesson-plan.md`             | 8 lessons from hashing to TLS and key management            |
 | `data-models-lesson-plan.md`              | 8 lessons from ER diagrams to model selection               |
+| `debugging-lesson-plan.md`                | 8 lessons from scientific method to system-call tracing     |
 | `docker-lesson-plan.md`                   | 8 lessons from images to Compose and security               |
 | `ghostty-lesson-plan.md`                  | 8 lessons from install to workflow integration              |
 | `git-lesson-plan.md`                      | 8 lessons from commits to workflows, with projects          |
@@ -96,9 +97,11 @@ Progressive lesson plans with exercises.
 | `regex-lesson-plan.md`                    | 8 lessons from literals to lookahead and extraction         |
 | `rust-lesson-plan.md`                     | 8 lessons from ownership to lifetimes                       |
 | `security-lesson-plan.md`                 | 8 lessons from threat modeling to OWASP Top 10              |
+| `sql-lesson-plan.md`                      | 8 lessons from SELECT to window functions and optimization  |
 | `specification-lesson-plan.md`            | 8 lessons from decision tables to TLA+ and agent contracts  |
 | `system-design-lesson-plan.md`            | 8 lessons from single server to distributed                 |
 | `technical-writing-lesson-plan.md`        | 8 lessons on clarity, structure, audience                   |
+| `testing-lesson-plan.md`                  | 8 lessons from first unit test to integration strategy      |
 | `tmux-lesson-plan.md`                     | 8 lessons from basics to scripting, with projects           |
 | `typescript-lesson-plan.md`               | 8 lessons from types to advanced patterns                   |
 

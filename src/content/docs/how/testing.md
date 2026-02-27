@@ -7,6 +7,12 @@ description:
 
 Commands, flags, and patterns for test runners across languages.
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn testing step by step? See the
+[Testing Lesson Plan](../learn/testing-lesson-plan.md).
+:::
+
 ## pytest (Python)
 
 ```bash

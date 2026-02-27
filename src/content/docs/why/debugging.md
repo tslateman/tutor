@@ -5,6 +5,12 @@ description:
   first principles of diagnosis.
 ---
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn debugging step by step? See the
+[Debugging Lesson Plan](../learn/debugging-lesson-plan.md).
+:::
+
 ## The Scientific Method for Bugs
 
 1. **Observe** — What actually happened vs. what you expected?

@@ -160,6 +160,7 @@ export default defineConfig({
                   label: "System Design",
                   slug: "learn/system-design-lesson-plan",
                 },
+                { label: "SQL", slug: "learn/sql-lesson-plan" },
                 { label: "Data Models", slug: "learn/data-models-lesson-plan" },
                 { label: "Concurrency", slug: "learn/concurrency-lesson-plan" },
                 { label: "Security", slug: "learn/security-lesson-plan" },
@@ -171,6 +172,8 @@ export default defineConfig({
                   label: "Specification",
                   slug: "learn/specification-lesson-plan",
                 },
+                { label: "Testing", slug: "learn/testing-lesson-plan" },
+                { label: "Debugging", slug: "learn/debugging-lesson-plan" },
               ],
             },
             {

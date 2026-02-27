@@ -7,6 +7,12 @@ description:
 
 Why, when, and how much to test. Strategy over ceremony.
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn testing step by step? See the
+[Testing Lesson Plan](../learn/testing-lesson-plan.md).
+:::
+
 ## The Purpose of Tests
 
 Tests are not proof of correctness. They are:

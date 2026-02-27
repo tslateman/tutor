@@ -8,6 +8,12 @@ description:
 Commands, flags, and workflows for debugging, profiling, and performance
 analysis.
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn debugging step by step? See the
+[Debugging Lesson Plan](../learn/debugging-lesson-plan.md).
+:::
+
 ## Python Debugging
 
 ### pdb / breakpoint()

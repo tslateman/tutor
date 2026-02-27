@@ -8,6 +8,12 @@ description:
 General SQL syntax (portable across databases). See `postgres.md` for
 PostgreSQL-specific features.
 
+<!-- prettier-ignore -->
+:::tip[Lesson Plan]
+Looking to learn SQL step by step? See the
+[SQL Lesson Plan](../learn/sql-lesson-plan.md).
+:::
+
 ## Basic Queries
 
 ### SELECT
