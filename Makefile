@@ -1,4 +1,4 @@
-.PHONY: help lint format check fix setup sync prose links new dev build preview check-refs check-counts
+.PHONY: help lint format check fix setup sync prose links new dev build preview check-refs check-counts audit-sidebar
 
 help:
 	@echo "Usage: make [target]"
@@ -15,7 +15,8 @@ help:
 	@echo "  sync    Download vale style packages"
 	@echo "  prose   Review prose with Claude (Strunk's rules)"
 	@echo "  links   Check markdown links (internal only)"
-	@echo "  new     Create new guide (NAME=foo TYPE=how|why|learn)"
+	@echo "  new           Create new guide (NAME=foo TYPE=how|why|learn)"
+	@echo "  audit-sidebar Verify all docs appear in sidebar"
 
 # Astro dev server
 dev:
@@ -106,4 +107,28 @@ check-counts:
 			err=1; \
 		fi; \
 	done; \
+	if [ "$$err" = "1" ]; then exit 1; fi; \
+	for mapping in "how:Reference" "why:Mental Models" "learn:Lesson Plans"; do \
+		dir=$${mapping%%:*}; \
+		label=$${mapping#*:}; \
+		actual=$$(find src/content/docs/$$dir -maxdepth 1 -name '*.md' | wc -l | tr -d ' '); \
+		listed=$$(grep "| $$label " README.md | awk -F'|' '{print $$4}' | tr -d ' '); \
+		if [ "$$actual" != "$$listed" ]; then \
+			echo "MISMATCH: $$dir/ has $$actual files but README.md lists $$listed"; \
+			err=1; \
+		fi; \
+	done; \
 	if [ "$$err" = "1" ]; then exit 1; fi
+
+# Verify all .md files appear in astro.config.mjs sidebar
+audit-sidebar:
+	@err=0; \
+	for file in $$(find src/content/docs/how src/content/docs/why src/content/docs/learn -maxdepth 1 -name '*.md' | sort); do \
+		slug=$$(echo "$$file" | sed 's/^src\/content\/docs\///;s/\.md$$//'); \
+		if ! grep -q "slug: \"$$slug\"" astro.config.mjs; then \
+			echo "MISSING: $$file (slug: $$slug) not found in sidebar"; \
+			err=1; \
+		fi; \
+	done; \
+	if [ "$$err" = "1" ]; then exit 1; fi; \
+	echo "All docs verified in sidebar"

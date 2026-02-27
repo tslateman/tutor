@@ -180,3 +180,6 @@ Good:  A ──contains──▶ B (clear containment)
 
 - [Knowledge Design](../why/knowledge-design.md) — When and why to use each
   diagram type
+- [Information Architecture](../why/information-architecture.md) — When and why
+  to diagram
+- [Thinking](../why/thinking.md) — Visual thinking as a mental model

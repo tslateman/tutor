@@ -209,3 +209,4 @@ usually less than the cost of maintaining unused flexibility now.
 - [Thinking](thinking.md) — Systems thinking helps manage complexity
 - [Specification](specification.md) — Specification defines abstraction
   boundaries
+- [Testing](testing.md) — Testing as complexity management

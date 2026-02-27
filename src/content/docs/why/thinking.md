@@ -248,3 +248,8 @@ Einstein
 - [Debugging](debugging.md) — Apply systematic thinking to find bugs
 - [Orchestration](orchestration.md) — Systems thinking applied to agent
   coordination
+- [Learning](learning.md) — How learning builds on mental models
+- [Problem-Solving](problem-solving.md) — Applying thinking frameworks to
+  problems
+- [Reasoning Lesson Plan](../learn/reasoning-lesson-plan.md) — Progressive
+  lessons on clear thinking

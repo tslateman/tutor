@@ -714,4 +714,7 @@ GROUP BY product_id;
 
 - [PostgreSQL](postgres.md) — PostgreSQL-specific features (JSONB, arrays, GIN
   indexes)
-- [Data Models Lesson Plan](../learn/data-models-lesson-plan.md)
+- [Data Models Lesson Plan](../learn/data-models-lesson-plan.md) — Progressive
+  lessons on data modeling
+- [Regex](regex.md) — Pattern matching in queries
+- [CLI Pipelines](cli-pipelines.md) — Piping query output

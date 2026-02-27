@@ -381,8 +381,8 @@ function createUserId(id: string): UserId {
 
 ## See Also
 
-- [TypeScript Lesson Plan](../learn/typescript-lesson-plan.md) — 8 lessons from
-  types to advanced patterns
-- [Testing](testing.md) — Jest commands and patterns
+- [TypeScript Lesson Plan](../learn/typescript-lesson-plan.md) — Progressive
+  TypeScript lessons
+- [Testing](testing.md) — Testing TypeScript code
 - [Learning a Language](learning-a-language.md) — Phases, techniques,
   anti-patterns
