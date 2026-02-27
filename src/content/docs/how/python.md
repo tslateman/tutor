@@ -286,3 +286,6 @@ value = data.get('key', {}).get('nested', default)
 - [Debugging](debugging.md) — pdb, py-spy, flame graphs
 - [Learning a Language](learning-a-language.md) — Phases, techniques,
   anti-patterns
+- [Performance Profiling](performance.md)
+- [Python CLI](python-cli.md)
+- [Regex](regex.md)

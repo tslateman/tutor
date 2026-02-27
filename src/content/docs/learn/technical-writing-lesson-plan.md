@@ -519,3 +519,4 @@ Document a multi-step procedure:
 - [Learning](../why/learning.md) — How to retain what you learn
 - [Thinking](../why/thinking.md) — Clear thinking enables clear writing
 - [AI CLI](../how/ai-cli.md) — Apply these principles to AI prompts
+- [Information Architecture](information-architecture-lesson-plan.md)

@@ -705,3 +705,4 @@ Configure a team repository:
 
 - [Git Lesson Plan](git-lesson-plan.md) — Git fundamentals
 - [Git Cheatsheet](../how/git.md) — Quick command reference
+- [CI/CD](../how/ci-cd.md)

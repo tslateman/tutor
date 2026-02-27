@@ -218,5 +218,6 @@ facts remain relevant.
 - [Orchestration](orchestration.md) — Context routing and agent coordination
 - [Learning](learning.md) — How humans form and retain knowledge
 - [Thinking](thinking.md) — Mental models and systems thinking
-- [Agent Orchestration Cheat Sheet](../how/agent-orchestration.md) — Practical
-  patterns for multi-agent work
+- [Agent Orchestration](../how/agent-orchestration.md) — Practical patterns for
+  multi-agent work
+- [Claude Code Extensibility](../how/claude-code.md)

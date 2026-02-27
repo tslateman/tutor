@@ -395,3 +395,8 @@ jq 'group_by(.category) | map({category: .[0].category, total: map(.amount) | ad
 ## See Also
 
 - [Shell](shell.md) — Scripting patterns for pipelines and data processing
+- [CLI Pipelines: Keeping Data in the Stream](cli-pipelines.md)
+- [HTTP](http.md)
+- [Kubernetes](k8s.md)
+- [Regex](regex.md)
+- [Unix CLI](unix.md)

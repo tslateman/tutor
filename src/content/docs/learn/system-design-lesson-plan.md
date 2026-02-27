@@ -1676,3 +1676,7 @@ and request count. Output results as both a summary and a JSON report.
   optimization
 - [Docker Cheatsheet](../how/docker.md) -- Containerization for multi-service
   setups
+- [Concurrency](concurrency-lesson-plan.md)
+- [Information Architecture](information-architecture-lesson-plan.md)
+- [System Design](../how/system-design.md)
+- [API Design](../why/api-design.md)

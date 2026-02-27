@@ -270,3 +270,6 @@ comm -23 \
   handling for scripts that use these pipeline patterns
 - [Unix CLI](unix.md) — Core commands for file ops and text processing
 - [jq](jq.md) — JSON processing in pipelines
+- [Python CLI](python-cli.md)
+- [Regex](regex.md)
+- [CLI-First](../why/cli-first.md)

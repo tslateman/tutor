@@ -339,3 +339,13 @@ go test -v -race -coverprofile=coverage.out ./... 2>&1 | go-junit-report > repor
 - [Testing Principles](../why/testing.md) — Strategy, pyramid, what to test
 - [Python](python.md) — pytest fixtures and assertions
 - [TypeScript](typescript.md) — Type-safe test patterns
+- [CI/CD](ci-cd.md)
+- [Debugging Tools](debugging.md)
+- [Performance Profiling](performance.md)
+- [Python CLI](python-cli.md)
+- [Rust](rust.md)
+- [API Design](../why/api-design.md)
+- [Go Lesson Plan](../learn/golang-lesson-plan.md)
+- [Python Lesson Plan](../learn/python-lesson-plan.md)
+- [Rust Lesson Plan](../learn/rust-lesson-plan.md)
+- [TypeScript Lesson Plan](../learn/typescript-lesson-plan.md)

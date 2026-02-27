@@ -763,3 +763,7 @@ signature and rejects replays using a timestamp window.
 - [Security Scanning](../how/security-scanning.md) -- Finding vulnerabilities in
   dependencies
 - [Shell Cheatsheet](../how/shell.md) -- openssl CLI patterns
+- [Networking](networking-lesson-plan.md)
+- [Security](security-lesson-plan.md)
+- [System Design](system-design-lesson-plan.md)
+- [Cryptography](../how/cryptography.md)

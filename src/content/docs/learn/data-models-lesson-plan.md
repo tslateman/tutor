@@ -570,3 +570,5 @@ clusters and most-connected nodes.
   admin queries
 - [SQL Cheatsheet](../how/sql.md) -- Joins, CTEs, window functions
 - [Thinking](../why/thinking.md) -- Mental models and systems thinking
+- [System Design](system-design-lesson-plan.md)
+- [API Design](../why/api-design.md)

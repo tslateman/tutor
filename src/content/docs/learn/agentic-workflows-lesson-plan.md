@@ -851,3 +851,5 @@ minutes and measure how many tasks complete correctly.
   local copy at `~/dev/opt/agentic-engineering-book`
 - [Specification Lesson Plan](specification-lesson-plan.md) -- Decision tables,
   Design by Contract, TLA+, and agent constraint specification
+- [AI Adoption](../why/ai-adoption.md)
+- [Orchestration](../why/orchestration.md)

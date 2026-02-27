@@ -288,3 +288,9 @@ Techniques compose well:
 - [Debugging](debugging.md) — Problem-solving applied to bugs
 - [Thinking](thinking.md) — Mental models for approach selection
 - [Complexity](complexity.md) — Understanding what makes problems hard
+- [Learning a Programming Language](../how/learning-a-language.md)
+- [Agentic Workflows](../learn/agentic-workflows-lesson-plan.md)
+- [Git](../learn/git-lesson-plan.md)
+- [Go](../learn/golang-lesson-plan.md)
+- [Reasoning Lesson Plan](../learn/reasoning-lesson-plan.md)
+- [Information Architecture](information-architecture.md)

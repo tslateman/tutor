@@ -714,3 +714,4 @@ GROUP BY product_id;
 
 - [PostgreSQL](postgres.md) — PostgreSQL-specific features (JSONB, arrays, GIN
   indexes)
+- [Data Models Lesson Plan](../learn/data-models-lesson-plan.md)

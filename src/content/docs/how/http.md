@@ -203,3 +203,7 @@ curl -s -o /dev/null -w "%{http_code}" https://api.example.com/health
 - [Cryptography](cryptography.md) — TLS, certificates, and HMAC authentication
 - [jq](jq.md) — Process JSON responses
 - [Unix](unix.md) — Pipe curl output to other tools
+- [API Design](../why/api-design.md)
+- [Cryptography Lesson Plan](../learn/cryptography-lesson-plan.md)
+- [Networking Lesson Plan](../learn/networking-lesson-plan.md)
+- [Security Lesson Plan](../learn/security-lesson-plan.md)

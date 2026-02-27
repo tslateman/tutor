@@ -235,3 +235,4 @@ packages. Ten minutes to a full environment.
 - [Terminal Emulators](../how/terminal-emulators.md) — iTerm2 vs Ghostty
 - [awesome-tuis](https://github.com/rothgar/awesome-tuis) — Community list of
   TUI applications
+- [macOS CLI](../how/macos.md)

@@ -278,3 +278,4 @@ time pressure, unclear requirements, missing guardrails.
   covers complexity bias and tunnel vision
 - [Complexity](complexity.md) — Essential vs accidental; the paradox of fighting
   complexity with complexity
+- [Reasoning](../learn/reasoning-lesson-plan.md)

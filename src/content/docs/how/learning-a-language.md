@@ -248,3 +248,6 @@ Share progress, not perfection. Vulnerability invites feedback and mentorship.
 - [Problem Solving](../why/problem-solving.md) — Approaching coding challenges
 - [Debugging](../why/debugging.md) — Systematic error investigation
 - Language lesson plans in [learn/](../learn/) — Structured curricula
+- [Python](python.md)
+- [Rust](rust.md)
+- [TypeScript](typescript.md)

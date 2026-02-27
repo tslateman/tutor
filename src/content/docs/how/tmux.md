@@ -322,3 +322,5 @@ tmux list-keys | grep split  # Filter
   integration
 - [Agent Orchestration](agent-orchestration.md) — tmux for multi-agent sessions
 - [Shell](shell.md) — Scripting patterns for tmux automation
+- [Neovim Commands (LazyVim)](neovim.md)
+- [CLI-First](../why/cli-first.md)

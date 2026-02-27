@@ -284,3 +284,6 @@ compatible** means new clients work with the old API.
 - [System Design Lesson Plan](../learn/system-design-lesson-plan.md) —
   Distributed architecture
 - [Testing](../how/testing.md) — API testing patterns
+- [System Design](../how/system-design.md)
+- [Specification Lesson Plan](../learn/specification-lesson-plan.md)
+- [Specification](specification.md)

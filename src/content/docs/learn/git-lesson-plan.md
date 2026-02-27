@@ -494,3 +494,4 @@ to understand how a feature was implemented.
 
 - [Git Cheatsheet](../how/git.md) — Quick command reference
 - [Problem Solving](../why/problem-solving.md) — Debugging git issues
+- [GitHub](github-lesson-plan.md)

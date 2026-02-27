@@ -716,3 +716,4 @@ Build a simple HTTP client:
 
 - [Rust Cheatsheet](../how/rust.md) — Quick syntax reference
 - [Testing](../how/testing.md) — Cargo test patterns
+- [Concurrency](concurrency-lesson-plan.md)

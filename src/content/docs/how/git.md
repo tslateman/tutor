@@ -680,3 +680,5 @@ git branch -d temp-branch
   and API
 - [CI/CD](ci-cd.md) — GitHub Actions, caching, matrix builds
 - [AI CLI Patterns](ai-cli.md) — Version control discipline with AI agents
+- [Neovim Commands (LazyVim)](neovim.md)
+- [Debugging](../why/debugging.md)

@@ -726,3 +726,6 @@ involved.
 - [Unix Commands](../how/unix.md) -- Shell tools used throughout these lessons
 - [Complexity](../why/complexity.md) -- Why OS abstractions exist and when they
   leak
+- [Concurrency](concurrency-lesson-plan.md)
+- [Networking](networking-lesson-plan.md)
+- [tmux](tmux-lesson-plan.md)

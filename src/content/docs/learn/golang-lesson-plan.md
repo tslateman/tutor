@@ -716,3 +716,4 @@ Fetch multiple URLs concurrently:
 
 - [Testing](../how/testing.md) — Go test patterns
 - [Problem Solving](../why/problem-solving.md) — Debugging techniques
+- [Concurrency](concurrency-lesson-plan.md)

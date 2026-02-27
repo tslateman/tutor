@@ -754,3 +754,4 @@ splits for your typical layout, quick terminal for one-off commands.
   config options
 - [tmux Lesson Plan](tmux-lesson-plan.md) — For remote multiplexing alongside
   Ghostty
+- [CLI-First](../why/cli-first.md)

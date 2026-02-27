@@ -263,3 +263,11 @@ while read -r line; do echo "$line"; done < file.txt
 
 - [Shell](shell.md) — Scripting patterns, loops, conditionals, functions
 - [jq](jq.md) — JSON processing in pipelines
+- [CLI Pipelines: Keeping Data in the Stream](cli-pipelines.md)
+- [Unix Filesystem (Advanced)](filesystem-advanced.md)
+- [Unix Filesystem](filesystem.md)
+- [HTTP](http.md)
+- [macOS CLI](macos.md)
+- [CLI-First](../why/cli-first.md)
+- [Networking Lesson Plan](../learn/networking-lesson-plan.md)
+- [Operating Systems Lesson Plan](../learn/operating-systems-lesson-plan.md)

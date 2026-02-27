@@ -601,3 +601,5 @@ tail -f app.log | grep --line-buffered --color=always -E "ERROR|WARNING|"
 - [Testing](testing.md) — Test-driven debugging
 - [Shell](shell.md) — Pipe and filter patterns for log analysis
 - [Python](python.md) — Python-specific patterns
+- [Neovim Commands (LazyVim)](neovim.md)
+- [Performance Profiling](performance.md)

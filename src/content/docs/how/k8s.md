@@ -393,3 +393,5 @@ kubectl delete pod <name> --force --grace-period=0
 - [Docker](docker.md) — Container basics before orchestration
 - [Shell](shell.md) — Scripting for kubectl automation
 - [jq](jq.md) — Processing kubectl JSON output
+- [PostgreSQL](postgres.md)
+- [System Design](system-design.md)

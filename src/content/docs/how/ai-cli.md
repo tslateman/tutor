@@ -312,3 +312,5 @@ Here's the error: [paste error]"
 - [Shell](shell.md) — Commands AI agents execute
 - [Debugging](../why/debugging.md) — Systematic approach to fixing AI bugs
 - [Thinking](../why/thinking.md) — Mental models for evaluating AI suggestions
+- [AI Adoption](../why/ai-adoption.md)
+- [Technical Writing Lesson Plan](../learn/technical-writing-lesson-plan.md)

@@ -211,3 +211,5 @@ from ambition.
   Progressive lessons on building agent systems
 - [Specification](specification.md) -- Agent contracts and constraint
   specification
+- [Agent Orchestration](../how/agent-orchestration.md)
+- [Claude Code Extensibility](../how/claude-code.md)

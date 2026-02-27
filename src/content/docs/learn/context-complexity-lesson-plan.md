@@ -656,3 +656,4 @@ Present the cost-benefit of each proposal.
 - [Thinking](../why/thinking.md) -- Mental models and systems thinking
 - [Agent Orchestration](../how/agent-orchestration.md) -- Multi-agent context
   management
+- [Specification](specification-lesson-plan.md)

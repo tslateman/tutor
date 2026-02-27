@@ -660,3 +660,8 @@ docker events --since 1h
 ## See Also
 
 - [Shell](shell.md) — Scripting patterns used in Dockerfiles and entrypoints
+- [CI/CD](ci-cd.md)
+- [Kubernetes](k8s.md)
+- [PostgreSQL](postgres.md)
+- [System Design](system-design.md)
+- [System Design Lesson Plan](../learn/system-design-lesson-plan.md)

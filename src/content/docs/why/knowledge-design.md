@@ -228,3 +228,4 @@ See [Diagramming](../how/diagramming.md) for syntax and tool reference.
   documents and codebases
 - [Learning](learning.md) — Retention science (spaced repetition, active recall)
 - [Thinking](thinking.md) — Mental models for reasoning and judgment
+- [Diagramming](../how/diagramming.md)

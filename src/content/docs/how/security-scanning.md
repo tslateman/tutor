@@ -389,6 +389,8 @@ osv-scanner --lockfile=requirements.txt
 - [Cryptography](cryptography.md) — Hashing, encryption, and TLS commands
 - [Cryptography Lesson Plan](../learn/cryptography-lesson-plan.md) — Key
   management and common mistakes
+- [CI/CD](ci-cd.md)
+- [Security Lesson Plan](../learn/security-lesson-plan.md)
 
 ## Resources
 

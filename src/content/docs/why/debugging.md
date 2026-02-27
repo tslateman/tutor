@@ -237,3 +237,9 @@ logger.debug("Processing complete", extra={
 - [Thinking](thinking.md) — Mental models for problem-solving
 - [Complexity](complexity.md) — Why bugs hide in complex code
 - [Git](../how/git.md) — Using git bisect
+- [AI CLI](../how/ai-cli.md)
+- [Debugging Tools](../how/debugging.md)
+- [Learning a Programming Language](../how/learning-a-language.md)
+- [Performance Profiling](../how/performance.md)
+- [Problem Solving](problem-solving.md)
+- [Testing](testing.md)

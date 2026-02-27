@@ -592,3 +592,4 @@ Build a simple API with FastAPI:
 
 - [Python Cheatsheet](../how/python.md) — Quick syntax reference
 - [Testing](../how/testing.md) — pytest patterns
+- [Concurrency](concurrency-lesson-plan.md)

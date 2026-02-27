@@ -671,3 +671,5 @@ k6 run --vus 50 --duration 60s load-test.js    # Override from CLI
 - [PostgreSQL](postgres.md) -- Database-specific commands
 - [Python](python.md) -- Python-specific patterns
 - [Testing](testing.md) -- Benchmark test patterns
+- [Unix Filesystem (Advanced)](filesystem-advanced.md)
+- [Unix Filesystem](filesystem.md)

@@ -818,3 +818,4 @@ connections. Output the report as formatted text to the terminal.
   network layer
 - [Operating Systems Lesson Plan](operating-systems-lesson-plan.md) -- Processes
   and I/O underpin networking
+- [System Design](system-design-lesson-plan.md)

@@ -385,6 +385,11 @@ Attempt 4: Human intervention
   parallels, context routing, failure modes
 - [Agentic Workflows Lesson Plan](../learn/agentic-workflows-lesson-plan.md) —
   Progressive lessons on building agent systems
+- [Claude Code Extensibility](claude-code.md)
+- [tmux](tmux.md)
+- [Agent Memory](../why/agent-memory.md)
+- [AI Adoption](../why/ai-adoption.md)
+- [Managing Context and Complexity Lesson Plan](../learn/context-complexity-lesson-plan.md)
 
 ## Resources
 

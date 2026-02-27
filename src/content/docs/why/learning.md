@@ -342,3 +342,6 @@ the habit; the learning compounds.
 - [Knowledge Design](knowledge-design.md) — Structuring knowledge for transfer
   (the teaching side of learning)
 - [Complexity](complexity.md) — Chunking relates to managing cognitive load
+- [Learning a Programming Language](../how/learning-a-language.md)
+- [Technical Writing](../learn/technical-writing-lesson-plan.md)
+- [Agent Memory](agent-memory.md)

@@ -131,3 +131,7 @@ those who depend on `-CC` integration, broadcast input, or the scripting API.
   integration in Lesson 8
 - [Ghostty Documentation](https://ghostty.org/docs)
 - [iTerm2 Documentation](https://iterm2.com/documentation.html)
+- [macOS CLI](macos.md)
+- [Neovim Commands (LazyVim)](neovim.md)
+- [tmux](tmux.md)
+- [CLI-First](../why/cli-first.md)

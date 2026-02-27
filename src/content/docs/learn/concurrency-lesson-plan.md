@@ -758,3 +758,4 @@ throughput vs buffer size and worker count. Implement in Python and Go, compare.
   Processes, threads, and scheduling at the OS level
 - [System Design Lesson Plan](system-design-lesson-plan.md) -- Concurrency
   patterns applied to distributed systems
+- [Rust](../how/rust.md)

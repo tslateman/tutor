@@ -337,3 +337,4 @@ WHERE table_name = 'users';
 - [Kubernetes](k8s.md) — Deploying PostgreSQL on k8s
 - [Data Models Lesson Plan](../learn/data-models-lesson-plan.md) — ER diagrams
   to model selection
+- [System Design Lesson Plan](../learn/system-design-lesson-plan.md)

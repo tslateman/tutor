@@ -233,3 +233,6 @@ You have enough tests when:
 - [Thinking](thinking.md) — Testing is hypothesis verification applied to code
 - [Specification](specification.md) — Property-based testing as executable
   specification; Design by Contract
+- [Testing](../how/testing.md)
+- [Specification Lesson Plan](../learn/specification-lesson-plan.md)
+- [AI Adoption](ai-adoption.md)
