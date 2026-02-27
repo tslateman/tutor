@@ -64,7 +64,7 @@ sync:
 
 # Review prose with Claude (Strunk's Elements of Style)
 prose:
-	claude -p "/elements-of-style:writing-clearly-and-concisely src/content/docs/how/ src/content/docs/why/"
+	claude -p "/elements-of-style:writing-clearly-and-concisely src/content/docs/how/ src/content/docs/why/ src/content/docs/learn/"
 
 # Create a new guide
 new:

@@ -5,7 +5,7 @@ description:
   SQL syntax.
 ---
 
-General SQL syntax (portable across databases). See `postgres-cheatsheet.md` for
+General SQL syntax (portable across databases). See `postgres.md` for
 PostgreSQL-specific features.
 
 ## Basic Queries

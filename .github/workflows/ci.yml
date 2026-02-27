@@ -32,6 +32,11 @@ jobs:
           markdownlint src/content/docs/**/*.md CLAUDE.md README.md
           vale src/content/docs/how/*.md src/content/docs/why/*.md src/content/docs/learn/*.md CLAUDE.md
 
+      - name: Verify cross-references and counts
+        run: |
+          make check-refs
+          make check-counts
+
       - name: Check formatting
         run: make check
 
