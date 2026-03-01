@@ -68,6 +68,7 @@ Mental models, principles, frameworks.
 | `orchestration.md`            | K8s-to-agents parallels, context routing, failure modes  |
 | `problem-solving.md`          | Polya's method, divide-and-conquer, rubber duck          |
 | `reasoning.md`                | Fallacies, cognitive biases, debiasing, System 1/2       |
+| `signal.md`                   | Prioritization, context, comms — filtering noise         |
 | `specification.md`            | Specification spectrum, DbC, TLA+, agent constraints     |
 | `testing.md`                  | Pyramid, strategy, doubles, TDD, anti-patterns           |
 | `thinking.md`                 | Mental models, systems thinking, asking good questions   |
@@ -99,6 +100,7 @@ Progressive lesson plans with exercises.
 | `security-lesson-plan.md`                 | 8 lessons from threat modeling to OWASP Top 10              |
 | `sql-lesson-plan.md`                      | 8 lessons from SELECT to window functions and optimization  |
 | `specification-lesson-plan.md`            | 8 lessons from decision tables to TLA+ and agent contracts  |
+| `sysml-v2-lesson-plan.md`                 | 8 lessons from KerML to Systems Modeling API                |
 | `system-design-lesson-plan.md`            | 8 lessons from single server to distributed                 |
 | `technical-writing-lesson-plan.md`        | 8 lessons on clarity, structure, audience                   |
 | `testing-lesson-plan.md`                  | 8 lessons from first unit test to integration strategy      |
