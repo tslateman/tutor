@@ -306,11 +306,15 @@ Here's the error: [paste error]"
 
 ## See Also
 
+- [Prompt Engineering](prompt-engineering.md) — Prompt structure, few-shot
+  examples, chain-of-thought, structured output, evaluation techniques
 - [Claude Code Extensibility](claude-code.md) — Agents, hooks, plugins, MCP,
   memory, configuration
 - [Git](git.md) — Version control for tracking AI changes
 - [Shell](shell.md) — Commands AI agents execute
 - [Debugging](../why/debugging.md) — Systematic approach to fixing AI bugs
 - [Thinking](../why/thinking.md) — Mental models for evaluating AI suggestions
+- [AI Glossary](ai-glossary.md) — Terms and myths engineers get wrong about
+  AI/ML
 - [AI Adoption](../why/ai-adoption.md)
 - [Technical Writing Lesson Plan](../learn/technical-writing-lesson-plan.md)

@@ -526,5 +526,7 @@ turns; sending a message wakes them.
   patterns, worktrees, delegation prompts
 - [Orchestration Mental Model](../why/orchestration.md) — K8s-to-agents
   parallels, context routing, failure modes
+- [MCP Servers](mcp-servers.md) — Building MCP servers with tools, resources,
+  prompts, and transport configuration
 - [Agent Memory](../why/agent-memory.md) — Temporal tracking, cognitive layers,
   decay, retrieval patterns

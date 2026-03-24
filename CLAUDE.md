@@ -14,66 +14,72 @@ materials.
 
 Commands, syntax, quick reference.
 
-| File                     | Topics                                                      |
-| ------------------------ | ----------------------------------------------------------- |
-| `agent-orchestration.md` | Multi-agent patterns, delegation, worktrees, monitoring     |
-| `authentication.md`      | Sessions, OAuth2, JWT, SSO, API keys, MFA                   |
-| `ai-cli.md`              | Claude Code, context files, prompting, verification         |
-| `ci-cd.md`               | GitHub Actions, caching, matrix builds, deployment          |
-| `claude-code.md`         | Agents, hooks, plugins, MCP, memory, settings, teams        |
-| `cli-pipelines.md`       | Pipes, substitution, xargs, fzf, history expansion          |
-| `cryptography.md`        | Hashing, encryption, certificates, TLS, openssl             |
-| `debugging.md`           | pdb, lldb, strace/dtruss, py-spy, hyperfine, flame graphs   |
-| `diagramming.md`         | Diagram types, Mermaid syntax, ASCII patterns, concept maps |
-| `docker.md`              | Images, containers, Dockerfile, Compose, networking         |
-| `filesystem-advanced.md` | Atomic operations, locking, inotify/FSEvents, performance   |
-| `filesystem.md`          | FHS, inodes, permissions, file descriptors, security        |
-| `git.md`                 | Commits, branches, merging, rebasing, remotes, workflows    |
-| `http.md`                | curl, headers, status codes, REST conventions               |
-| `jq.md`                  | JSON processing, filters, transforms, practical examples    |
-| `k8s.md`                 | Pods, deployments, services, debugging, OrbStack            |
-| `learning-a-language.md` | Phases, daily routine, techniques, tools, anti-patterns     |
-| `macos.md`               | Homebrew, defaults, Spotlight, launchctl, AppleScript       |
-| `neovim.md`              | LazyVim keybindings, Telescope, LSP, DAP, config patterns   |
-| `performance.md`         | Profiling, benchmarking, flame graphs, load testing         |
-| `postgres.md`            | psql commands, indexes, window functions, admin queries     |
-| `python.md`              | Data structures, comprehensions, typing, async              |
-| `python-cli.md`          | Typer, Click, argparse, Django wrappers, packaging          |
-| `regex.md`               | Patterns, quantifiers, groups, lookahead, language-specific |
-| `rust.md`                | Ownership, borrowing, lifetimes, traits, cargo              |
-| `security-scanning.md`   | Scorecard, Trivy, GuardDog, secrets, supply chain           |
-| `shell.md`               | Scripting patterns, loops, conditionals, functions          |
-| `sql.md`                 | General SQL, joins, CTEs, window functions                  |
-| `system-design.md`       | Load balancing, caching, consensus, databases, capacity     |
-| `terminal-emulators.md`  | iTerm2 vs Ghostty, rendering, tmux -CC, decision guide      |
-| `testing.md`             | pytest, Jest, Go, Rust test commands, patterns              |
-| `tmux.md`                | Sessions, windows, panes, copy mode, configuration          |
-| `typescript.md`          | Types, generics, utility types, patterns                    |
-| `unix.md`                | Shell commands, file ops, text processing, SSH              |
+| File                     | Topics                                                       |
+| ------------------------ | ------------------------------------------------------------ |
+| `agent-orchestration.md` | Multi-agent patterns, delegation, worktrees, monitoring      |
+| `authentication.md`      | Sessions, OAuth2, JWT, SSO, API keys, MFA                    |
+| `ai-cli.md`              | Claude Code, context files, prompting, verification          |
+| `ai-glossary.md`         | AI/ML terms, myths, common misconceptions for engineers      |
+| `ci-cd.md`               | GitHub Actions, caching, matrix builds, deployment           |
+| `claude-code.md`         | Agents, hooks, plugins, MCP, memory, settings, teams         |
+| `cli-pipelines.md`       | Pipes, substitution, xargs, fzf, history expansion           |
+| `cryptography.md`        | Hashing, encryption, certificates, TLS, openssl              |
+| `debugging.md`           | pdb, lldb, strace/dtruss, py-spy, hyperfine, flame graphs    |
+| `diagramming.md`         | Diagram types, Mermaid syntax, ASCII patterns, concept maps  |
+| `docker.md`              | Images, containers, Dockerfile, Compose, networking          |
+| `filesystem-advanced.md` | Atomic operations, locking, inotify/FSEvents, performance    |
+| `filesystem.md`          | FHS, inodes, permissions, file descriptors, security         |
+| `git.md`                 | Commits, branches, merging, rebasing, remotes, workflows     |
+| `http.md`                | curl, headers, status codes, REST conventions                |
+| `jq.md`                  | JSON processing, filters, transforms, practical examples     |
+| `k8s.md`                 | Pods, deployments, services, debugging, OrbStack             |
+| `learning-a-language.md` | Phases, daily routine, techniques, tools, anti-patterns      |
+| `llm-evaluation.md`      | Eval types, metrics, LLM-as-judge, CI integration            |
+| `macos.md`               | Homebrew, defaults, Spotlight, launchctl, AppleScript        |
+| `mcp-servers.md`         | MCP protocol, tool/resource handlers, TypeScript/Python SDKs |
+| `neovim.md`              | LazyVim keybindings, Telescope, LSP, DAP, config patterns    |
+| `performance.md`         | Profiling, benchmarking, flame graphs, load testing          |
+| `postgres.md`            | psql commands, indexes, window functions, admin queries      |
+| `prompt-engineering.md`  | Prompt structure, few-shot, chain-of-thought, guardrails     |
+| `python.md`              | Data structures, comprehensions, typing, async               |
+| `python-cli.md`          | Typer, Click, argparse, Django wrappers, packaging           |
+| `regex.md`               | Patterns, quantifiers, groups, lookahead, language-specific  |
+| `rust.md`                | Ownership, borrowing, lifetimes, traits, cargo               |
+| `security-scanning.md`   | Scorecard, Trivy, GuardDog, secrets, supply chain            |
+| `shell.md`               | Scripting patterns, loops, conditionals, functions           |
+| `sql.md`                 | General SQL, joins, CTEs, window functions                   |
+| `system-design.md`       | Load balancing, caching, consensus, databases, capacity      |
+| `terminal-emulators.md`  | iTerm2 vs Ghostty, rendering, tmux -CC, decision guide       |
+| `testing.md`             | pytest, Jest, Go, Rust test commands, patterns               |
+| `tmux.md`                | Sessions, windows, panes, copy mode, configuration           |
+| `typescript.md`          | Types, generics, utility types, patterns                     |
+| `unix.md`                | Shell commands, file ops, text processing, SSH               |
 
 ### why/
 
 Mental models, principles, frameworks.
 
-| File                          | Topics                                                   |
-| ----------------------------- | -------------------------------------------------------- |
-| `agent-memory.md`             | Temporal tracking, cognitive layers, decay, retrieval    |
-| `ai-adoption.md`              | Tooling without mandate, what stays human, codeowners    |
-| `api-design.md`               | REST vs GraphQL vs gRPC, pagination, versioning, errors  |
-| `cli-first.md`                | Why terminal-first, core stack, tool replacements, habit |
-| `complexity.md`               | Essential vs accidental, techniques, heuristics          |
-| `debugging.md`                | Scientific method, bisection, isolation techniques       |
-| `information-architecture.md` | Four systems, Diataxis, findability heuristics           |
-| `knowledge-design.md`         | Taxonomy, CTA, mental modeling, semantic labeling        |
-| `learning.md`                 | Retention techniques, spaced repetition, active recall   |
-| `orchestration.md`            | K8s-to-agents parallels, context routing, failure modes  |
-| `problem-solving.md`          | Polya's method, divide-and-conquer, rubber duck          |
-| `reasoning.md`                | Fallacies, cognitive biases, debiasing, System 1/2       |
-| `resilience.md`               | Failure modes, chaos engineering, circuit breakers       |
-| `signal.md`                   | Prioritization, context, comms — filtering noise         |
-| `specification.md`            | Specification spectrum, DbC, TLA+, agent constraints     |
-| `testing.md`                  | Pyramid, strategy, doubles, TDD, anti-patterns           |
-| `thinking.md`                 | Mental models, systems thinking, asking good questions   |
+| File                          | Topics                                                    |
+| ----------------------------- | --------------------------------------------------------- |
+| `agent-memory.md`             | Temporal tracking, cognitive layers, decay, retrieval     |
+| `ai-adoption.md`              | Tooling without mandate, what stays human, codeowners     |
+| `ai-safety.md`                | Prompt injection, output validation, guardrails, defense  |
+| `api-design.md`               | REST vs GraphQL vs gRPC, pagination, versioning, errors   |
+| `cli-first.md`                | Why terminal-first, core stack, tool replacements, habit  |
+| `complexity.md`               | Essential vs accidental, techniques, heuristics           |
+| `debugging.md`                | Scientific method, bisection, isolation techniques        |
+| `information-architecture.md` | Four systems, Diataxis, findability heuristics            |
+| `knowledge-design.md`         | Taxonomy, CTA, mental modeling, semantic labeling         |
+| `learning.md`                 | Retention techniques, spaced repetition, active recall    |
+| `orchestration.md`            | K8s-to-agents parallels, context routing, failure modes   |
+| `problem-solving.md`          | Polya's method, divide-and-conquer, rubber duck           |
+| `rag.md`                      | RAG pipeline, chunking, embeddings, retrieval, evaluation |
+| `reasoning.md`                | Fallacies, cognitive biases, debiasing, System 1/2        |
+| `resilience.md`               | Failure modes, chaos engineering, circuit breakers        |
+| `signal.md`                   | Prioritization, context, comms — filtering noise          |
+| `specification.md`            | Specification spectrum, DbC, TLA+, agent constraints      |
+| `testing.md`                  | Pyramid, strategy, doubles, TDD, anti-patterns            |
+| `thinking.md`                 | Mental models, systems thinking, asking good questions    |
 
 ### learn/
 

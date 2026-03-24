@@ -10,7 +10,13 @@ function remarkRewriteMdLinks() {
     visit(tree, "link", (node) => {
       const url = node.url;
       // Skip external links, anchors, and non-.md links
-      if (!url || url.startsWith("http") || url.startsWith("#") || !url.endsWith(".md")) return;
+      if (
+        !url ||
+        url.startsWith("http") ||
+        url.startsWith("#") ||
+        !url.endsWith(".md")
+      )
+        return;
 
       // Resolve the link target relative to the source file's directory
       const sourceDir = path.dirname(file.history[0]);
@@ -101,6 +107,13 @@ export default defineConfig({
                   label: "Agent Orchestration",
                   slug: "how/agent-orchestration",
                 },
+                {
+                  label: "Prompt Engineering",
+                  slug: "how/prompt-engineering",
+                },
+                { label: "MCP Servers", slug: "how/mcp-servers" },
+                { label: "LLM Evaluation", slug: "how/llm-evaluation" },
+                { label: "AI Glossary", slug: "how/ai-glossary" },
                 { label: "CLI Pipelines", slug: "how/cli-pipelines" },
                 { label: "Diagramming", slug: "how/diagramming" },
               ],
@@ -146,6 +159,8 @@ export default defineConfig({
               label: "AI & Systems",
               items: [
                 { label: "Agent Memory", slug: "why/agent-memory" },
+                { label: "RAG", slug: "why/rag" },
+                { label: "AI Safety", slug: "why/ai-safety" },
                 { label: "Orchestration", slug: "why/orchestration" },
                 { label: "CLI-First", slug: "why/cli-first" },
                 { label: "AI Adoption", slug: "why/ai-adoption" },

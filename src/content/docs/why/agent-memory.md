@@ -215,6 +215,8 @@ facts remain relevant.
 
 ## See Also
 
+- [Retrieval-Augmented Generation](rag.md) — RAG pipelines, chunking, and
+  retrieval strategies that serve as one memory layer
 - [Orchestration](orchestration.md) — Context routing and agent coordination
 - [Learning](learning.md) — How humans form and retain knowledge
 - [Thinking](thinking.md) — Mental models and systems thinking

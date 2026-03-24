@@ -348,6 +348,8 @@ go test -v -race -coverprofile=coverage.out ./... 2>&1 | go-junit-report > repor
 - [CI/CD](ci-cd.md)
 - [Debugging Tools](debugging.md)
 - [Performance Profiling](performance.md)
+- [LLM Evaluation](llm-evaluation.md) — Eval types, LLM-as-judge, and regression
+  testing for non-deterministic AI systems
 - [Python CLI](python-cli.md)
 - [Rust](rust.md)
 - [API Design](../why/api-design.md)

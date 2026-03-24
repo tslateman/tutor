@@ -397,6 +397,8 @@ osv-scanner --lockfile=requirements.txt
   management and common mistakes
 - [CI/CD](ci-cd.md)
 - [Security Lesson Plan](../learn/security-lesson-plan.md)
+- [AI Safety](../why/ai-safety.md) — Threat models and guardrails for
+  LLM-powered systems
 
 ## Resources
 

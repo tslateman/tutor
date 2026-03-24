@@ -223,3 +223,5 @@ Burn rate alert thresholds:
   distributed coordination
 - [Testing](testing.md) — Testing pyramid, integration tests that exercise
   failure paths
+- [AI Safety](ai-safety.md) — Defense in depth and failure modes applied to
+  LLM-powered systems
