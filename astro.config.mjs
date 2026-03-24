@@ -108,6 +108,7 @@ export default defineConfig({
             {
               label: "Security",
               items: [
+                { label: "Authentication", slug: "how/authentication" },
                 { label: "Cryptography", slug: "how/cryptography" },
                 { label: "Security Scanning", slug: "how/security-scanning" },
               ],
@@ -148,6 +149,7 @@ export default defineConfig({
                 { label: "Orchestration", slug: "why/orchestration" },
                 { label: "CLI-First", slug: "why/cli-first" },
                 { label: "AI Adoption", slug: "why/ai-adoption" },
+                { label: "Resilience", slug: "why/resilience" },
               ],
             },
           ],

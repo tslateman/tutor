@@ -17,6 +17,7 @@ Commands, syntax, quick reference.
 | File                     | Topics                                                      |
 | ------------------------ | ----------------------------------------------------------- |
 | `agent-orchestration.md` | Multi-agent patterns, delegation, worktrees, monitoring     |
+| `authentication.md`      | Sessions, OAuth2, JWT, SSO, API keys, MFA                   |
 | `ai-cli.md`              | Claude Code, context files, prompting, verification         |
 | `ci-cd.md`               | GitHub Actions, caching, matrix builds, deployment          |
 | `claude-code.md`         | Agents, hooks, plugins, MCP, memory, settings, teams        |
@@ -43,7 +44,7 @@ Commands, syntax, quick reference.
 | `security-scanning.md`   | Scorecard, Trivy, GuardDog, secrets, supply chain           |
 | `shell.md`               | Scripting patterns, loops, conditionals, functions          |
 | `sql.md`                 | General SQL, joins, CTEs, window functions                  |
-| `system-design.md`       | Load balancing, caching, consistency, capacity estimation   |
+| `system-design.md`       | Load balancing, caching, consensus, databases, capacity     |
 | `terminal-emulators.md`  | iTerm2 vs Ghostty, rendering, tmux -CC, decision guide      |
 | `testing.md`             | pytest, Jest, Go, Rust test commands, patterns              |
 | `tmux.md`                | Sessions, windows, panes, copy mode, configuration          |
@@ -68,6 +69,7 @@ Mental models, principles, frameworks.
 | `orchestration.md`            | K8s-to-agents parallels, context routing, failure modes  |
 | `problem-solving.md`          | Polya's method, divide-and-conquer, rubber duck          |
 | `reasoning.md`                | Fallacies, cognitive biases, debiasing, System 1/2       |
+| `resilience.md`               | Failure modes, chaos engineering, circuit breakers       |
 | `signal.md`                   | Prioritization, context, comms — filtering noise         |
 | `specification.md`            | Specification spectrum, DbC, TLA+, agent constraints     |
 | `testing.md`                  | Pyramid, strategy, doubles, TDD, anti-patterns           |
@@ -93,6 +95,7 @@ Progressive lesson plans with exercises.
 | `information-architecture-lesson-plan.md` | 8 lessons from organization to full audit                   |
 | `networking-lesson-plan.md`               | 8 lessons from DNS to sockets and debugging                 |
 | `operating-systems-lesson-plan.md`        | 8 lessons from processes to system call tracing             |
+| `org-mode-lesson-plan.md`                 | 8 lessons from org-mode basics to org-roam knowledge base   |
 | `python-lesson-plan.md`                   | 8 lessons from basics to async                              |
 | `reasoning-lesson-plan.md`                | 8 lessons from fallacies to systemic debiasing              |
 | `regex-lesson-plan.md`                    | 8 lessons from literals to lookahead and extraction         |

@@ -166,17 +166,101 @@ Beyond CAP -- when there is **no** partition, trade latency vs consistency:
 Quorum formula: with N replicas, set W (write) + R (read) > N to guarantee
 overlap. Common config: N=3, W=2, R=2.
 
+### Consensus Algorithms
+
+Consensus solves the problem: how do N nodes agree on a value when some nodes
+may fail?
+
+| Algorithm | Model              | Leader   | Use Case                         |
+| --------- | ------------------ | -------- | -------------------------------- |
+| Raft      | Crash-tolerant     | Elected  | etcd, Consul, CockroachDB        |
+| Paxos     | Crash-tolerant     | Proposer | Chubby, Spanner (Multi-Paxos)    |
+| ZAB       | Crash-tolerant     | Elected  | ZooKeeper                        |
+| PBFT      | Byzantine-tolerant | Rotating | Blockchain, high-trust consensus |
+
+All crash-tolerant algorithms require a majority quorum: tolerate F failures
+with 2F+1 nodes. A 3-node cluster tolerates 1 failure; 5 nodes tolerate 2.
+
+#### Raft Overview
+
+Raft is the most widely-taught consensus algorithm. Three roles: leader,
+follower, candidate.
+
+```text
+Election:
+  1. Follower times out (no heartbeat from leader)
+  2. Becomes candidate, increments term, votes for self
+  3. Requests votes from peers
+  4. Wins with majority → becomes leader
+  5. Leader sends heartbeats to prevent new elections
+
+Log replication:
+  1. Client sends command to leader
+  2. Leader appends to its log, sends AppendEntries to followers
+  3. Followers append and acknowledge
+  4. Leader commits once majority acknowledges
+  5. Leader notifies followers of committed entries
+```
+
+#### When You Need Consensus
+
+| Problem                         | Consensus needed? | Why                                |
+| ------------------------------- | ----------------- | ---------------------------------- |
+| Leader election                 | Yes               | Exactly one leader at a time       |
+| Distributed lock                | Yes               | Mutual exclusion across nodes      |
+| Configuration management        | Yes               | All nodes see same config          |
+| Sequence number generation      | Yes               | Globally unique, ordered IDs       |
+| Shopping cart (last-write-wins) | No                | Eventual consistency is acceptable |
+| Metrics aggregation             | No                | Approximate counts are fine        |
+| DNS caching                     | No                | TTL-based staleness is tolerable   |
+
+Consensus is expensive (network round trips on every write). Avoid it when
+eventual consistency or conflict-free replicated data types (CRDTs) suffice.
+
 ### Database Selection Guide
 
-| Workload                 | Good Fit                   | Why                                  |
-| ------------------------ | -------------------------- | ------------------------------------ |
-| OLTP, relational data    | PostgreSQL, MySQL          | ACID, joins, mature tooling          |
-| High write throughput    | Cassandra, ScyllaDB        | LSM-tree, horizontal writes          |
-| Document/flexible schema | MongoDB, CouchDB           | Schema-per-document, easy iteration  |
-| Key-value, sub-ms reads  | Redis, DynamoDB            | In-memory or SSD-optimized           |
-| Graph relationships      | Neo4j, Amazon Neptune      | Traversal queries, no join explosion |
-| Time-series              | TimescaleDB, InfluxDB      | Compression, time-windowed queries   |
-| Full-text search         | Elasticsearch, Meilisearch | Inverted index, ranking              |
+| Workload                 | Good Fit                     | Why                                  |
+| ------------------------ | ---------------------------- | ------------------------------------ |
+| OLTP, relational data    | PostgreSQL, MySQL            | ACID, joins, mature tooling          |
+| High write throughput    | Cassandra, ScyllaDB          | LSM-tree, horizontal writes          |
+| Document/flexible schema | MongoDB, CouchDB             | Schema-per-document, easy iteration  |
+| Key-value, sub-ms reads  | Redis, DynamoDB              | In-memory or SSD-optimized           |
+| Graph relationships      | Neo4j, Amazon Neptune        | Traversal queries, no join explosion |
+| Time-series              | TimescaleDB, InfluxDB        | Compression, time-windowed queries   |
+| Full-text search         | Elasticsearch, Meilisearch   | Inverted index, ranking              |
+| NewSQL (OLTP + scale)    | CockroachDB, TiDB, Spanner   | ACID + horizontal sharding           |
+| Analytical (OLAP)        | ClickHouse, DuckDB, BigQuery | Columnar storage, aggregate queries  |
+
+#### ACID vs BASE
+
+| Property     | ACID (Relational/NewSQL)        | BASE (NoSQL)                       |
+| ------------ | ------------------------------- | ---------------------------------- |
+| Consistency  | Strong (every read sees latest) | Eventual (replicas converge)       |
+| Availability | May block during partition      | Prioritizes availability           |
+| Transactions | Multi-row, multi-table          | Single-document or none            |
+| Scale model  | Vertical or sharded (NewSQL)    | Horizontal by default              |
+| Best for     | Financial, inventory, booking   | Social feeds, IoT, high-write logs |
+
+NewSQL (CockroachDB, TiDB, Spanner) bridges the gap: ACID transactions with
+automatic horizontal sharding. The trade-off is higher write latency from
+distributed consensus on every commit.
+
+#### Time-Series Databases
+
+Time-series workloads differ from OLTP: writes are append-only, reads scan time
+ranges, and old data compresses or ages out.
+
+| Feature            | TimescaleDB               | InfluxDB                   |
+| ------------------ | ------------------------- | -------------------------- |
+| Built on           | PostgreSQL extension      | Custom storage engine      |
+| Query language     | SQL                       | InfluxQL / Flux            |
+| Compression        | Columnar, 90%+ on older   | Run-length, delta, Gorilla |
+| Retention policies | Continuous aggregates     | Built-in retention rules   |
+| Best for           | Teams already on Postgres | Metrics/IoT pipelines      |
+
+Key concepts: downsampling (roll 1-second data into 1-minute averages),
+retention policies (auto-delete data older than N days), and continuous
+aggregates (pre-compute summaries as data arrives).
 
 ## Data Partitioning
 
@@ -420,3 +504,6 @@ Jaeger, Zipkin, OpenTelemetry.
 - [Docker](docker.md) — Images, containers, Compose
 - [API Design](../why/api-design.md) — REST, GraphQL, gRPC, pagination,
   versioning
+- [Authentication](authentication.md) — Sessions, OAuth2, JWT, SSO, API keys
+- [Resilience](../why/resilience.md) — Failure modes, chaos engineering, circuit
+  breaker mental models
