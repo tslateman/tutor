@@ -14,6 +14,14 @@ Working knowledge of [HTTP](../how/http.md),
 [SQL](../how/sql.md), and basic [Unix CLI](../how/unix.md).
 :::
 
+<!-- prettier-ignore -->
+:::tip[Next Step]
+Comfortable with everything here? Continue to the
+[Data-Intensive Systems Lesson Plan](data-intensive-systems-lesson-plan.md)
+for staff-level depth: storage engines, replication, transactions,
+consensus, and stream processing.
+:::
+
 ## Lesson 1: Single-Server Foundations
 
 **Goal:** Understand what one machine can handle and learn to measure its limits
@@ -1672,6 +1680,8 @@ and request count. Output results as both a summary and a JSON report.
 
 ## See Also
 
+- [Data-Intensive Systems Lesson Plan](data-intensive-systems-lesson-plan.md) --
+  The staff-level sequel
 - [Data Models Lesson Plan](data-models-lesson-plan.md) -- How you store data
   shapes everything
 - [Networking Lesson Plan](networking-lesson-plan.md) -- The network layer

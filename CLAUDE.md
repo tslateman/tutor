@@ -76,7 +76,7 @@ Mental models, principles, frameworks.
 | `rag.md`                      | RAG pipeline, chunking, embeddings, retrieval, evaluation |
 | `reasoning.md`                | Fallacies, cognitive biases, debiasing, System 1/2        |
 | `resilience.md`               | Failure modes, chaos engineering, circuit breakers        |
-| `signal.md`                   | Prioritization, context, comms — filtering noise          |
+| `signal.md`                   | Prioritization, context, comms, filtering noise           |
 | `specification.md`            | Specification spectrum, DbC, TLA+, agent constraints      |
 | `testing.md`                  | Pyramid, strategy, doubles, TDD, anti-patterns            |
 | `thinking.md`                 | Mental models, systems thinking, asking good questions    |
@@ -91,6 +91,7 @@ Progressive lesson plans with exercises.
 | `concurrency-lesson-plan.md`              | 8 lessons on threads, channels, async across Go/Python/Rust |
 | `context-complexity-lesson-plan.md`       | 8 lessons on managing context as a finite resource          |
 | `cryptography-lesson-plan.md`             | 8 lessons from hashing to TLS and key management            |
+| `data-intensive-systems-lesson-plan.md`   | 8 staff-level lessons from storage engines to streams       |
 | `data-models-lesson-plan.md`              | 8 lessons from ER diagrams to model selection               |
 | `debugging-lesson-plan.md`                | 8 lessons from scientific method to system-call tracing     |
 | `docker-lesson-plan.md`                   | 8 lessons from images to Compose and security               |

@@ -210,6 +210,10 @@ export default defineConfig({
                   label: "System Design",
                   slug: "learn/system-design-lesson-plan",
                 },
+                {
+                  label: "Data-Intensive Systems",
+                  slug: "learn/data-intensive-systems-lesson-plan",
+                },
                 { label: "SQL", slug: "learn/sql-lesson-plan" },
                 { label: "Data Models", slug: "learn/data-models-lesson-plan" },
                 { label: "Concurrency", slug: "learn/concurrency-lesson-plan" },
