@@ -668,6 +668,8 @@ k6 run --vus 50 --duration 60s load-test.js    # Override from CLI
 - [Debugging Tools](debugging.md) -- pdb, lldb, system call tracing
 - [Debugging Principles](../why/debugging.md) -- Scientific method for
   performance issues
+- [Observability](observability.md) -- Metrics, tracing, and SLOs for the
+  systems you profile
 - [PostgreSQL](postgres.md) -- Database-specific commands
 - [Python](python.md) -- Python-specific patterns
 - [Testing](testing.md) -- Benchmark test patterns

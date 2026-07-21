@@ -1682,6 +1682,8 @@ and request count. Output results as both a summary and a JSON report.
 
 - [Data-Intensive Systems Lesson Plan](data-intensive-systems-lesson-plan.md) --
   The staff-level sequel
+- [Observability Lesson Plan](observability-lesson-plan.md) -- Lesson 7, grown
+  into a full plan
 - [Data Models Lesson Plan](data-models-lesson-plan.md) -- How you store data
   shapes everything
 - [Networking Lesson Plan](networking-lesson-plan.md) -- The network layer

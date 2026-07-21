@@ -217,6 +217,8 @@ Burn rate alert thresholds:
 - [System Design](../how/system-design.md) — Circuit breaker states, load
   balancing, caching patterns
 - [Debugging](debugging.md) — Scientific method applied to failures
+- [Observability](observability.md) -- The telemetry that catches these failure
+  modes in production
 - [Specification](specification.md) — Defining what "correct" means before
   testing resilience
 - [Orchestration](orchestration.md) — Failure modes in multi-agent and

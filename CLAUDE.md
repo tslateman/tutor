@@ -38,6 +38,7 @@ Commands, syntax, quick reference.
 | `macos.md`               | Homebrew, defaults, Spotlight, launchctl, AppleScript        |
 | `mcp-servers.md`         | MCP protocol, tool/resource handlers, TypeScript/Python SDKs |
 | `neovim.md`              | LazyVim keybindings, Telescope, LSP, DAP, config patterns    |
+| `observability.md`       | jq log queries, PromQL, OpenTelemetry, SLO math, burn rates  |
 | `performance.md`         | Profiling, benchmarking, flame graphs, load testing          |
 | `postgres.md`            | psql commands, indexes, window functions, admin queries      |
 | `prompt-engineering.md`  | Prompt structure, few-shot, chain-of-thought, guardrails     |
@@ -71,6 +72,7 @@ Mental models, principles, frameworks.
 | `information-architecture.md` | Four systems, Diataxis, findability heuristics            |
 | `knowledge-design.md`         | Taxonomy, CTA, mental modeling, semantic labeling         |
 | `learning.md`                 | Retention techniques, spaced repetition, active recall    |
+| `observability.md`            | Unknown-unknowns, SLOs, error budgets, symptom alerting   |
 | `orchestration.md`            | K8s-to-agents parallels, context routing, failure modes   |
 | `problem-solving.md`          | Polya's method, divide-and-conquer, rubber duck           |
 | `rag.md`                      | RAG pipeline, chunking, embeddings, retrieval, evaluation |
@@ -101,6 +103,7 @@ Progressive lesson plans with exercises.
 | `golang-lesson-plan.md`                   | 8 lessons from basics to concurrency                        |
 | `information-architecture-lesson-plan.md` | 8 lessons from organization to full audit                   |
 | `networking-lesson-plan.md`               | 8 lessons from DNS to sockets and debugging                 |
+| `observability-lesson-plan.md`            | 8 lessons from structured logs to burn-rate alerting        |
 | `operating-systems-lesson-plan.md`        | 8 lessons from processes to system call tracing             |
 | `org-mode-lesson-plan.md`                 | 8 lessons from org-mode basics to org-roam knowledge base   |
 | `python-lesson-plan.md`                   | 8 lessons from basics to async                              |

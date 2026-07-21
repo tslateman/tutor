@@ -9,9 +9,9 @@ software engineers.
 
 | Section       | Directory                 | Count | Description                               |
 | ------------- | ------------------------- | ----- | ----------------------------------------- |
-| Reference     | `src/content/docs/how/`   | 38    | Commands, syntax, quick reference         |
-| Mental Models | `src/content/docs/why/`   | 19    | Principles, frameworks, heuristics        |
-| Lesson Plans  | `src/content/docs/learn/` | 29    | Progressive 8-lesson plans with exercises |
+| Reference     | `src/content/docs/how/`   | 39    | Commands, syntax, quick reference         |
+| Mental Models | `src/content/docs/why/`   | 20    | Principles, frameworks, heuristics        |
+| Lesson Plans  | `src/content/docs/learn/` | 30    | Progressive 8-lesson plans with exercises |
 
 ## Development
 

@@ -99,6 +99,7 @@ export default defineConfig({
                 { label: "Kubernetes", slug: "how/k8s" },
                 { label: "System Design", slug: "how/system-design" },
                 { label: "Performance", slug: "how/performance" },
+                { label: "Observability", slug: "how/observability" },
                 { label: "jq", slug: "how/jq" },
               ],
             },
@@ -170,6 +171,7 @@ export default defineConfig({
                 { label: "CLI-First", slug: "why/cli-first" },
                 { label: "AI Adoption", slug: "why/ai-adoption" },
                 { label: "Resilience", slug: "why/resilience" },
+                { label: "Observability", slug: "why/observability" },
               ],
             },
           ],
@@ -229,6 +231,10 @@ export default defineConfig({
                 { label: "SysML v2", slug: "learn/sysml-v2-lesson-plan" },
                 { label: "Testing", slug: "learn/testing-lesson-plan" },
                 { label: "Debugging", slug: "learn/debugging-lesson-plan" },
+                {
+                  label: "Observability",
+                  slug: "learn/observability-lesson-plan",
+                },
               ],
             },
             {
