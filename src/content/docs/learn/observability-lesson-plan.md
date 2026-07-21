@@ -417,9 +417,10 @@ two methods. For each service, three RED panels: request rate, error ratio,
 duration percentiles -- the user's experience. For each resource, three USE
 panels: utilization, saturation, errors -- the machine's experience. Title
 panels with the question ("Are users seeing errors?"), not the metric name, so
-3am-you knows why the panel exists. Template variables (`$path`, `$instance`)
-make one dashboard serve every instance. If a panel never changed a decision,
-delete it; every panel is a maintenance liability that must earn its place.
+the 3 a.m. responder knows why the panel exists. Template variables (`$path`,
+`$instance`) make one dashboard serve every instance. If a panel never changed a
+decision, delete it; every panel is a maintenance liability that must earn its
+place.
 
 ### Exercises
 
@@ -765,7 +766,7 @@ errors) would cause and how long the monthly budget would survive it.
 
 ---
 
-## Lesson 7: Alerting Without the 3am Regret
+## Lesson 7: Alerting Without the 3 a.m. Regret
 
 **Goal:** Encode burn-rate alerts in Prometheus, fire one on purpose, and
 classify every alert as page, ticket, or dashboard-only.
