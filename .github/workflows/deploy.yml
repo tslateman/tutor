@@ -14,6 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history so Starlight lastUpdated reflects each file's real
+          # last commit instead of the deploy HEAD
+          fetch-depth: 0
       - uses: withastro/action@v5
 
   deploy:

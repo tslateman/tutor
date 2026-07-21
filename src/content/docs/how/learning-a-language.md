@@ -247,7 +247,9 @@ Share progress, not perfection. Vulnerability invites feedback and mentorship.
 - [Learning](../why/learning.md) — Evidence-based retention techniques
 - [Problem Solving](../why/problem-solving.md) — Approaching coding challenges
 - [Debugging](../why/debugging.md) — Systematic error investigation
-- Language lesson plans in [learn/](../learn/) — Structured curricula
+- Language lesson plans: [Python](../learn/python-lesson-plan.md),
+  [TypeScript](../learn/typescript-lesson-plan.md),
+  [Rust](../learn/rust-lesson-plan.md), [Go](../learn/golang-lesson-plan.md)
 - [Python](python.md)
 - [Rust](rust.md)
 - [TypeScript](typescript.md)

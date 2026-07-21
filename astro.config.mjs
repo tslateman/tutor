@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightLinksValidator from "starlight-links-validator";
 import { visit } from "unist-util-visit";
 import path from "node:path";
 
@@ -9,25 +10,27 @@ function remarkRewriteMdLinks() {
   return (tree, file) => {
     visit(tree, "link", (node) => {
       const url = node.url;
-      // Skip external links, anchors, and non-.md links
-      if (
-        !url ||
-        url.startsWith("http") ||
-        url.startsWith("#") ||
-        !url.endsWith(".md")
-      )
+      // Skip external links (any protocol) and same-page anchors. A bare
+      // startsWith("http") check would also match "http.md".
+      if (!url || /^[a-z][a-z0-9+.-]*:/i.test(url) || url.startsWith("#"))
         return;
+
+      // Split off any #fragment so "foo.md#section" is rewritten too
+      const hashIndex = url.indexOf("#");
+      const filePath = hashIndex === -1 ? url : url.slice(0, hashIndex);
+      const fragment = hashIndex === -1 ? "" : url.slice(hashIndex);
+      if (!filePath.endsWith(".md")) return;
 
       // Resolve the link target relative to the source file's directory
       const sourceDir = path.dirname(file.history[0]);
-      const resolved = path.resolve(sourceDir, url);
+      const resolved = path.resolve(sourceDir, filePath);
 
       // Compute slug relative to src/content/docs/
       const docsRoot = path.resolve("src/content/docs");
       const rel = path.relative(docsRoot, resolved); // e.g. "learn/git-lesson-plan.md"
       const slug = rel.replace(/\.md$/, ""); // e.g. "learn/git-lesson-plan"
 
-      node.url = `/tutor/${slug}/`;
+      node.url = `/tutor/${slug}/${fragment}`;
     });
   };
 }
@@ -42,6 +45,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Tutor",
+      plugins: [starlightLinksValidator()],
       editLink: {
         baseUrl: "https://github.com/tslateman/tutor/edit/main/",
       },
