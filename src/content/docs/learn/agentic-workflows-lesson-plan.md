@@ -355,10 +355,11 @@ codebase and must eventually merge into a single coherent state.
 **Before parallelizing, justify the cost.** Token spend scales with agent count,
 but useful output does not. Coordination overhead -- dispatching, status checks,
 conflict resolution -- consumes tokens without producing code. Real measurement
-from a 20-agent swarm completing 15 tasks: 8M tokens (~$60). The same tasks done
-sequentially: 1.2M tokens (~$9). The swarm finished 2 hours faster. That 2-hour
-speedup cost $51 in coordination overhead. For most projects, this is not a
-worthwhile trade.
+from a 20-agent swarm completing 15 tasks: 8M tokens
+(~$60). The same tasks done
+sequentially: 1.2M tokens (~$9). The swarm finished 2
+hours faster. That 2-hour speedup cost $51 in coordination overhead. For most
+projects, this is not a worthwhile trade.
 
 Errors also compound multiplicatively at integration boundaries, not additively.
 Three agents at a 5% error rate produce roughly a 14.3% aggregate failure

@@ -14,11 +14,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install markdownlint-cli
-        run: npm install -g markdownlint-cli
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
 
-      - name: Install prettier
-        run: npm install -g prettier
+      - name: Install dependencies
+        run: npm ci
 
       - name: Install vale
         run: |
@@ -29,7 +32,7 @@ jobs:
 
       - name: Run markdownlint and vale
         run: |
-          markdownlint src/content/docs/**/*.md CLAUDE.md README.md
+          npx --no-install markdownlint src/content/docs/**/*.md CLAUDE.md README.md
           vale src/content/docs/how/*.md src/content/docs/why/*.md src/content/docs/learn/*.md CLAUDE.md
 
       - name: Verify cross-references and counts

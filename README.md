@@ -25,7 +25,8 @@ npm run preview       # Preview production build
 ## Linting
 
 ```bash
-brew install markdownlint-cli prettier vale lychee
+brew install vale lychee
+npm install           # Provides pinned prettier and markdownlint
 make sync             # Download vale style packages
 make setup            # Install git hooks
 make lint             # Check style (markdownlint + vale + links)

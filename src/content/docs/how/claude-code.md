@@ -89,7 +89,9 @@ not just what it does.
 description: "Analyzes code"
 
 # Strong — states the trigger condition
-description: "Deep research combining web sources and existing repo content. Use when investigating a topic before writing new guides."
+description:
+  "Deep research combining web sources and existing repo content. Use when
+  investigating a topic before writing new guides."
 ```
 
 ## Skills and Commands

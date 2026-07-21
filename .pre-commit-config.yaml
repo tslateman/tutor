@@ -3,13 +3,13 @@ repos:
     hooks:
       - id: prettier
         name: prettier
-        entry: prettier --write
+        entry: npx --no-install prettier --write
         language: system
         files: '\.md$'
         exclude: '^\.claude/'
       - id: markdownlint
         name: markdownlint
-        entry: markdownlint --ignore .vale
+        entry: npx --no-install markdownlint --ignore .vale
         language: system
         files: '\.md$'
         exclude: '^\.claude/'

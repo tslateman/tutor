@@ -36,7 +36,7 @@ MD_FILES = src/content/docs/**/*.md CLAUDE.md README.md
 
 # Lint markdown files
 lint:
-	markdownlint $(MD_FILES)
+	npx --no-install markdownlint $(MD_FILES)
 	vale src/content/docs/how/*.md src/content/docs/why/*.md src/content/docs/learn/*.md CLAUDE.md
 	lychee --offline $(MD_FILES)
 
@@ -46,11 +46,11 @@ links:
 
 # Format markdown files
 format:
-	prettier --write $(MD_FILES)
+	npx --no-install prettier --write $(MD_FILES)
 
 # Check formatting (no changes)
 check:
-	prettier --check $(MD_FILES)
+	npx --no-install prettier --check $(MD_FILES)
 
 # Fix everything
 fix: format lint
