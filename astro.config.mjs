@@ -143,6 +143,7 @@ export default defineConfig({
                 { label: "Problem Solving", slug: "why/problem-solving" },
                 { label: "Learning", slug: "why/learning" },
                 { label: "Debugging", slug: "why/debugging" },
+                { label: "Signal", slug: "why/signal" },
               ],
             },
             {
@@ -194,6 +195,7 @@ export default defineConfig({
                 { label: "Docker", slug: "learn/docker-lesson-plan" },
                 { label: "tmux", slug: "learn/tmux-lesson-plan" },
                 { label: "Ghostty", slug: "learn/ghostty-lesson-plan" },
+                { label: "Org-mode", slug: "learn/org-mode-lesson-plan" },
                 {
                   label: "Operating Systems",
                   slug: "learn/operating-systems-lesson-plan",
@@ -220,6 +222,7 @@ export default defineConfig({
                   label: "Specification",
                   slug: "learn/specification-lesson-plan",
                 },
+                { label: "SysML v2", slug: "learn/sysml-v2-lesson-plan" },
                 { label: "Testing", slug: "learn/testing-lesson-plan" },
                 { label: "Debugging", slug: "learn/debugging-lesson-plan" },
               ],
